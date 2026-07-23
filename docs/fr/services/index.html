@@ -70,7 +70,7 @@
 
             <!-- Header Booking CTA -->
             <a href="https://la-fiancee-du-pirate.amenitiz.io/fr/booking/room" target="_blank" rel="noopener" class="btn btn-primary btn-book-header">
-                Réserver
+                {{nav.book}}
             </a>
             
             <!-- Mobile Menu Toggle -->
@@ -89,8 +89,8 @@
         <!-- Inner Hero / Page Header -->
 <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/jacuzzi_and_pool.webp');">
     <div class="page-header-content">
-        <h1 class="page-header-title">Services & Activités</h1>
-        <p class="page-header-subtitle">Tout ce dont vous avez besoin pour un séjour d'exception sur la Côte d'Azur.</p>
+        <h1 class="page-header-title">{{services.title}}</h1>
+        <p class="page-header-subtitle">{{services.subtitle}}</p>
     </div>
 </section>
 
@@ -99,8 +99,8 @@
     <div class="container">
         <div class="text-center mb-5">
             <span class="section-tag">Confort & Bien-être</span>
-            <h2 class="section-title">Les Services de l'Hôtel</h2>
-            <p class="section-subtitle">Profitez de nos installations haut de gamme conçues pour votre détente et votre confort.</p>
+            <h2 class="section-title">{{services.hotel_services_title}}</h2>
+            <p class="section-subtitle">{{services.hotel_services_desc}}</p>
             <div class="divider"></div>
         </div>
         
@@ -108,29 +108,29 @@
             <!-- Pool & Jacuzzi -->
             <div class="service-detail-card">
                 <i class="fa-solid fa-water-ladder service-detail-icon"></i>
-                <h3>Piscine & Jacuzzi</h3>
-                <p>Une piscine extérieure chauffée selon la saison et un jacuzzi sur demande pour vos moments de bien-être.</p>
+                <h3>{{services.service_pool_title}}</h3>
+                <p>{{services.service_pool_desc}}</p>
             </div>
             
             <!-- Garden & Lounges -->
             <div class="service-detail-card">
                 <i class="fa-solid fa-seedling service-detail-icon"></i>
-                <h3>Jardin & Salons</h3>
-                <p>Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.</p>
+                <h3>{{services.service_garden_title}}</h3>
+                <p>{{services.service_garden_desc}}</p>
             </div>
             
             <!-- Breakfast -->
             <div class="service-detail-card">
                 <i class="fa-solid fa-mug-saucer service-detail-icon"></i>
-                <h3>Petit-déjeuner Buffet</h3>
-                <p>Servi sur la terrasse face à la mer, composé de produits frais pour bien démarrer votre journée.</p>
+                <h3>{{services.service_breakfast_title}}</h3>
+                <p>{{services.service_breakfast_desc}}</p>
             </div>
             
             <!-- Transport -->
             <div class="service-detail-card">
                 <i class="fa-solid fa-route service-detail-icon"></i>
-                <h3>Transport & Excursions</h3>
-                <p>Transfert aéroport en 20 min, bus pour Nice et Monaco à proximité, et notre partenaire de taxi privé Myblackcab.</p>
+                <h3>{{services.service_cab_title}}</h3>
+                <p>{{services.service_cab_desc}}</p>
             </div>
         </div>
     </div>
@@ -141,8 +141,8 @@
     <div class="container">
         <div class="text-center mb-5">
             <span class="section-tag">Art, Culture & Histoire</span>
-            <h2 class="section-title">Découvrir Villefranche-sur-Mer</h2>
-            <p class="section-subtitle">Un village d'art et d'histoire au charme intemporel.</p>
+            <h2 class="section-title">{{services.activities_title}}</h2>
+            <p class="section-subtitle">{{services.activities_desc}}</p>
             <div class="divider"></div>
         </div>
         
@@ -153,8 +153,8 @@
                     <i class="fa-solid fa-fort-awesome"></i>
                 </div>
                 <div class="culture-info">
-                    <h3>La Citadelle Saint-Elme</h3>
-                    <p>Imposante forteresse du XVIe siècle construite pour protéger la rade. Elle abrite aujourd'hui la Mairie et 4 musées (dont le Musée Volti et le Musée Goetz-Boumeester). Entrée libre.</p>
+                    <h3>{{services.citadelle_title}}</h3>
+                    <p>{{services.citadelle_desc}}</p>
                 </div>
             </div>
             
@@ -164,8 +164,8 @@
                     <i class="fa-solid fa-church"></i>
                 </div>
                 <div class="culture-info">
-                    <h3>La Chapelle Saint-Pierre</h3>
-                    <p>Entièrement restaurée et décorée en 1956 par le célèbre artiste Jean Cocteau, c'est un chef-d'œuvre incontournable dédié au patron des pêcheurs.</p>
+                    <h3>{{services.chapelle_title}}</h3>
+                    <p>{{services.chapelle_desc}}</p>
                 </div>
             </div>
             
@@ -175,8 +175,8 @@
                     <i class="fa-solid fa-road-barrier"></i>
                 </div>
                 <div class="culture-info">
-                    <h3>La Rue Obscure</h3>
-                    <p>Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.</p>
+                    <h3>{{services.rue_title}}</h3>
+                    <p>{{services.rue_desc}}</p>
                 </div>
             </div>
             
@@ -186,8 +186,8 @@
                     <i class="fa-solid fa-anchor"></i>
                 </div>
                 <div class="culture-info">
-                    <h3>Le Port Royal de la Darse</h3>
-                    <p>Bassin historique du XVIe siècle avec ses remparts, son phare historique, sa corderie et son port de plaisance actif.</p>
+                    <h3>{{services.port_title}}</h3>
+                    <p>{{services.port_desc}}</p>
                 </div>
             </div>
         </div>
@@ -200,25 +200,25 @@
         <div class="surroundings-wrapper">
             <div class="surroundings-content">
                 <span class="section-tag">Explorer la Côte d'Azur</span>
-                <h2 class="section-title">Aux alentours sur la Riviera</h2>
-                <p class="lead-text">Notre hôtel est le point de départ idéal pour explorer la Côte d'Azur :</p>
+                <h2 class="section-title">{{services.surroundings_title}}</h2>
+                <p class="lead-text">{{services.surroundings_desc}}</p>
                 
                 <ul class="surroundings-list">
                     <li>
                         <span class="surroundings-badge">Nice</span>
-                        <p>Nice (10 min) : le vieux Nice, le marché du cours Saleya, la Promenade des Anglais (accès rapide en bus).</p>
+                        <p>{{services.surroundings_nice}}</p>
                     </li>
                     <li>
                         <span class="surroundings-badge">Monaco</span>
-                        <p>Monaco (20 min) : le Rocher, le Casino de Monte-Carlo, le Musée Océanographique.</p>
+                        <p>{{services.surroundings_monaco}}</p>
                     </li>
                     <li>
                         <span class="surroundings-badge">Eze & Vence</span>
-                        <p>Les villages perchés d'Eze et de Saint-Paul-de-Vence pour une escapade pittoresque.</p>
+                        <p>{{services.surroundings_villages}}</p>
                     </li>
                     <li>
                         <span class="surroundings-badge">Italie</span>
-                        <p>L'Italie à seulement 7 stations de train (départs réguliers de la gare de Villefranche).</p>
+                        <p>{{services.surroundings_italy}}</p>
                     </li>
                 </ul>
             </div>
@@ -273,13 +273,13 @@
         <!-- Brand Section -->
         <div class="footer-section footer-brand">
             <img src="../../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="footer-logo">
-            <p class="footer-desc">La Fiancée du Pirate, boutique-hôtel intimiste de 15 chambres niché sur les hauteurs de Villefranche-sur-Mer, entre Nice et Monaco.</p>
+            <p class="footer-desc">{{footer.desc}}</p>
             <!-- TripAdvisor rating badge -->
             <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="footer-ta-badge">
                 <i class="fa-brands fa-tripadvisor"></i>
                 <div class="ta-badge-content">
                     <span class="ta-badge-title">TripAdvisor</span>
-                    <span class="ta-badge-desc">Classé Excellent sur TripAdvisor</span>
+                    <span class="ta-badge-desc">{{footer.tripadvisor_badge}}</span>
                     <div class="ta-stars">
                         <span class="ta-circle"></span>
                         <span class="ta-circle"></span>
