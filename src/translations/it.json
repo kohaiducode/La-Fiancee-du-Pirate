@@ -139,25 +139,46 @@
     "read_more": "Leggi tutte le recensioni su TripAdvisor",
     "items": [
       {
-        "author": "Sophie L.",
-        "date": "Giugno 2026",
+        "author": "Fabienne W",
+        "date": "Marzo 2025",
         "rating": 5,
-        "title": "Vista spettacolare e accoglienza calorosa",
-        "text": "Un soggiorno assolutamente magico! La vista sulla baia di Villefranche dalla terrazza della colazione è incredibile. L'hotel è tranquillo, intimo e lo staff è fantastico. Ritorneremo sicuramente."
+        "title": "Una bellissima scoperta",
+        "text": "Abbiamo soggiornato a La Fiancée du Pirate dal 27 al 31 marzo 2025 in famiglia e con i nostri amici in occasione del matrimonio di nostra figlia. Si scopre questo hotel scendendo pochi gradini; l'accoglienza e la sala da pranzo molto luminose si aprono su una terrazza con vista in lontananza su Cap Ferrat e sul mare. Le camere situate allo stesso piano della reception e quelle dei livelli -1 e -2 sono spaziose, luminose, confortevoli e molto pulite. La splendida vista si apprezza altrettanto durante le ottime colazioni a buffet. Abbiamo gradito molto la calorosa accoglienza e la disponibilità di Charlotte e Fabrice, che hanno fatto di tutto per rendere il soggiorno piacevole, attenti al benessere di ognuno (compresa la nostra nipotina di 9 mesi). Grazie ancora di tutto, Charlotte!!"
       },
       {
-        "author": "Thomas M.",
-        "date": "Maggio 2026",
+        "author": "Ingrid V",
+        "date": "Agosto 2025",
         "rating": 5,
-        "title": "Un piccolo angolo di paradiso",
-        "text": "La piscina e la vasca idromassaggio vista mare sono perfette per rilassarsi. Le camere sono moderne, ben attrezzate e molto pulite. Posizione strategica per esplorare la Riviera."
+        "title": "Hotel da raccomandare",
+        "text": "Posizione ideale... a due passi da Nizza... vicinissimo anche alla spiaggia. Camera molto pulita, arredamento curato con molto gusto... Piccole attenzioni da parte della direzione... tè, caffè e dolci a disposizione... Colazione completa servita su una terrazza vista mare. La piscina è molto piacevole... Abbiamo trascorso un soggiorno fantastico in un ambiente idilliaco con uno staff molto attento..."
       },
       {
-        "author": "Elena R.",
-        "date": "Aprile 2026",
+        "author": "John T",
+        "date": "Luglio 2025",
+        "rating": 4,
+        "title": "Raccomando questa struttura",
+        "text": "Grazioso piccolo hotel a 3 stelle, terrazza con vista straordinaria su Saint-Jean-Cap-Ferrat, l'ideale per fare colazione. Buffet con prodotti di qualità e succhi di frutta freschi fatti in casa. I proprietari sono molto affascinanti e simpatici, così come lo staff. La camera era decisamente adeguata per il mese di luglio, con tariffe ragionevoli per il periodo. Ci sono una piscina e una vasca idromassaggio per rilassarsi. Io e la mia amica abbiamo trascorso 3 giorni molto piacevoli."
+      },
+      {
+        "author": "JoeC1963",
+        "date": "Settembre 2025",
         "rating": 5,
-        "title": "Fascino e tranquillità assoluta",
-        "text": "Boutique hotel eccezionale. La colazione a buffet è abbondante e di alta qualità, servita davanti a una vista da cartolina. Il servizio di autista partner Myblackcab è stato perfetto."
+        "title": "Bellissimo hotel e proprietari",
+        "text": "Questo hotel ha la posizione più bella di tutta la Costa Azzurra e i proprietari Emilie e Hugues sono stati fantastici, gentili e pronti ad aiutarci in ogni momento. Viaggiavamo con nostra figlia di 9 anni, che si è sentita subito a casa. La colazione fatta in casa era abbondante e squisita, un ottimo inizio di giornata. Ritorneremo di sicuro."
+      },
+      {
+        "author": "Jean",
+        "date": "Ottobre 2025",
+        "rating": 5,
+        "title": "Perfetto",
+        "text": "Accoglienza personalizzata di qualità. La coppia di proprietari fa di tutto per farti sentire a tuo agio. Camera e letti di ottima qualità e ben insonorizzati. Colazione abbondante e anch'essa di alta qualità. Purtroppo non abbiamo potuto usufruire della piscina perché andavamo di fretta, ma ci sarebbe piaciuto molto. Torneremo con piacere. Grazie mille ai proprietari, un servizio così attento è ormai merce rara."
+      },
+      {
+        "author": "cati13190",
+        "date": "Novembre 2025",
+        "rating": 5,
+        "title": "Ottimo soggiorno",
+        "text": "La prima impressione telefonica era già eccellente, e l'accoglienza di persona all'arrivo è stata splendida. L'ambiente è bellissimo, con una terrazza per la colazione che offre ottimi prodotti, tra cui dolci fatti in casa. Camera graziosa e abbastanza spaziosa per una coppia, con spazio esterno per rilassarsi."
       }
     ]
   },

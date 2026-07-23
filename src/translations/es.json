@@ -139,25 +139,46 @@
     "read_more": "Leer todas las opiniones en TripAdvisor",
     "items": [
       {
-        "author": "Sophie L.",
-        "date": "Junio 2026",
+        "author": "Fabienne W",
+        "date": "Marzo 2025",
         "rating": 5,
-        "title": "Vistas espectaculares y acogida cálida",
-        "text": "¡Una estancia absolutamente mágica! Las vistas de la bahía de Villefranche desde la terraza del desayuno son increíbles. El hotel es tranquilo, íntimo y el personal excelente. Volveremos sin dudarlo."
+        "title": "Un gran descubrimiento",
+        "text": "Nos alojamos en La Fiancée du Pirate del 27 al 31 de marzo de 2025 con familiares y amigos para la boda de nuestra hija. Descubres este hotel bajando unos pocos escalones; la recepción y el comedor, muy luminosos, se abren a una terraza con vistas lejanas a Cap Ferrat y al mar. Las habitaciones de la planta de recepción y las de los niveles -1 y -2 son amplias, luminosas, cómodas y muy limpias. Las hermosas vistas se aprecian igual durante los deliciosos desayunos buffet. Agradecemos la cálida acogida y la gran amabilidad de Charlotte y Fabrice, quienes hicieron todo lo posible para que nuestra estancia fuera acogedora, siempre atentos al bienestar de todos (viajábamos con nuestra nieta de 9 meses). ¡Muchas gracias por todo, Charlotte!"
       },
       {
-        "author": "Thomas M.",
-        "date": "Mayo 2026",
+        "author": "Ingrid V",
+        "date": "Agosto 2025",
         "rating": 5,
-        "title": "Un pequeño trozo de paraíso",
-        "text": "La piscina y el jacuzzi con vistas al mar son ideales para relajarse. Las habitaciones son modernas, bien equipadas y muy limpias. Ubicación perfecta para explorar la zona."
+        "title": "Hotel muy recomendable",
+        "text": "Ubicación ideal... a dos pasos de Niza... también muy cerca de la playa. Habitación muy limpia, decoración de buen gusto... Detalles atentos por parte de la dirección... té, café y dulces de cortesía... Desayuno completo servido en una terraza con vistas al mar. La piscina es muy agradable... Pasamos una estancia maravillosa en un entorno idílico con un personal muy atento..."
       },
       {
-        "author": "Elena R.",
-        "date": "Abril 2026",
+        "author": "John T",
+        "date": "Julio 2025",
+        "rating": 4,
+        "title": "Recomiendo este hotel",
+        "text": "Lindo y pequeño hotel de 3 estrellas, terraza comedor con vistas extraordinarias a Saint-Jean-Cap-Ferrat, ideal para desayunar. Buffet con productos de calidad y zumos de frutas frescos y caseros. Los dueños son encantadores y muy simpáticos, al igual que el personal. La habitación era muy adecuada para julio, con tarifas razonables para la temporada. Hay piscina y jacuzzi para relajarse. Mi amiga y yo pasamos 3 días estupendos."
+      },
+      {
+        "author": "JoeC1963",
+        "date": "Septiembre 2025",
         "rating": 5,
-        "title": "Encanto y tranquilidad absoluta",
-        "text": "Hotel boutique excepcional. El desayuno buffet es delicioso y de gran calidad, servido frente a una postal increíble. El servicio de chófer socio Myblackcab fue perfecto."
+        "title": "Hermoso hotel y anfitriones",
+        "text": "Este hotel tiene el entorno más bonito de la Costa Azul y los anfitriones Emilie y Hugues no pudieron ser más simpáticos y serviciales; estuvieron atentos a cualquier detalle. Íbamos con nuestra hija de 9 años y se sintió como en casa desde el primer momento. El desayuno casero era abundante y riquísimo, una forma estupenda de empezar el día. Volveremos seguro."
+      },
+      {
+        "author": "Jean",
+        "date": "Octubre 2025",
+        "rating": 5,
+        "title": "Perfecto",
+        "text": "Acogida personalizada de calidad. La pareja de dueños está muy atenta para que te sientas cómodo. Habitación y camas de buena calidad y bien insonorizadas. El desayuno completo y de gran calidad. Lamentablemente no pudimos disfrutar de la piscina por falta de tiempo, pero nos habría encantado. Volveremos con mucho gusto. Gracias a los anfitriones, un servicio así es difícil de encontrar hoy en día."
+      },
+      {
+        "author": "cati13190",
+        "date": "Noviembre 2025",
+        "rating": 5,
+        "title": "Muy buena estancia",
+        "text": "La impresión telefónica inicial fue excelente, y la acogida de persona el día de llegada fue encantadora. El hotel es hermoso, con una terraza de desayuno que ofrece una gran selección de productos, algunos caseros. Habitación bonita, lo suficientemente espaciosa para una pareja, con zona exterior para relajarse."
       }
     ]
   },
