@@ -153,7 +153,7 @@ def compile_site():
             lang_data.update(load_json(path))
             
         # Load content pages
-        for name in ["accueil", "chambres", "services"]:
+        for name in ["accueil", "chambres", "services", "galerie", "contact"]:
             path = os.path.join(translations_dir, "pages", f"{name}.{lang}.json")
             if os.path.exists(path):
                 lang_data.update(load_json(path))
@@ -281,6 +281,7 @@ def compile_site():
                 "page_path": page_path,
                 "booking_url": booking_url,
                 "page_filename": page,
+                "page_name": page_name_no_ext,
                 "meta_title": meta_title,
                 "meta_desc": meta_desc,
                 

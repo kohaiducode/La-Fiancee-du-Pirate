@@ -1,0 +1,12 @@
+{
+  "title": "Nome della Lingua",
+  "gallery": {
+    "title": "Galleria Foto",
+    "subtitle": "Scoprite il nostro hotel in immagini",
+    "filter_all": "Tutti",
+    "filter_view": "Vista",
+    "filter_pool": "Piscina",
+    "filter_rooms": "Camere",
+    "filter_breakfast": "Colazione"
+  }
+}

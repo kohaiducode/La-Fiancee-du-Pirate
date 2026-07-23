@@ -22,7 +22,7 @@ collections:
     files:
       - name: accueil
         label: "Page d'Accueil"
-        file: "src/translations/seo/accueil.{{locale}}.json"
+        file: "src/translations/seo/accueil.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -35,7 +35,7 @@ collections:
 
       - name: chambres
         label: "Page Chambres & Pavillons"
-        file: "src/translations/seo/chambres.{{locale}}.json"
+        file: "src/translations/seo/chambres.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -48,7 +48,7 @@ collections:
 
       - name: services
         label: "Page Services & Activités"
-        file: "src/translations/seo/services.{{locale}}.json"
+        file: "src/translations/seo/services.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -61,7 +61,7 @@ collections:
 
       - name: galerie
         label: "Page Galerie"
-        file: "src/translations/seo/galerie.{{locale}}.json"
+        file: "src/translations/seo/galerie.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -74,7 +74,7 @@ collections:
 
       - name: contact
         label: "Page Contact"
-        file: "src/translations/seo/contact.{{locale}}.json"
+        file: "src/translations/seo/contact.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -93,7 +93,7 @@ collections:
     files:
       - name: layout
         label: "Configuration En-tête & Pied de page"
-        file: "src/translations/navigation/index.{{locale}}.json"
+        file: "src/translations/navigation/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -140,7 +140,7 @@ collections:
     files:
       - name: accueil
         label: "Page d'Accueil"
-        file: "src/translations/pages/accueil.{{locale}}.json"
+        file: "src/translations/pages/accueil.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -168,7 +168,7 @@ collections:
 
       - name: chambres
         label: "Page Chambres"
-        file: "src/translations/pages/chambres.{{locale}}.json"
+        file: "src/translations/pages/chambres.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -208,7 +208,7 @@ collections:
 
       - name: services
         label: "Page Services"
-        file: "src/translations/pages/services.{{locale}}.json"
+        file: "src/translations/pages/services.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -228,6 +228,48 @@ collections:
               - { label: "Service 3 - Desc", name: service_breakfast_desc, widget: text, i18n: true }
               - { label: "Activités - Titre", name: activities_title, widget: string, i18n: true }
               - { label: "Activités - Desc", name: activities_desc, widget: text, i18n: true }
+
+      - name: galerie_textes
+        label: "Page Galerie (Textes)"
+        file: "src/translations/pages/galerie.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: gallery
+            label: "Textes de la Galerie"
+            widget: object
+            fields:
+              - { label: "Titre de la Galerie", name: title, widget: string, i18n: true }
+              - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+              - { label: "Filtre: Tout", name: filter_all, widget: string, i18n: true }
+              - { label: "Filtre: Vue", name: filter_view, widget: string, i18n: true }
+              - { label: "Filtre: Piscine", name: filter_pool, widget: string, i18n: true }
+              - { label: "Filtre: Chambres", name: filter_rooms, widget: string, i18n: true }
+              - { label: "Filtre: Petit-déjeuner", name: filter_breakfast, widget: string, i18n: true }
+
+      - name: contact
+        label: "Page Contact"
+        file: "src/translations/pages/contact.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: contact
+            label: "Contenu"
+            widget: object
+            fields:
+              - { label: "Titre Principal", name: title, widget: string, i18n: true }
+              - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+              - { label: "Titre Formulaire", name: form_title, widget: string, i18n: true }
+              - { label: "Label: Nom", name: form_name, widget: string, i18n: true }
+              - { label: "Label: Email", name: form_email, widget: string, i18n: true }
+              - { label: "Label: Téléphone", name: form_phone, widget: string, i18n: true }
+              - { label: "Label: Message", name: form_message, widget: string, i18n: true }
+              - { label: "Bouton Envoyer", name: form_submit, widget: string, i18n: true }
+              - { label: "Message de succès", name: form_success, widget: string, i18n: true }
+              - { label: "Message d'erreur", name: form_error, widget: string, i18n: true }
+              - { label: "Titre Coordonnées", name: info_title, widget: string, i18n: true }
+              - { label: "Titre Adresse", name: info_address, widget: string, i18n: true }
+              - { label: "Titre Plan d'accès", name: map_title, widget: string, i18n: true }
 
       - name: galerie
         label: "Galerie Photos"

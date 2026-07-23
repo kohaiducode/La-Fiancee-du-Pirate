@@ -1,0 +1,12 @@
+{
+  "title": "Nombre del Idioma",
+  "gallery": {
+    "title": "Galería de Fotos",
+    "subtitle": "Descubra nuestro hotel en imágenes",
+    "filter_all": "Todos",
+    "filter_view": "Vista",
+    "filter_pool": "Piscina",
+    "filter_rooms": "Habitaciones",
+    "filter_breakfast": "Desayuno"
+  }
+}

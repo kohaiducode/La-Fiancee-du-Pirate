@@ -1,0 +1,18 @@
+{
+  "title": "Language Name",
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are at your service",
+    "form_title": "Send us a message",
+    "form_name": "Full name",
+    "form_email": "Email address",
+    "form_phone": "Phone number",
+    "form_message": "Your message",
+    "form_submit": "Send",
+    "info_title": "Contact details",
+    "info_address": "Address",
+    "map_title": "Access map",
+    "form_success": "Your message has been successfully sent. We will contact you very soon.",
+    "form_error": "An error occurred while sending your message. Please try again later."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Nome della Lingua",
+  "contact": {
+    "title": "Contatto",
+    "subtitle": "Siamo a vostra disposizione",
+    "form_title": "Inviaci un messaggio",
+    "form_name": "Nome e cognome",
+    "form_email": "Indirizzo email",
+    "form_phone": "Numero di telefono",
+    "form_message": "Il tuo messaggio",
+    "form_submit": "Inviare",
+    "info_title": "I nostri contatti",
+    "info_address": "Indirizzo",
+    "map_title": "Mappa di accesso",
+    "form_success": "Il tuo messaggio è stato inviato con successo. Ti contatteremo al più presto.",
+    "form_error": "Si è verificato un errore durante l'invio del messaggio. Riprova più tardi."
+  }
+}
