@@ -632,8 +632,8 @@ ul {
         margin-top: 0.25rem;
     }
     
-    /* Add padding to body to prevent content being hidden under sticky bar */
-    body {
+    /* Add padding to footer to prevent content being hidden under sticky bar */
+    .main-footer {
         padding-bottom: 180px;
     }
 }
