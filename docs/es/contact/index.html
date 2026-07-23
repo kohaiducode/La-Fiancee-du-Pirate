@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto & Mapa | La Fiancée du Pirate</title>
+    <meta name="description" content="Contacte con el hotel La Fiancée du Pirate. Formulario de contacto, dirección, teléfono, correo electrónico y mapa de ubicación.">
+    
+    <!-- SEO & Accessibility -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a2b49">
+    
+    <!-- Open Graph (Facebook/Instagram sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto & Mapa | La Fiancée du Pirate">
+    <meta property="og:description" content="Contacte con el hotel La Fiancée du Pirate. Formulario de contacto, dirección, teléfono, correo electrónico y mapa de ubicación.">
+    <meta property="og:image" content="../../assets/images/accueil/hotel_view.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-{{page_name}}">
+    <!-- Header -->
+    <header class="main-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <a href="../../es/" class="logo-link" aria-label="La Fiancée du Pirate">
+            <img src="../../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="logo-img">
+        </a>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../../es/" class="nav-link ">Inicio</a></li>
+                <li class="nav-item"><a href="../../es/chambres/" class="nav-link ">Habitaciones</a></li>
+                <li class="nav-item"><a href="../../es/services/" class="nav-link ">Servicios & Actividades</a></li>
+                <li class="nav-item"><a href="../../es/galerie/" class="nav-link ">Galería</a></li>
+                <li class="nav-item"><a href="../../es/contact/" class="nav-link active">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Menu Actions (Language & Book CTA) -->
+        <div class="header-actions">
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="active-lang-code">ES</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown" aria-labelledby="langBtn">
+                    <li><a href="../../fr/contact/" class="lang-dropdown-link ">FR</a></li>
+                    <li><a href="../../en/contact/" class="lang-dropdown-link ">EN</a></li>
+                    <li><a href="../../de/contact/" class="lang-dropdown-link ">DE</a></li>
+                    <li><a href="../../it/contact/" class="lang-dropdown-link ">IT</a></li>
+                    <li><a href="../../es/contact/" class="lang-dropdown-link active">ES</a></li>
+                    <li><a href="../../ru/contact/" class="lang-dropdown-link ">RU</a></li>
+                    <li><a href="../../en-au/contact/" class="lang-dropdown-link ">EN-AU</a></li>
+                </ul>
+            </div>
+
+            <!-- Header Booking CTA -->
+            <a href="https://la-fiancee-du-pirate.amenitiz.io/es/booking/room" target="_blank" rel="noopener" class="btn btn-primary btn-book-header">
+                Reservar
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <!-- Main Content Page Body -->
+    <main class="main-content">
+        <!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/dinner_room.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">Contacte con nosotros</h1>
+        <p class="page-header-subtitle">¿Tiene preguntas o alguna petición especial de reserva? Nuestro equipo está a su disposición.</p>
+    </div>
+</section>
+
+<!-- Contact Form & Details Section -->
+<section class="contact-section section-padding">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Left Column: Form -->
+            <div class="contact-form-wrapper">
+                <h3>Enviar un mensaje</h3>
+                <div class="divider-left"></div>
+                
+                <form class="contact-form" id="contactForm" novalidate>
+                    <!-- Success & Error Messages -->
+                    <div class="alert alert-success d-none" id="contactSuccess">
+                        <i class="fa-solid fa-circle-check"></i> ¡Gracias! Su mensaje ha sido enviado con éxito. Le responderemos lo antes posible.
+                    </div>
+                    <div class="alert alert-danger d-none" id="contactError">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Ocurrió un error al enviar. Por favor, inténtelo de nuevo o contáctenos directamente por correo electrónico.
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactName">Nombre completo *</label>
+                        <input type="text" id="contactName" name="name" required class="form-control" placeholder="John Doe">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Correo electrónico *</label>
+                        <input type="email" id="contactEmail" name="email" required class="form-control" placeholder="john.doe@example.com">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactPhone">Número de teléfono</label>
+                        <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+33 6 12 34 56 78">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Mensaje *</label>
+                        <textarea id="contactMessage" name="message" required class="form-control" rows="6" placeholder="Bonjour..."></textarea>
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Right Column: Details & Map -->
+            <div class="contact-info-wrapper">
+                <div class="contact-details-card">
+                    <h3>Datos de Contacto</h3>
+                    <div class="divider-left"></div>
+                    
+                    <ul class="contact-info-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Adresse</strong>
+                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">8 Boulevard de La Corne d'Or
+Moyenne Corniche
+06230 Villefranche-sur-Mer, Francia</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p><a href="tel:+33493766740">+33 (0)4 93 76 67 40</a><br><a href="tel:+33745282937">+33 (0)7 45 28 29 37</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p><a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-map-card">
+                    <h3><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="color: inherit;">Ubicación <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 0.3rem;"></i></a></h3>
+                    <div class="divider-left"></div>
+                    <div class="map-iframe-container">
+                        <!-- Embedded Google Maps -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.200155252877!2d7.300007212008453!3d43.706817878988636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cddad3ebf6700f%3A0x29d12da16b491ce9!2sH%C3%B4tel%20La%20Fianc%C3%A9e%20du%20Pirate!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="280" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Google Maps - La Fiancée du Pirate"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Sticky Booking Bar -->
+    <div class="booking-bar-wrapper" id="bookingBar">
+    <div class="booking-bar-container">
+        <form class="booking-form" id="bookingForm" action="https://la-fiancee-du-pirate.amenitiz.io/es/booking/room" method="GET" target="_blank" rel="noopener">
+            <!-- Check In -->
+            <div class="booking-field">
+                <label for="barCheckIn"><i class="fa-regular fa-calendar-days"></i> Llegada</label>
+                <input type="date" id="barCheckIn" name="check_in" required>
+            </div>
+            
+            <!-- Check Out -->
+            <div class="booking-field">
+                <label for="barCheckOut"><i class="fa-regular fa-calendar-days"></i> Salida</label>
+                <input type="date" id="barCheckOut" name="check_out" required>
+            </div>
+            
+            <!-- Guests -->
+            <div class="booking-field">
+                <label for="barGuests"><i class="fa-solid fa-users"></i> Huéspedes</label>
+                <select id="barGuests" name="adults">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <!-- Submit CTA -->
+            <button type="submit" class="btn btn-secondary btn-booking-submit">
+                Comprobar disponibilidad
+            </button>
+        </form>
+    </div>
+</div>
+
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-section footer-brand">
+            <img src="../../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="footer-logo">
+            <p class="footer-desc">La Fiancée du Pirate, hotel boutique íntimo de 15 habitaciones situado en las colinas de Villefranche-sur-Mer, entre Niza y Mónaco.</p>
+            <!-- TripAdvisor rating badge -->
+            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="footer-ta-badge">
+                <i class="fa-brands fa-tripadvisor"></i>
+                <div class="ta-badge-content">
+                    <span class="ta-badge-title">TripAdvisor</span>
+                    <span class="ta-badge-desc">Valorado como Excelente en TripAdvisor</span>
+                    <div class="ta-stars">
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="footer-section footer-links">
+            <h4 class="footer-section-title">Navegación</h4>
+            <ul class="footer-list">
+                <li><a href="../../es/">Inicio</a></li>
+                <li><a href="../../es/chambres/">Habitaciones</a></li>
+                <li><a href="../../es/services/">Servicios & Actividades</a></li>
+                <li><a href="../../es/galerie/">Galería</a></li>
+                <li><a href="../../es/contact/">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+            <h4 class="footer-section-title">Contacto</h4>
+            <ul class="footer-contact-list">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">8 Boulevard de La Corne d'Or,<br>Moyenne Corniche,<br>06230 Villefranche-sur-Mer, France</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33493766740">+33 (0)4 93 76 67 40</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <a href="tel:+33745282937">+33 (0)7 45 28 29 37</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Socials Section -->
+        <div class="footer-section footer-social">
+            <h4 class="footer-section-title">Síganos</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>&copy; 2026 La Fiancée du Pirate. Todos los derechos reservados. Aviso Legal.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JS Script Entry Point -->
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
+

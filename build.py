@@ -74,8 +74,9 @@ def compile_site():
     # Get all pages
     pages = [f for f in os.listdir(pages_dir) if f.endswith('.html')]
     
-    # Get all translation files
-    translation_files = [f for f in os.listdir(translations_dir) if f.endswith('.json')]
+    # Get all translation files (read from seo/ subfolder)
+    seo_dir = os.path.join(translations_dir, "seo")
+    translation_files = [f for f in os.listdir(seo_dir) if f.endswith('.json')]
     languages = [os.path.splitext(f)[0] for f in translation_files]
     
     # Language code mapping for Amenitiz URLs
@@ -91,7 +92,13 @@ def compile_site():
     
     # 4. Process each language
     for lang in languages:
-        lang_data = load_json(os.path.join(translations_dir, f"{lang}.json"))
+        # Load language translation files from subfolders and merge them
+        lang_data = {}
+        for folder in ["seo", "navigation", "pages", "reviews"]:
+            folder_file = os.path.join(translations_dir, folder, f"{lang}.json")
+            if os.path.exists(folder_file):
+                lang_data.update(load_json(folder_file))
+                
         lang_upper = lang.upper()
         
         # Create language folder
