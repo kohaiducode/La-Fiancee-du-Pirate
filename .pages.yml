@@ -71,6 +71,20 @@ content:
             label: Contact
             type: string
             
+      - name: hero
+        label: Bannière d'Accueil (Hero Banner)
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: cta
+            label: Texte du Bouton d'Action
+            type: string
+            
       - name: booking_bar
         label: Barre de Réservation
         type: object
