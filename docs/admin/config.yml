@@ -27,7 +27,7 @@ collections:
     format: json
     files:
       - name: accueil
-        label: "Page d'Accueil"
+        label: "Accueil"
         file: "src/translations/seo/accueil.json"
         i18n: true
         format: json
@@ -43,7 +43,7 @@ collections:
               - { label: "Description Google - Accueil", name: home_desc, widget: text, i18n: true }
 
       - name: chambres
-        label: "Page Chambres & Pavillons"
+        label: "Chambres"
         file: "src/translations/seo/chambres.json"
         i18n: true
         format: json
@@ -59,7 +59,7 @@ collections:
               - { label: "Description Google - Chambres", name: rooms_desc, widget: text, i18n: true }
 
       - name: services
-        label: "Page Services & Activités"
+        label: "Services"
         file: "src/translations/seo/services.json"
         i18n: true
         format: json
@@ -75,7 +75,7 @@ collections:
               - { label: "Description Google - Services", name: services_desc, widget: text, i18n: true }
 
       - name: galerie
-        label: "Page Galerie"
+        label: "Galerie"
         file: "src/translations/seo/galerie.json"
         i18n: true
         format: json
@@ -91,7 +91,7 @@ collections:
               - { label: "Description Google - Galerie", name: gallery_desc, widget: text, i18n: true }
 
       - name: contact
-        label: "Page Contact"
+        label: "Contact"
         file: "src/translations/seo/contact.json"
         i18n: true
         format: json
@@ -179,7 +179,7 @@ collections:
     format: json
     files:
       - name: accueil
-        label: "Page d'Accueil"
+        label: "Accueil"
         file: "src/translations/pages/accueil.json"
         i18n: true
         format: json
@@ -210,7 +210,7 @@ collections:
               - { label: "Teaser Chambres - Texte", name: explore_rooms_text, widget: text, i18n: true }
 
       - name: chambres
-        label: "Page Chambres"
+        label: "Chambres"
         file: "src/translations/pages/chambres.json"
         i18n: true
         format: json
@@ -254,7 +254,7 @@ collections:
               - { label: "Teaser Bas - Bouton", name: footer_cta, widget: string, i18n: true }
 
       - name: services
-        label: "Page Services"
+        label: "Services"
         file: "src/translations/pages/services.json"
         i18n: true
         format: json
@@ -280,7 +280,7 @@ collections:
               - { label: "Activités - Desc", name: activities_desc, widget: text, i18n: true }
 
       - name: galerie_textes
-        label: "Page Galerie (Textes)"
+        label: "Galerie (Textes)"
         file: "src/translations/pages/galerie.json"
         i18n: true
         format: json
@@ -301,7 +301,7 @@ collections:
               - { label: "Filtre: Petit-déjeuner", name: filter_breakfast, widget: string, i18n: true }
 
       - name: contact
-        label: "Page Contact"
+        label: "Contact"
         file: "src/translations/pages/contact.json"
         i18n: true
         format: json
