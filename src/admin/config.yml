@@ -12,6 +12,7 @@ i18n:
   structure: multiple_files
   locales: [fr, en, en-au, de, it, es, ru]
   default_locale: fr
+  omit_default_locale_from_file_path: false
 
 collections:
   - name: seo
@@ -26,6 +27,8 @@ collections:
         label: "Page d'Accueil"
         file: "src/translations/seo/accueil.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
@@ -40,6 +43,8 @@ collections:
         label: "Page Chambres & Pavillons"
         file: "src/translations/seo/chambres.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
@@ -54,6 +59,8 @@ collections:
         label: "Page Services & Activités"
         file: "src/translations/seo/services.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
@@ -68,6 +75,8 @@ collections:
         label: "Page Galerie"
         file: "src/translations/seo/galerie.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
@@ -82,6 +91,8 @@ collections:
         label: "Page Contact"
         file: "src/translations/seo/contact.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
@@ -104,6 +115,8 @@ collections:
         label: "Configuration En-tête & Pied de page"
         file: "src/translations/navigation/index.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: nav
@@ -157,6 +170,8 @@ collections:
         label: "Page d'Accueil"
         file: "src/translations/pages/accueil.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: accueil
@@ -186,6 +201,8 @@ collections:
         label: "Page Chambres"
         file: "src/translations/pages/chambres.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: rooms
@@ -228,6 +245,8 @@ collections:
         label: "Page Services"
         file: "src/translations/pages/services.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: services
@@ -252,6 +271,8 @@ collections:
         label: "Page Galerie (Textes)"
         file: "src/translations/pages/galerie.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: gallery
@@ -271,6 +292,8 @@ collections:
         label: "Page Contact"
         file: "src/translations/pages/contact.json"
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: contact
@@ -337,6 +360,8 @@ collections:
         label: "Avis"
         widget: object
         i18n: true
+        format: json
+        extension: json
         fields:
           - { label: "Titre de l'avis", name: title, widget: string, i18n: true }
           - { label: "Message de l'avis", name: text, widget: text, i18n: true }
