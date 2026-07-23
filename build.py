@@ -79,6 +79,13 @@ def compile_site():
     if os.path.exists(src_assets):
         shutil.copytree(src_assets, dist_assets)
         print("Assets copied successfully.")
+        
+    # Copy Sveltia CMS admin folder
+    src_admin = os.path.join(src_dir, "admin")
+    dist_admin = os.path.join(dist_dir, "admin")
+    if os.path.exists(src_admin):
+        shutil.copytree(src_admin, dist_admin)
+        print("Sveltia CMS admin copied successfully.")
     
     # 3. Load layout files
     layout_tpl = ""
@@ -132,7 +139,7 @@ def compile_site():
         # Load language translation files from subfolders and merge them
         lang_data = {}
         for folder in ["seo", "navigation", "pages", "reviews", "gallery"]:
-            folder_file = os.path.join(translations_dir, folder, f"{lang}.json")
+            folder_file = os.path.join(translations_dir, folder, f"index.{lang}.json")
             if os.path.exists(folder_file):
                 lang_data.update(load_json(folder_file))
                 
