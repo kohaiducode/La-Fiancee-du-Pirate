@@ -1,0 +1,128 @@
+{
+  "fr": {
+    "title": "Nom de la Langue",
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Nous sommes à votre écoute",
+      "form_title": "Envoyez-nous un message",
+      "form_name": "Nom complet",
+      "form_email": "Adresse e-mail",
+      "form_phone": "Numéro de téléphone",
+      "form_message": "Votre message",
+      "form_submit": "Envoyer",
+      "info_title": "Nos coordonnées",
+      "info_address": "Adresse",
+      "map_title": "Plan d'accès",
+      "form_success": "Votre message a bien été envoyé. Nous vous contacterons très prochainement.",
+      "form_error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard."
+    }
+  },
+  "en": {
+    "title": "Language Name",
+    "contact": {
+      "title": "Contact",
+      "subtitle": "We are at your service",
+      "form_title": "Send us a message",
+      "form_name": "Full name",
+      "form_email": "Email address",
+      "form_phone": "Phone number",
+      "form_message": "Your message",
+      "form_submit": "Send",
+      "info_title": "Contact details",
+      "info_address": "Address",
+      "map_title": "Access map",
+      "form_success": "Your message has been successfully sent. We will contact you very soon.",
+      "form_error": "An error occurred while sending your message. Please try again later."
+    }
+  },
+  "en-au": {
+    "title": "Language Name",
+    "contact": {
+      "title": "Contact",
+      "subtitle": "We are at your service",
+      "form_title": "Send us a message",
+      "form_name": "Full name",
+      "form_email": "Email address",
+      "form_phone": "Phone number",
+      "form_message": "Your message",
+      "form_submit": "Send",
+      "info_title": "Contact details",
+      "info_address": "Address",
+      "map_title": "Access map",
+      "form_success": "Your message has been successfully sent. We will contact you very soon.",
+      "form_error": "An error occurred while sending your message. Please try again later."
+    }
+  },
+  "de": {
+    "title": "Sprache Name",
+    "contact": {
+      "title": "Kontakt",
+      "subtitle": "Wir sind für Sie da",
+      "form_title": "Senden Sie uns eine Nachricht",
+      "form_name": "Vollständiger Name",
+      "form_email": "E-Mail-Adresse",
+      "form_phone": "Telefonnummer",
+      "form_message": "Ihre Nachricht",
+      "form_submit": "Senden",
+      "info_title": "Kontaktdaten",
+      "info_address": "Adresse",
+      "map_title": "Lageplan",
+      "form_success": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+      "form_error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "it": {
+    "title": "Nome della Lingua",
+    "contact": {
+      "title": "Contatto",
+      "subtitle": "Siamo a vostra disposizione",
+      "form_title": "Inviaci un messaggio",
+      "form_name": "Nome e cognome",
+      "form_email": "Indirizzo email",
+      "form_phone": "Numero di telefono",
+      "form_message": "Il tuo messaggio",
+      "form_submit": "Inviare",
+      "info_title": "I nostri contatti",
+      "info_address": "Indirizzo",
+      "map_title": "Mappa di accesso",
+      "form_success": "Il tuo messaggio è stato inviato con successo. Ti contatteremo al più presto.",
+      "form_error": "Si è verificato un errore durante l'invio del messaggio. Riprova più tardi."
+    }
+  },
+  "es": {
+    "title": "Nombre del Idioma",
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "Estamos a su disposición",
+      "form_title": "Envíenos un mensaje",
+      "form_name": "Nombre completo",
+      "form_email": "Correo electrónico",
+      "form_phone": "Número de teléfono",
+      "form_message": "Su mensaje",
+      "form_submit": "Enviar",
+      "info_title": "Datos de contacto",
+      "info_address": "Dirección",
+      "map_title": "Mapa de acceso",
+      "form_success": "Su mensaje ha sido enviado con éxito. Nos pondremos en contacto con usted muy pronto.",
+      "form_error": "Se ha producido un error al enviar su mensaje. Por favor, inténtelo de nuevo más tarde."
+    }
+  },
+  "ru": {
+    "title": "Название Языка",
+    "contact": {
+      "title": "Контакты",
+      "subtitle": "Мы всегда на связи",
+      "form_title": "Отправьте нам сообщение",
+      "form_name": "Полное имя",
+      "form_email": "Адрес электронной почты",
+      "form_phone": "Номер телефона",
+      "form_message": "Ваше сообщение",
+      "form_submit": "Отправить",
+      "info_title": "Наши контакты",
+      "info_address": "Адрес",
+      "map_title": "Схема проезда",
+      "form_success": "Ваше сообщение успешно отправлено. Мы свяжемся с вами в ближайшее время.",
+      "form_error": "При отправке сообщения произошла ошибка. Пожалуйста, повторите попытку позже."
+    }
+  }
+}

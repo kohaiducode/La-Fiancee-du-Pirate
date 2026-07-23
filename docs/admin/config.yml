@@ -19,7 +19,7 @@ collections:
   - name: seo
     label: "1. Référencement (SEO)"
     i18n:
-      structure: multiple_files
+      structure: single_file
       locales: [fr, en, en-au, de, it, es, ru]
     extension: json
     format: json
@@ -107,7 +107,7 @@ collections:
   - name: navigation
     label: "2. En-tête & Pied de page"
     i18n:
-      structure: multiple_files
+      structure: single_file
       locales: [fr, en, en-au, de, it, es, ru]
     extension: json
     format: json
@@ -162,7 +162,7 @@ collections:
   - name: pages
     label: "3. Pages"
     i18n:
-      structure: multiple_files
+      structure: single_file
       locales: [fr, en, en-au, de, it, es, ru]
     extension: json
     format: json

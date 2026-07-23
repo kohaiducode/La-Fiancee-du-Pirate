@@ -141,29 +141,42 @@ def compile_site():
         # Load SEO pages
         seo_data = {"seo": {}}
         for name in ["accueil", "chambres", "services", "galerie", "contact"]:
-            path = os.path.join(translations_dir, "seo", f"{name}.{lang}.json")
+            path = os.path.join(translations_dir, "seo", f"{name}.json")
             if os.path.exists(path):
                 loaded = load_json(path)
-                seo_data["seo"].update(loaded.get("seo", {}))
+                lang_specific_data = loaded.get(lang, {})
+                seo_data["seo"].update(lang_specific_data.get("seo", {}))
         lang_data.update(seo_data)
         
         # Load navigation layout
-        path = os.path.join(translations_dir, "navigation", f"index.{lang}.json")
+        path = os.path.join(translations_dir, "navigation", "index.json")
         if os.path.exists(path):
-            lang_data.update(load_json(path))
+            loaded = load_json(path)
+            lang_data.update(loaded.get(lang, {}))
             
         # Load content pages
         for name in ["accueil", "chambres", "services", "galerie", "contact"]:
-            path = os.path.join(translations_dir, "pages", f"{name}.{lang}.json")
+            path = os.path.join(translations_dir, "pages", f"{name}.json")
             if os.path.exists(path):
-                lang_data.update(load_json(path))
+                loaded = load_json(path)
+                lang_data.update(loaded.get(lang, {}))
                 
         # Load reviews folder collection
         reviews_list = []
         reviews_dir = os.path.join(translations_dir, "reviews")
         if os.path.exists(reviews_dir):
             file_suffix = f".{lang}.json"
-            files = sorted([f for f in os.listdir(reviews_dir) if f.endswith(file_suffix)])
+            
+            # Find files matching the language suffix
+            files = [f for f in os.listdir(reviews_dir) if f.endswith(file_suffix)]
+            
+            # If default language, also include .json files that don't have a language suffix
+            if lang == "fr":
+                base_json_files = [f for f in os.listdir(reviews_dir) if f.endswith('.json') and not any(f.endswith(f".{l}.json") for l in languages)]
+                files.extend(base_json_files)
+                
+            files = sorted(list(set(files)))
+            
             for file in files:
                 loaded = load_json(os.path.join(reviews_dir, file))
                 rev_content = loaded.get("review", {})
