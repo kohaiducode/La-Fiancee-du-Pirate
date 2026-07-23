@@ -1,0 +1,45 @@
+{
+  "title": "Русский (RU)",
+  "items": [
+    {
+      "image": "Photos/Galerie/hotel_view.jpg",
+      "category": "view",
+      "alt": "Панорамный вид на отель La Fiancée du Pirate"
+    },
+    {
+      "image": "Photos/Galerie/pool_and_hotel.jpg",
+      "category": "pool",
+      "alt": "Подогреваемый бассейн и здание отеля"
+    },
+    {
+      "image": "Photos/Galerie/by_the_pool.jpg",
+      "category": "pool",
+      "alt": "Шезлонги и зонтики у бассейна"
+    },
+    {
+      "image": "Photos/Galerie/jacuzzi_and_pool.jpg",
+      "category": "pool",
+      "alt": "Зона отдыха с джакузи и бассейном с видом на море"
+    },
+    {
+      "image": "Photos/Galerie/snacks_by_the_pool.jpg",
+      "category": "pool",
+      "alt": "Закуски и прохладительные напитки у бассейна"
+    },
+    {
+      "image": "Photos/Galerie/room_with_view.jpg",
+      "category": "rooms",
+      "alt": "Комфортабельный номер с балконом и панорамным видом на море"
+    },
+    {
+      "image": "Photos/Galerie/dinner_room.jpg",
+      "category": "breakfast",
+      "alt": "Светлый зал для завтраков с открытой террасой"
+    },
+    {
+      "image": "Photos/Galerie/breakfast.jpg",
+      "category": "breakfast",
+      "alt": "Обильный завтрак 'шведский стол' с видом на море"
+    }
+  ]
+}

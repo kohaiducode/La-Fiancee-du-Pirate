@@ -336,3 +336,38 @@ content:
               - name: text
                 label: Message
                 type: text
+
+  - name: gallery
+    label: "5. Galerie Photos"
+    type: collection
+    path: src/translations/gallery
+    extension: json
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Nom de la Langue
+        type: string
+      - name: items
+        label: Liste des Photos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo (Image)
+            type: image
+          - name: category
+            label: Catégorie
+            type: select
+            options:
+              - value: view
+                label: Vue
+              - value: pool
+                label: Piscine
+              - value: rooms
+                label: Chambres
+              - value: breakfast
+                label: Petit-déjeuner
+          - name: alt
+            label: Balise Alt SEO (Description de l'image)
+            type: string

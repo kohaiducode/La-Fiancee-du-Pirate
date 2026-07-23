@@ -2,6 +2,7 @@ import os
 import json
 import shutil
 import re
+import unicodedata
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -25,6 +26,35 @@ def render_template(template_str, variables):
     # Pattern to match {{key}} or {{category.key}}
     pattern = re.compile(r'\{\{([^}]+)\}\}')
     return pattern.sub(replace_var, template_str)
+
+def sanitize_name(name):
+    name = name.lower()
+    name = name.replace(" & ", "_and_")
+    name = name.replace("&", "_and_")
+    name = name.replace(" ", "_")
+    name = name.replace("-", "_")
+    name = "".join(
+        c for c in unicodedata.normalize('NFD', name)
+        if unicodedata.category(c) != 'Mn'
+    )
+    return name
+
+def get_optimized_image_path(raw_path):
+    if not raw_path:
+        return ""
+    raw_path = raw_path.replace('\\', '/')
+    raw_path = raw_path.lstrip('/')
+    
+    if raw_path.startswith('Photos/'):
+        parts = raw_path.split('/')
+        sanitized_parts = [sanitize_name(p) for p in parts[1:-1]]
+        filename = parts[-1]
+        name_no_ext, _ = os.path.splitext(filename)
+        sanitized_filename = f"{sanitize_name(name_no_ext)}.webp"
+        
+        final_parts = ['assets', 'images'] + sanitized_parts + [sanitized_filename]
+        return '/'.join(final_parts)
+    return raw_path
 
 def compile_site():
     print("Compiling La Fiancee du Pirate website...")
@@ -137,6 +167,23 @@ def compile_site():
             </div>
             """
         
+        # Build Photo Gallery Grid HTML for this language
+        gallery_html = ""
+        gallery_data = load_json(os.path.join(translations_dir, "gallery", f"{lang}.json"))
+        gallery_items = gallery_data.get("items", [])
+        for item in gallery_items:
+            img_path = get_optimized_image_path(item.get("image", ""))
+            category = item.get("category", "")
+            alt = item.get("alt", "")
+            
+            gallery_html += f"""
+            <div class="gallery-item" data-category="{category}">
+                <img src="{{{{path_prefix}}}}{img_path}" alt="{alt}" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>"""
+            
         # Compile each page template
         for page in pages:
             page_name_no_ext = os.path.splitext(page)[0]
@@ -209,6 +256,8 @@ def compile_site():
             # Inject testimonial slides if homepage
             if page_name_no_ext == "index":
                 page_content = page_content.replace("{{reviews_slides_placeholder}}", reviews_html)
+            elif page_name_no_ext == "galerie":
+                page_content = page_content.replace("{{gallery_grid_html}}", gallery_html)
                 
             rendered_page_content = render_template(page_content, full_vars)
             

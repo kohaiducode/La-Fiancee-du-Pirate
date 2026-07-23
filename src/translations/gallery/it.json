@@ -1,0 +1,45 @@
+{
+  "title": "Italiano (IT)",
+  "items": [
+    {
+      "image": "Photos/Galerie/hotel_view.jpg",
+      "category": "view",
+      "alt": "Vista panoramica dell'hotel La Fiancée du Pirate"
+    },
+    {
+      "image": "Photos/Galerie/pool_and_hotel.jpg",
+      "category": "pool",
+      "alt": "Piscina riscaldata e edificio dell'hotel"
+    },
+    {
+      "image": "Photos/Galerie/by_the_pool.jpg",
+      "category": "pool",
+      "alt": "Lettini e ombrelloni a bordo piscina"
+    },
+    {
+      "image": "Photos/Galerie/jacuzzi_and_pool.jpg",
+      "category": "pool",
+      "alt": "Area relax jacuzzi e piscina con vista mare"
+    },
+    {
+      "image": "Photos/Galerie/snacks_by_the_pool.jpg",
+      "category": "pool",
+      "alt": "Snack e rinfreschi serviti a bordo piscina"
+    },
+    {
+      "image": "Photos/Galerie/room_with_view.jpg",
+      "category": "rooms",
+      "alt": "Camera confortevole con balcone e vista panoramica sul mare"
+    },
+    {
+      "image": "Photos/Galerie/dinner_room.jpg",
+      "category": "breakfast",
+      "alt": "Luminosa sala colazione con terrazza esterna"
+    },
+    {
+      "image": "Photos/Galerie/breakfast.jpg",
+      "category": "breakfast",
+      "alt": "Ricca colazione a buffet di fronte al mare"
+    }
+  ]
+}
