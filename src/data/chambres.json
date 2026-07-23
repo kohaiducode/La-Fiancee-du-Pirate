@@ -1,0 +1,294 @@
+{
+  "rooms": {
+    "footer_cta": {
+      "fr": "Contactez-nous",
+      "en": "Contact us",
+      "en-au": "Contact us",
+      "de": "Kontaktieren Sie uns",
+      "it": "Contattateci",
+      "es": "Contacte con nosotros",
+      "ru": "Свяжитесь с нами"
+    },
+    "pavillons_title": {
+      "fr": "Nos Pavillons Privatifs",
+      "en": "Our Private Pavilions",
+      "en-au": "Our Private Pavilions",
+      "de": "Unsere privaten Pavillons",
+      "it": "I Nostri Padiglioni Privati",
+      "es": "Nuestros Pabellones Privados",
+      "ru": "Наши отдельные павильоны"
+    },
+    "mer_title": {
+      "fr": "Chambre Vue Mer",
+      "en": "Sea View Room",
+      "en-au": "Sea View Room",
+      "de": "Zimmer mit Meerblick",
+      "it": "Camera Vista Mare",
+      "es": "Habitación Vista al Mar",
+      "ru": "Номер с видом на море"
+    },
+    "footer_question": {
+      "fr": "Vous avez des questions sur nos équipements ?",
+      "en": "Any questions about our room amenities?",
+      "en-au": "Any questions about our room amenities?",
+      "de": "Haben Sie Fragen zur Ausstattung unserer Zimmer?",
+      "it": "Avete domande sui servizi delle nostre camere?",
+      "es": "¿Tiene alguna pregunta sobre los servicios de nuestras habitaciones?",
+      "ru": "У вас есть вопросы об оснащении номеров?"
+    },
+    "garden_title": {
+      "fr": "Chambre Côté Jardin",
+      "en": "Garden Side Room",
+      "en-au": "Garden Side Room",
+      "de": "Zimmer zur Gartenseite",
+      "it": "Camera Lato Giardino",
+      "es": "Habitación Lado Jardín",
+      "ru": "Номер с выходом в сад"
+    },
+    "pavillons_details": {
+      "fr": "Le Pavillon de la Fiancée ravira les couples en quête de romantisme. Le Pavillon du Pirate séduira les familles par son emplacement privilégié.",
+      "en": "The Pavillon de la Fiancée is perfect for couples seeking romance. The Pavillon du Pirate is ideal for families thanks to its prime location.",
+      "en-au": "The Pavillon de la Fiancée is perfect for couples seeking romance. The Pavillon du Pirate is ideal for families thanks to its prime location.",
+      "de": "Der Pavillon de la Fiancée ist ideal für Paare, die Romantik suchen. Der Pavillon du Pirate ist dank seiner Lage ideal für Familien.",
+      "it": "Il Pavillon de la Fiancée incanterà le coppie in cerca di romanticismo. Il Pavillon du Pirate conquisterà le famiglie grazie alla sua posizione ideale.",
+      "es": "El Pavillon de la Fiancée encantará a las parejas que buscan romance. El Pavillon du Pirate conquistará a las familias gracias a su ubicación privilegiada.",
+      "ru": "Павильон «Fiancée» очарует влюбленные пары, а павильон «Pirate» идеально подойдет для семей благодаря отличному расположению."
+    },
+    "pavillons_desc": {
+      "fr": "Séparés du bâtiment principal, nos deux pavillons privatifs offrent un espace unique de liberté et de bien-être.",
+      "en": "Separated from the main building, our two private pavilions offer a unique space of freedom and well-being.",
+      "en-au": "Separated from the main building, our two private pavilions offer a unique space of freedom and well-being.",
+      "de": "Getrennt vom Hauptgebäude bieten unsere beiden privaten Pavillons einzigartigen Freiraum und Wohlbefinden.",
+      "it": "Separati dal corpo principale, i nostri due padiglioni privati offrono uno spazio unico di libertà e benessere.",
+      "es": "Separados del edificio principal, nuestros dos pabellones privados ofrecen un espacio único de libertad y bienestar.",
+      "ru": "Расположенные отдельно от главного здания, наши два частных павильона дарят уникальное ощущение свободы и комфорта."
+    },
+    "mer_details": {
+      "fr": "Disponibles en version Double, Triple ou Quadruple. Réveillez-vous face au bleu de la Méditerranée.",
+      "en": "Available in Double, Triple, or Quadruple configurations. Wake up facing the deep blue Mediterranean.",
+      "en-au": "Available in Double, Triple, or Quadruple configurations. Wake up facing the deep blue Mediterranean.",
+      "de": "Verfügbar als Doppel-, Dreibett- oder Vierbettzimmer. Wachen Sie direkt vor dem blauen Mittelmeer auf.",
+      "it": "Disponibili in versione Doppia, Tripla o Quadrupla. Svegliatevi di fronte all'azzurro del Mediterraneo.",
+      "es": "Disponibles en versiones Doble, Triple o Cuádruple. Despiértese frente al azul del Mediterráneo.",
+      "ru": "Доступны в двух-, трех- и четырехместной конфигурациях. Просыпайтесь под шум волн Средиземного моря."
+    },
+    "specs": {
+      "capacity": {
+        "fr": "Capacité",
+        "en": "Capacity",
+        "en-au": "Capacity",
+        "de": "Kapazität",
+        "it": "Capacità",
+        "es": "Capacidad",
+        "ru": "Вместимость"
+      },
+      "products": {
+        "fr": "Produits d'accueil",
+        "en": "Complimentary Toiletries",
+        "en-au": "Complimentary Toiletries",
+        "de": "Pflegeprodukte",
+        "it": "Prodotti da bagno omaggio",
+        "es": "Productos de acogida gratis",
+        "ru": "Косметические средства"
+      },
+      "courtesy": {
+        "fr": "Plateau de courtoisie",
+        "en": "Courtesy Tray",
+        "en-au": "Courtesy Tray",
+        "de": "Kaffee- und Teezubereiter",
+        "it": "Set di cortesia (tè/caffè)",
+        "es": "Bandeja de cortesía (café/té)",
+        "ru": "Чайный набор"
+      },
+      "bed": {
+        "fr": "Literie",
+        "en": "Bedding",
+        "en-au": "Bedding",
+        "de": "Betten",
+        "it": "Letti",
+        "es": "Camas",
+        "ru": "Кровати"
+      },
+      "wifi": {
+        "fr": "Wifi Gratuit",
+        "en": "Free Wi-Fi",
+        "en-au": "Free Wi-Fi",
+        "de": "Kostenloses WLAN",
+        "it": "Wi-Fi Gratuito",
+        "es": "Wifi Gratis",
+        "ru": "Бесплатный Wi-Fi"
+      },
+      "hairdryer": {
+        "fr": "Sèche-cheveux",
+        "en": "Hairdryer",
+        "en-au": "Hairdryer",
+        "de": "Haartrockner",
+        "it": "Asciugacapelli",
+        "es": "Secador de pelo",
+        "ru": "Фен"
+      },
+      "size": {
+        "fr": "Superficie",
+        "en": "Surface Area",
+        "en-au": "Surface Area",
+        "de": "Größe",
+        "it": "Superficie",
+        "es": "Superficie",
+        "ru": "Площадь"
+      }
+    },
+    "pavillons_specs": {
+      "bed": {
+        "fr": "Lit Queen Size ou King Size",
+        "en": "Queen Size or King Size bed",
+        "en-au": "Queen Size or King Size bed",
+        "de": "Queensize- oder Kingsize-Bett",
+        "it": "Letto Queen Size o King Size",
+        "es": "Cama Queen Size o King Size",
+        "ru": "Кровать Queen Size или King Size"
+      },
+      "capacity": {
+        "fr": "2 ou 4 personnes",
+        "en": "2 or 4 guests",
+        "en-au": "2 or 4 guests",
+        "de": "2 oder 4 Personen",
+        "it": "2 o 4 persone",
+        "es": "2 o 4 personas",
+        "ru": "2 или 4 человека"
+      },
+      "size": {
+        "fr": "20 ou 26 m²",
+        "en": "20 or 26 m²",
+        "en-au": "20 or 26 m²",
+        "de": "20 oder 26 m²",
+        "it": "20 o 26 m²",
+        "es": "20 o 26 m²",
+        "ru": "20 или 26 м²"
+      }
+    },
+    "mer_desc": {
+      "fr": "Spacieuses et accueillantes, ces chambres vous offrent une vue panoramique imprenable sur la baie de Villefranche-sur-Mer et le Cap Ferrat.",
+      "en": "Spacious and welcoming, these rooms offer breathtaking panoramic views of the bay of Villefranche-sur-Mer and Cap Ferrat.",
+      "en-au": "Spacious and welcoming, these rooms offer breathtaking panoramic views of the bay of Villefranche-sur-Mer and Cap Ferrat.",
+      "de": "Geräumig und einladend bieten diese Zimmer einen unvergesslichen Panoramablick auf die Bucht von Villefranche-sur-Mer und das Cap Ferrat.",
+      "it": "Spaziose e accoglienti, queste camere offrono una vista panoramica spettacolare sulla baia di Villefranche-sur-Mer e su Cap Ferrat.",
+      "es": "Espaciosas y acogedoras, estas habitaciones ofrecen unas vistas panorámicas espectaculares de la bahía de Villefranche-sur-Mer y Cap Ferrat.",
+      "ru": "Просторные и гостеприимные номера с незабываемым панорамным видом на залив Вильфранш-сюр-Мер и Кап-Ферра."
+    },
+    "amenities_title": {
+      "fr": "Équipements inclus",
+      "en": "Included Amenities",
+      "en-au": "Included Amenities",
+      "de": "Inklusive Leistungen",
+      "it": "Servizi inclusi",
+      "es": "Servicios incluidos",
+      "ru": "Включенные удобства"
+    },
+    "subtitle": {
+      "fr": "Rénovés pour votre plus grand confort, offrant calme, intimité et élégance.",
+      "en": "Renovated for your utmost comfort, combining tranquility, privacy, and elegance.",
+      "en-au": "Renovated for your utmost comfort, combining tranquility, privacy, and elegance.",
+      "de": "Renoviert für höchsten Komfort, Ruhe, Privatsphäre und Eleganz.",
+      "it": "Rinnovate per il vostro massimo comfort, all'insegna di tranquillità, privacy ed eleganza.",
+      "es": "Renovadas para su mayor comodidad, combinando tranquilidad, privacidad y elegancia.",
+      "ru": "Отремонтированы для вашего максимального удобства, сочетая покой, уединение и элегантность."
+    },
+    "garden_specs": {
+      "bed": {
+        "fr": "Lit Queen Size ou lits jumeaux",
+        "en": "Queen Size bed or twin beds",
+        "en-au": "Queen Size bed or twin beds",
+        "de": "Queensize-Bett oder getrennte Betten",
+        "it": "Letto Queen Size o letti singoli",
+        "es": "Cama Queen Size o camas individuales",
+        "ru": "Кровать Queen Size или две односпальные кровати"
+      },
+      "capacity": {
+        "fr": "1 à 4 personnes",
+        "en": "1 to 4 guests",
+        "en-au": "1 to 4 guests",
+        "de": "1 bis 4 Personen",
+        "it": "Da 1 a 4 persone",
+        "es": "De 1 a 4 personas",
+        "ru": "От 1 до 4 человек"
+      },
+      "size": {
+        "fr": "16 à 25 m²",
+        "en": "16 to 25 m²",
+        "en-au": "16 to 25 m²",
+        "de": "16 bis 25 m²",
+        "it": "Da 16 a 25 m²",
+        "es": "De 16 a 25 m²",
+        "ru": "От 16 до 25 м²"
+      }
+    },
+    "garden_details": {
+      "fr": "Disponibles en version Double, Triple et Familiale, elles disposent d'une terrasse intime donnant sur notre écrin de verdure.",
+      "en": "Available in Double, Triple, and Family options, they feature a cozy private terrace opening onto our green sanctuary.",
+      "en-au": "Available in Double, Triple, and Family options, they feature a cozy private terrace opening onto our green sanctuary.",
+      "de": "Verfügbar als Doppel-, Dreibett- und Familienzimmer, bieten sie eine private Terrasse mit Blick in die Natur.",
+      "it": "Disponibili in versione Doppia, Tripla e Familiare, dispongono di una terrazza privata che si affaccia sulla nostra oasi di verde.",
+      "es": "Disponibles en versiones Doble, Triple y Familiar, cuentan con una terraza privada que da a nuestro oasis verde.",
+      "ru": "Доступны в двухместном, трехместном и семейном вариантах. К услугам гостей уютная терраса с видом на зеленый сад."
+    },
+    "mer_specs": {
+      "bed": {
+        "fr": "Lit King Size ou Queen Size",
+        "en": "King Size or Queen Size bed",
+        "en-au": "King Size or Queen Size bed",
+        "de": "Kingsize- oder Queensize-Bett",
+        "it": "Letto King Size o Queen Size",
+        "es": "Cama King Size o Queen Size",
+        "ru": "Кровать King Size или Queen Size"
+      },
+      "capacity": {
+        "fr": "1 à 4 personnes",
+        "en": "1 to 4 guests",
+        "en-au": "1 to 4 guests",
+        "de": "1 to 4 Personen",
+        "it": "Da 1 a 4 persone",
+        "es": "De 1 a 4 personas",
+        "ru": "От 1 до 4 человек"
+      },
+      "size": {
+        "fr": "16 à 31 m²",
+        "en": "16 to 31 m²",
+        "en-au": "16 to 31 m²",
+        "de": "16 bis 31 m²",
+        "it": "Da 16 a 31 m²",
+        "es": "De 16 a 31 m²",
+        "ru": "От 16 до 31 м²"
+      }
+    },
+    "garden_desc": {
+      "fr": "Ces chambres agréables vous permettent de profiter pleinement du jardin grâce à leur terrasse privative.",
+      "en": "These pleasant rooms allow you to fully enjoy the garden with their private terraces.",
+      "en-au": "These pleasant rooms allow you to fully enjoy the garden with their private terraces.",
+      "de": "Diese gemütlichen Zimmer verfügen über eine eigene Terrasse, auf der Sie den Garten in vollen Zügen genießen können.",
+      "it": "Queste piacevoli camere vi consentono di godere appieno del giardino grazie alle loro terrazze private.",
+      "es": "Estas agradables habitaciones le permiten disfrutar plenamente del jardín gracias a sus terrazas privadas.",
+      "ru": "Эти приятные номера позволяют в полной мере насладиться садом благодаря собственной террасе."
+    },
+    "cta": {
+      "fr": "Réserver cette chambre",
+      "en": "Book this room",
+      "en-au": "Book this room",
+      "de": "Dieses Zimmer buchen",
+      "it": "Prenota questa camera",
+      "es": "Reservar esta habitación",
+      "ru": "Забронировать этот номер"
+    },
+    "title": {
+      "fr": "Nos Chambres & Pavillons",
+      "en": "Our Rooms & Pavilions",
+      "en-au": "Our Rooms & Pavilions",
+      "de": "Unsere Zimmer & Pavillons",
+      "it": "Le Nostre Camere & Padiglioni",
+      "es": "Nuestras Habitaciones & Pabellones",
+      "ru": "Наши номера и павильоны"
+    },
+    "garden_image": "Photos/Accueil/snacks_by_the_pool.jpg",
+    "mer_image": "Photos/Accueil/room_with_view.jpg",
+    "pavillons_image": "Photos/Accueil/jacuzzi_and_pool.jpg"
+  }
+}

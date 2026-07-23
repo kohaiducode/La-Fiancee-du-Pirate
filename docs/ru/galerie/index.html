@@ -89,8 +89,8 @@
         <!-- Inner Hero / Page Header -->
 <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/pool_and_hotel.webp');">
     <div class="page-header-content">
-        <h1 class="page-header-title">Фотогалерея</h1>
-        <p class="page-header-subtitle">Посмотрите на очаровательную территорию нашего бутик-отеля на фотографиях.</p>
+        <h1 class="page-header-title">{{gallery.title}}</h1>
+        <p class="page-header-subtitle">{{gallery.subtitle}}</p>
     </div>
 </section>
 
@@ -99,11 +99,11 @@
     <div class="container">
         <!-- Filter Tabs -->
         <div class="gallery-filters" id="galleryFilters">
-            <button class="filter-btn active" data-filter="all">Все</button>
-            <button class="filter-btn" data-filter="view">Отель и виды</button>
-            <button class="filter-btn" data-filter="pool">Бассейн и сад</button>
-            <button class="filter-btn" data-filter="rooms">Номера</button>
-            <button class="filter-btn" data-filter="breakfast">Завтрак</button>
+            <button class="filter-btn active" data-filter="all">{{gallery.filter_all}}</button>
+            <button class="filter-btn" data-filter="view">{{gallery.filter_view}}</button>
+            <button class="filter-btn" data-filter="pool">{{gallery.filter_pool}}</button>
+            <button class="filter-btn" data-filter="rooms">{{gallery.filter_rooms}}</button>
+            <button class="filter-btn" data-filter="breakfast">{{gallery.filter_breakfast}}</button>
         </div>
         
         <!-- Gallery Grid -->

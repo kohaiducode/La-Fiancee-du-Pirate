@@ -104,10 +104,8 @@ def compile_site():
     # Get all pages
     pages = [f for f in os.listdir(pages_dir) if f.endswith('.html')]
     
-    # Get all translation files (read from seo/ subfolder)
-    seo_dir = os.path.join(translations_dir, "seo")
-    translation_files = [f for f in os.listdir(seo_dir) if f.endswith('.json')]
-    languages = [os.path.splitext(f)[0] for f in translation_files]
+    # Supported languages
+    languages = ["fr", "en", "en-au", "de", "it", "es", "ru"]
     
     # Language code mapping for Amenitiz URLs
     amenitiz_lang_map = {
@@ -120,15 +118,47 @@ def compile_site():
         "ru": "ru"
     }
     
+    def extract_lang_data(obj, l):
+        if isinstance(obj, dict):
+            lang_keys = {"fr", "en", "en-au", "en_au", "de", "it", "es", "ru"}
+            if any(k in lang_keys for k in obj.keys()) and not any(k not in lang_keys for k in obj.keys()):
+                val = obj.get(l)
+                if val is None:
+                    val = obj.get(l.replace('-', '_'))
+                if val is None:
+                    val = obj.get('fr', '')
+                return val
+            res = {}
+            for k, v in obj.items():
+                res[k] = extract_lang_data(v, l)
+            return res
+        elif isinstance(obj, list):
+            return [extract_lang_data(item, l) for item in obj]
+        return obj
+
+    def resolve_image_paths(obj):
+        if isinstance(obj, dict):
+            return {k: resolve_image_paths(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [resolve_image_paths(item) for item in obj]
+        elif isinstance(obj, str) and obj.startswith('Photos/'):
+            return get_optimized_image_path(obj)
+        return obj
+
+    # Load component data files
+    merged_components = {}
+    data_dir = os.path.join(src_dir, "data")
+    for filename in ["global.json", "accueil.json", "chambres.json", "services.json"]:
+        filepath = os.path.join(data_dir, filename)
+        if os.path.exists(filepath):
+            merged_components.update(load_json(filepath))
+
     # 4. Process each language
     for lang in languages:
-        # Load language translation files from subfolders and merge them
-        lang_data = {}
-        for folder in ["seo", "navigation", "pages", "reviews"]:
-            folder_file = os.path.join(translations_dir, folder, f"{lang}.json")
-            if os.path.exists(folder_file):
-                lang_data.update(load_json(folder_file))
-                
+        # Extract lang-specific dictionary and resolve image paths
+        lang_data = extract_lang_data(merged_components, lang)
+        lang_data = resolve_image_paths(lang_data)
+        
         lang_upper = lang.upper()
         
         # Create language folder

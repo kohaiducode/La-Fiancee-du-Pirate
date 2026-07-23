@@ -89,8 +89,8 @@
         <!-- Inner Hero / Page Header -->
 <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/dinner_room.webp');">
     <div class="page-header-content">
-        <h1 class="page-header-title">Kontaktieren Sie uns</h1>
-        <p class="page-header-subtitle">Haben Sie Fragen oder spezielle Wünsche? Unser Team steht Ihnen gerne zur Verfügung.</p>
+        <h1 class="page-header-title">{{contact.title}}</h1>
+        <p class="page-header-subtitle">{{contact.subtitle}}</p>
     </div>
 </section>
 
@@ -100,44 +100,44 @@
         <div class="contact-grid">
             <!-- Left Column: Form -->
             <div class="contact-form-wrapper">
-                <h3>Nachricht senden</h3>
+                <h3>{{contact.form_title}}</h3>
                 <div class="divider-left"></div>
                 
                 <form class="contact-form" id="contactForm" novalidate>
                     <!-- Success & Error Messages -->
                     <div class="alert alert-success d-none" id="contactSuccess">
-                        <i class="fa-solid fa-circle-check"></i> Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.
+                        <i class="fa-solid fa-circle-check"></i> {{contact.form_success}}
                     </div>
                     <div class="alert alert-danger d-none" id="contactError">
-                        <i class="fa-solid fa-triangle-exclamation"></i> Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.
+                        <i class="fa-solid fa-triangle-exclamation"></i> {{contact.form_error}}
                     </div>
                     
                     <div class="form-group">
-                        <label for="contactName">Vollständiger Name *</label>
+                        <label for="contactName">{{contact.form_name}} *</label>
                         <input type="text" id="contactName" name="name" required class="form-control" placeholder="John Doe">
                         <span class="error-feedback"></span>
                     </div>
                     
                     <div class="form-group">
-                        <label for="contactEmail">E-Mail-Adresse *</label>
+                        <label for="contactEmail">{{contact.form_email}} *</label>
                         <input type="email" id="contactEmail" name="email" required class="form-control" placeholder="john.doe@example.com">
                         <span class="error-feedback"></span>
                     </div>
                     
                     <div class="form-group">
-                        <label for="contactPhone">Telefonnummer</label>
+                        <label for="contactPhone">{{contact.form_phone}}</label>
                         <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+33 6 12 34 56 78">
                         <span class="error-feedback"></span>
                     </div>
                     
                     <div class="form-group">
-                        <label for="contactMessage">Nachricht *</label>
+                        <label for="contactMessage">{{contact.form_message}} *</label>
                         <textarea id="contactMessage" name="message" required class="form-control" rows="6" placeholder="Bonjour..."></textarea>
                         <span class="error-feedback"></span>
                     </div>
                     
                     <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
-                        Nachricht senden
+                        {{contact.form_submit}}
                     </button>
                 </form>
             </div>
@@ -145,7 +145,7 @@
             <!-- Right Column: Details & Map -->
             <div class="contact-info-wrapper">
                 <div class="contact-details-card">
-                    <h3>Kontaktdaten</h3>
+                    <h3>{{contact.info_title}}</h3>
                     <div class="divider-left"></div>
                     
                     <ul class="contact-info-list">
@@ -153,9 +153,7 @@
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <strong>Adresse</strong>
-                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">8 Boulevard de La Corne d'Or
-Moyenne Corniche
-06230 Villefranche-sur-Mer, Frankreich</a></p>
+                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">{{contact.info_address}}</a></p>
                             </div>
                         </li>
                         <li>
@@ -176,7 +174,7 @@ Moyenne Corniche
                 </div>
                 
                 <div class="contact-map-card">
-                    <h3><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="color: inherit;">Standort <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 0.3rem;"></i></a></h3>
+                    <h3><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="color: inherit;">{{contact.map_title}} <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 0.3rem;"></i></a></h3>
                     <div class="divider-left"></div>
                     <div class="map-iframe-container">
                         <!-- Embedded Google Maps -->

@@ -1,0 +1,256 @@
+{
+  "services": {
+    "service_garden_desc": {
+      "fr": "Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.",
+      "en": "A large Mediterranean garden with cozy, intimate seating areas to read, rest, or enjoy a drink.",
+      "en-au": "A large Mediterranean garden with cozy, intimate seating areas to read, rest, or enjoy a drink.",
+      "de": "Ein großer mediterraner Garten mit gemütlichen Sitzecken zum Lesen, Entspannen oder Genießen eines Getränks.",
+      "it": "Un grande giardino mediterraneo con salottini intimi per leggere, riposare o sorseggiare un drink.",
+      "es": "Un gran jardín mediterráneo con íntimos salones al aire libre para leer, descansar o disfrutar de una bebida.",
+      "ru": "Просторный средиземноморский сад с уютными уголками для чтения, отдыха или бокала вина."
+    },
+    "rue_desc": {
+      "fr": "Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.",
+      "en": "A 130-meter covered medieval street dating back to the 14th century, once used as a defensive pathway and painted by Jean Cocteau.",
+      "en-au": "A 130-meter covered medieval street dating back to the 14th century, once used as a defensive pathway and painted by Jean Cocteau.",
+      "de": "Eine 130 Meter lange, überdachte mittelalterliche Straße aus dem 14. Jahrhundert, die einst als Verteidigungsweg diente und von Cocteau gemalt wurde.",
+      "it": "Una via medievale coperta lunga 130 metri risalente al XIV secolo, che un tempo fungeva da passaggio difensivo ed è stata dipinta da Cocteau.",
+      "es": "Una calle medieval cubierta de 130 metros de largo que data del siglo XIV, utilizada antiguamente como paso defensivo y pintada por Cocteau.",
+      "ru": "Крытая средневековая улица XIV века длиной 130 метров, когда-то служившая оборонительным проходом и запечатленная Кокто на картинах."
+    },
+    "service_cab_title": {
+      "fr": "Transport & Excursions",
+      "en": "Transport & Excursions",
+      "en-au": "Transport & Excursions",
+      "de": "Transport & Ausflüge",
+      "it": "Trasporti & Escursioni",
+      "es": "Transporte & Excursiones",
+      "ru": "Транспорт и экскурсии"
+    },
+    "surroundings_italy": {
+      "fr": "L'Italie à seulement 7 stations de train (départs réguliers de la gare de Villefranche).",
+      "en": "Italy is just 7 train stops away (regular departures from Villefranche station).",
+      "en-au": "Italy is just 7 train stops away (regular departures from Villefranche station).",
+      "de": "Italien ist nur 7 Zugstationen entfernt (regelmäßige Abfahrten vom Bahnhof Villefranche).",
+      "it": "L'Italia è a sole 7 fermate di treno (partenze regolari dalla stazione di Villefranche).",
+      "es": "Italia está a solo 7 paradas de tren (salidas regulares desde la estación de Villefranche).",
+      "ru": "Италия всего в 7 остановках на поезде (регулярное расписание от вокзала Вильфранш)."
+    },
+    "surroundings_nice": {
+      "fr": "Nice (10 min) : le vieux Nice, le marché du cours Saleya, la Promenade des Anglais (accès rapide en bus).",
+      "en": "Nice (10 min): Old Nice, the Cours Saleya flower market, and the Promenade des Anglais (easily accessible by bus).",
+      "en-au": "Nice (10 min): Old Nice, the Cours Saleya flower market, and the Promenade des Anglais (easily accessible by bus).",
+      "de": "Nizza (10 Min.): Die Altstadt, der Blumenmarkt Cours Saleya und die Promenade des Anglais (schnell mit dem Bus erreichbar).",
+      "it": "Nizza (10 min): la vecchia Nizza, il mercato dei fiori di Cours Saleya e la Promenade des Anglais (facilmente raggiungibile in bus).",
+      "es": "Niza (10 min): el casco antiguo, el mercado de flores de Cours Saleya y el Paseo de los Ingleses (fácil acceso en autobús).",
+      "ru": "Ницца (10 мин): Старый город, цветочный рынок Кур Салейя и Английская набережная (легко добраться на автобусе)."
+    },
+    "citadelle_title": {
+      "fr": "La Citadelle Saint-Elme",
+      "en": "Saint-Elme Citadel",
+      "en-au": "Saint-Elme Citadel",
+      "de": "Die Zitadelle Saint-Elme",
+      "it": "La Cittadella Saint-Elme",
+      "es": "La Ciudadela Saint-Elme",
+      "ru": "Цитадель Сен-Эльм"
+    },
+    "service_breakfast_desc": {
+      "fr": "Servi sur la terrasse face à la mer, composé de produits frais pour bien démarrer votre journée.",
+      "en": "Served on the sea-facing terrace, featuring fresh local products to start your day beautifully.",
+      "en-au": "Served on the sea-facing terrace, featuring fresh local products to start your day beautifully.",
+      "de": "Auf der Terrasse mit Meerblick serviert, bestehend aus frischen Produkten für einen perfekten Start in den Tag.",
+      "it": "Servita sulla terrazza di fronte al mare, preparata con prodotti freschi locali per iniziare al meglio la giornata.",
+      "es": "Servido en la terraza frente al mar, elaborado con ingredientes locales frescos para empezar el día de la mejor manera.",
+      "ru": "Сервируется на террасе у моря. Свежие фермерские продукты для отличного начала вашего дня."
+    },
+    "surroundings_villages": {
+      "fr": "Les villages perchés d'Eze et de Saint-Paul-de-Vence pour une escapade pittoresque.",
+      "en": "The picturesque perched villages of Eze and Saint-Paul-de-Vence.",
+      "en-au": "The picturesque perched villages of Eze and Saint-Paul-de-Vence.",
+      "de": "Die malerischen Bergdörfer Eze und Saint-Paul-de-Vence.",
+      "it": "I pittoreschi villaggi medievali di Eze e Saint-Paul-de-Vence.",
+      "es": "Los pintorescos pueblos colgados de Eze y Saint-Paul-de-Vence.",
+      "ru": "Живописные средневековые деревни Эз и Сен-Поль-де-Ванс."
+    },
+    "service_pool_title": {
+      "fr": "Piscine & Jacuzzi",
+      "en": "Pool & Jacuzzi",
+      "en-au": "Pool & Jacuzzi",
+      "de": "Pool & Whirlpool",
+      "it": "Piscine & Idromassaggio",
+      "es": "Piscina & Jacuzzi",
+      "ru": "Бассейн и джакузи"
+    },
+    "port_desc": {
+      "fr": "Bassin historique du XVIe siècle avec ses remparts, son phare historique, sa corderie et son port de plaisance actif.",
+      "en": "Historical 16th-century basin featuring ancient fortifications, a lighthouse, a traditional rope-walk, and an active yachting marina.",
+      "en-au": "Historical 16th-century basin featuring ancient fortifications, a lighthouse, a traditional rope-walk, and an active yachting marina.",
+      "de": "Historisches Hafenbecken aus dem 16. Jahrhundert mit alten Befestigungsanlagen, Leuchtturm, Seilerei und einem Yachthafen.",
+      "it": "Bacino storico del XVI secolo con antiche fortificazioni, faro storico, corderia e porto turistico attivo.",
+      "es": "Dársena histórica del siglo XVI con antiguas fortificaciones, faro, fábrica de cuerdas y un puerto deportivo activo.",
+      "ru": "Историческая гавань XVI века со старинными укреплениями, маяком, канатной мастерской и действующей яхтенной пристанью."
+    },
+    "service_cab_desc": {
+      "fr": "Transfert aéroport en 20 min, bus pour Nice et Monaco à proximité, et notre partenaire de taxi privé Myblackcab.",
+      "en": "Airport transfers in 20 min, bus lines to Nice and Monaco nearby, and our private transport partner Myblackcab.",
+      "en-au": "Airport transfers in 20 min, bus lines to Nice and Monaco nearby, and our private transport partner Myblackcab.",
+      "de": "Flughafentransfer in 20 Min., Buslinien nach Nizza und Monaco in der Nähe sowie unser privater Transferpartner Myblackcab.",
+      "it": "Trasferimenti aeroportuali in 20 min., linee di autobus per Nizza e Monaco nelle vicinanze e il nostro partner di trasporto privato Myblackcab.",
+      "es": "Traslados al aeropuerto en 20 min., líneas de autobús a Niza y Mónaco cerca y nuestro socio de transporte privado Myblackcab.",
+      "ru": "Трансфер в аэропорт за 20 мин., автобусы в Ниццу и Монако рядом, а также наш партнер по частным перевозкам Myblackcab."
+    },
+    "service_garden_title": {
+      "fr": "Jardin & Salons",
+      "en": "Garden & Lounges",
+      "en-au": "Garden & Lounges",
+      "de": "Garten & Lounges",
+      "it": "Giardino & Salottini",
+      "es": "Jardín & Salones",
+      "ru": "Сад и террасы"
+    },
+    "service_pool_desc": {
+      "fr": "Une piscine extérieure chauffée selon la saison et un jacuzzi sur demande pour vos moments de bien-être.",
+      "en": "An outdoor swimming pool, heated according to the season, and a jacuzzi available upon request.",
+      "en-au": "An outdoor swimming pool, heated according to the season, and a jacuzzi available upon request.",
+      "de": "Ein saisonal beheizter Außenpool und ein Whirlpool auf Anfrage für entspannende Momente.",
+      "it": "Una piscina all'aperto riscaldata a seconda della stagione e una vasca idromassaggio su richiesta per i vostri momenti di benessere.",
+      "es": "Una piscina al aire libre, climatizada según la temporada, y un jacuzzi disponible bajo petición para su bienestar.",
+      "ru": "Открытый бассейн, подогреваемый по сезону, и джакузи по запросу для приятного отдыха."
+    },
+    "activities_desc": {
+      "fr": "Un village d'art et d'histoire au charme intemporel.",
+      "en": "A charming, timeless coastal town of art and history.",
+      "en-au": "A charming, timeless coastal town of art and history.",
+      "de": "Ein historisches Kunst- und Küstenstädtchen mit zeitlosem Charme.",
+      "it": "Un affascinante borgo costiero d'arte e di storia dal fascino intramontabile.",
+      "es": "Un encantador pueblo pesquero de arte y de historia con un atractivo atemporal.",
+      "ru": "Очаровательный приморский городок искусств и истории."
+    },
+    "port_title": {
+      "fr": "Le Port Royal de la Darse",
+      "en": "Royal Port of La Darse",
+      "en-au": "Royal Port of La Darse",
+      "de": "Der königliche Hafen von La Darse",
+      "it": "Porto Reale di La Darse",
+      "es": "Puerto Real de La Darse",
+      "ru": "Королевский порт Ля-Дарс"
+    },
+    "chapelle_title": {
+      "fr": "La Chapelle Saint-Pierre",
+      "en": "Saint-Pierre Chapel",
+      "en-au": "Saint-Pierre Chapel",
+      "de": "Die Kapelle Saint-Pierre",
+      "it": "La Cappella Saint-Pierre",
+      "es": "La Capilla Saint-Pierre",
+      "ru": "Часовня Сен-Пьер"
+    },
+    "surroundings_monaco": {
+      "fr": "Monaco (20 min) : le Rocher, le Casino de Monte-Carlo, le Musée Océanographique.",
+      "en": "Monaco (20 min): The Palace, Monte-Carlo Casino, and the Oceanographic Museum.",
+      "en-au": "Monaco (20 min): The Palace, Monte-Carlo Casino, and the Oceanographic Museum.",
+      "de": "Monaco (20 Min.): Der Palast, das Casino Monte-Carlo und das Ozeanographische Museum.",
+      "it": "Monaco (20 min): Il Palazzo dei Principi, il Casinò di Monte-Carlo e il Museo Oceanografico.",
+      "es": "Mónaco (20 min): El Palacio de los Príncipes, el Casino de Montecarlo y el Museo Oceanográfico.",
+      "ru": "Монако (20 мин): Княжеский дворец, казино Монте-Карло и Океанографический музей."
+    },
+    "hotel_services_title": {
+      "fr": "Les Services de l'Hôtel",
+      "en": "Hotel Services",
+      "en-au": "Hotel Services",
+      "de": "Hotelservices",
+      "it": "Servizi dell'Hotel",
+      "es": "Servicios del Hotel",
+      "ru": "Услуги отеля"
+    },
+    "subtitle": {
+      "fr": "Tout ce dont vous avez besoin pour un séjour d'exception sur la Côte d'Azur.",
+      "en": "Everything you need for an exceptional stay on the French Riviera.",
+      "en-au": "Everything you need for an exceptional stay on the French Riviera.",
+      "de": "Alles, was Sie für einen außergewöhnlichen Aufenthalt an der Côte d'Azur brauchen.",
+      "it": "Tutto il necessario per un soggiorno eccezionale in Costa Azzurra.",
+      "es": "Todo lo que necesita para una estancia excepcional en la Costa Azul.",
+      "ru": "Все необходимое для незабываемого отдыха на Лазурном Берегу."
+    },
+    "surroundings_title": {
+      "fr": "Aux alentours sur la Riviera",
+      "en": "Around the French Riviera",
+      "en-au": "Around the French Riviera",
+      "de": "Umgebung & Riviera",
+      "it": "Nei dintorni della Riviera",
+      "es": "Alrededor de la Costa Azul",
+      "ru": "Что посмотреть вокруг"
+    },
+    "chapelle_desc": {
+      "fr": "Entièrement restaurée et décorée en 1956 par le célèbre artiste Jean Cocteau, c'est un chef-d'œuvre incontournable dédié au patron des pêcheurs.",
+      "en": "Fully restored and decorated in 1956 by the famous artist Jean Cocteau, this is a must-see masterpiece dedicated to the patron saint of fishermen.",
+      "en-au": "Fully restored and decorated in 1956 by the famous artist Jean Cocteau, this is a must-see masterpiece dedicated to the patron saint of fishermen.",
+      "de": "Diese im Jahr 1956 vom berühmten Künstler Jean Cocteau vollständig restaurierte und dekorierte Kapelle ist ein Meisterwerk, das dem Schutzpatron der Fischer gewidmet ist.",
+      "it": "Interamente restaurata e decorata nel 1956 dal celebre artista Jean Cocteau, è un capolavoro imperdibile dedicato al santo patrono dei pescatori.",
+      "es": "Totalmente restaurada y decorada en 1956 por el famoso artista Jean Cocteau, es una obra maestra imprescindible dedicada al santo patrón de los pescadores.",
+      "ru": "Полностью отреставрированная и расписанная Жаном Кокто в 1956 году, эта часовня — шедевр искусства, посвященный покровителю рыбаков."
+    },
+    "surroundings_desc": {
+      "fr": "Notre hôtel est le point de départ idéal pour explorer la Côte d'Azur :",
+      "en": "Our hotel is the ideal starting point to explore the Côte d'Azur:",
+      "en-au": "Our hotel is the ideal starting point to explore the Côte d'Azur:",
+      "de": "Unser Hotel ist der ideale Ausgangspunkt, um die Côte d'Azur zu erkunden:",
+      "it": "Il nostro hotel è il punto di partenza ideale per esplorare la Costa Azzurra:",
+      "es": "Nuestro hotel es el punto de partida ideal para explorar la Costa Azul:",
+      "ru": "Наш отель — идеальная отправная точка для путешествий по Лазурному Берегу:"
+    },
+    "rue_title": {
+      "fr": "La Rue Obscure",
+      "en": "The Obscure Street (Rue Obscure)",
+      "en-au": "The Obscure Street (Rue Obscure)",
+      "de": "Die Rue Obscure (Dunkle Straße)",
+      "it": "La Rue Obscure (Via Oscura)",
+      "es": "La Calle Oscura (Rue Obscure)",
+      "ru": "Темная улица (Rue Obscure)"
+    },
+    "activities_title": {
+      "fr": "Découvrir Villefranche-sur-Mer",
+      "en": "Discover Villefranche-sur-Mer",
+      "en-au": "Discover Villefranche-sur-Mer",
+      "de": "Villefranche-sur-Mer entdecken",
+      "it": "Scoprire Villefranche-sur-Mer",
+      "es": "Descubrir Villefranche-sur-Mer",
+      "ru": "Откройте для себя Вильфранш-сюр-Мер"
+    },
+    "citadelle_desc": {
+      "fr": "Imposante forteresse du XVIe siècle construite pour protéger la rade. Elle abrite aujourd'hui la Mairie et 4 musées (dont le Musée Volti et le Musée Goetz-Boumeester). Entrée libre.",
+      "en": "An imposing 16th-century fortress built to protect the bay. Today it houses the City Hall and 4 museums (including the Volti Museum and Goetz-Boumeester Museum). Free entry.",
+      "en-au": "An imposing 16th-century fortress built to protect the bay. Today it houses the City Hall and 4 museums (including the Volti Museum and Goetz-Boumeester Museum). Free entry.",
+      "de": "Imposante Festung aus dem 16. Jahrhundert, die zum Schutz der Bucht erbaut wurde. Heute beherbergt sie das Rathaus und 4 Museen (darunter das Volti-Museum und das Goetz-Boumeester-Museum). Freier Eintritt.",
+      "it": "Imponente fortezza del XVI secolo costruita per proteggere la rada. Oggi ospita il Municipio e 4 musei (tra cui il Museo Volti e il Museo Goetz-Boumeester). Ingresso gratuito.",
+      "es": "Imponente fortaleza del siglo XVI construida para proteger la bahía. Hoy alberga el Ayuntamiento y 4 museos (incluyendo el Museo Volti y el Museo Goetz-Boumeester). Entrada libre.",
+      "ru": "Внушительная крепость XVI века, построенная для защиты залива. Сегодня здесь находятся мэрия и 4 музея (включая музей Вольти и музей Гетца-Буместера). Вход бесплатный."
+    },
+    "hotel_services_desc": {
+      "fr": "Profitez de nos installations haut de gamme conçues pour votre détente et votre confort.",
+      "en": "Enjoy our high-end amenities designed for your absolute relaxation.",
+      "en-au": "Enjoy our high-end amenities designed for your absolute relaxation.",
+      "de": "Nutzen Sie unsere erstklassigen Einrichtungen für Entspannung und Komfort.",
+      "it": "Approfittate delle nostre strutture di alta qualità pensate per il vostro relax.",
+      "es": "Disfrute de nuestras instalaciones de primera calidad diseñadas para su relajación.",
+      "ru": "Воспользуйтесь нашими высококлассными удобствами для полного расслабления."
+    },
+    "service_breakfast_title": {
+      "fr": "Petit-déjeuner Buffet",
+      "en": "Buffet Breakfast",
+      "en-au": "Buffet Breakfast",
+      "de": "Frühstücksbuffet",
+      "it": "Colazione a Buffet",
+      "es": "Desayuno Buffet",
+      "ru": "Завтрак «шведский стол»"
+    },
+    "title": {
+      "fr": "Services & Activités",
+      "en": "Services & Activities",
+      "en-au": "Services & Activities",
+      "de": "Service & Aktivitäten",
+      "it": "Servizi & Attività",
+      "es": "Servicios & Actividades",
+      "ru": "Услуги и развлечения"
+    }
+  }
+}

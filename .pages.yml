@@ -4,325 +4,260 @@ media:
   input: Photos
   output: /Photos
 
+# Helper list of language fields to avoid typos:
+# fr, en, en_au, de, it, es, ru
+
 content:
-  - name: seo
-    label: "1. Référencement (SEO)"
-    type: collection
-    path: src/translations/seo
-    extension: json
-    view:
-      primary: title
+  - name: global
+    label: "5. Configuration Globale & SEO"
+    type: file
+    path: src/data/global.json
+    format: json
     fields:
-      - name: title
-        label: Nom de la Langue
-        type: string
       - name: seo
-        label: Métadonnées SEO (Google)
+        label: Référencement (SEO Google)
         type: object
         fields:
           - name: home_title
             label: Titre - Page d'Accueil
-            type: string
+            type: object
+            fields: &lang_fields
+              - name: fr
+                label: Français
+                type: string
+              - name: en
+                label: English
+                type: string
+              - name: en_au
+                label: English AU
+                type: string
+              - name: de
+                label: Deutsch
+                type: string
+              - name: it
+                label: Italiano
+                type: string
+              - name: es
+                label: Español
+                type: string
+              - name: ru
+                label: Русский
+                type: string
           - name: home_desc
             label: Description - Page d'Accueil
-            type: text
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
           - name: rooms_title
             label: Titre - Page Chambres
-            type: string
+            type: object
+            fields: *lang_fields
           - name: rooms_desc
             label: Description - Page Chambres
-            type: text
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
           - name: services_title
             label: Titre - Page Services
-            type: string
+            type: object
+            fields: *lang_fields
           - name: services_desc
             label: Description - Page Services
-            type: text
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
           - name: gallery_title
             label: Titre - Page Galerie
-            type: string
+            type: object
+            fields: *lang_fields
           - name: gallery_desc
             label: Description - Page Galerie
-            type: text
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
           - name: contact_title
             label: Titre - Page Contact
-            type: string
+            type: object
+            fields: *lang_fields
           - name: contact_desc
             label: Description - Page Contact
-            type: text
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
 
-  - name: navigation
-    label: "2. En-tête & Pied de page"
-    type: collection
-    path: src/translations/navigation
-    extension: json
-    view:
-      primary: title
-    fields:
-      - name: title
-        label: Nom de la Langue
-        type: string
       - name: nav
         label: Menu de Navigation
         type: object
         fields:
           - name: home
-            label: Accueil
-            type: string
+            label: Lien - Accueil
+            type: object
+            fields: *lang_fields
           - name: rooms
-            label: Chambres
-            type: string
+            label: Lien - Chambres
+            type: object
+            fields: *lang_fields
           - name: services
-            label: Services
-            type: string
+            label: Lien - Services
+            type: object
+            fields: *lang_fields
           - name: gallery
-            label: Galerie
-            type: string
+            label: Lien - Galerie
+            type: object
+            fields: *lang_fields
           - name: contact
-            label: Contact
-            type: string
-      - name: hero
-        label: Bannière d'Accueil (Hero Banner)
-        type: object
-        fields:
-          - name: title
-            label: Titre Principal
-            type: string
-          - name: subtitle
-            label: Sous-titre
-            type: string
-          - name: cta
-            label: Texte du Bouton d'Action
-            type: string
+            label: Lien - Contact
+            type: object
+            fields: *lang_fields
+          - name: book
+            label: Label Bouton Réserver
+            type: object
+            fields: *lang_fields
+
       - name: booking_bar
         label: Barre de Réservation
         type: object
         fields:
           - name: check_in
-            label: Label Date d'arrivée
-            type: string
+            label: Arrivée
+            type: object
+            fields: *lang_fields
           - name: check_out
-            label: Label Date de départ
-            type: string
+            label: Départ
+            type: object
+            fields: *lang_fields
           - name: guests
-            label: Label Voyageurs
-            type: string
+            label: Voyageurs
+            type: object
+            fields: *lang_fields
           - name: search
-            label: Label Bouton Rechercher
-            type: string
-      - name: footer
-        label: Pied de page (Footer)
-        type: object
-        fields:
-          - name: desc
-            label: Description Sous-Logo
-            type: string
-          - name: links_title
-            label: Titre Liens Rapides
-            type: string
-          - name: contact_title
-            label: Titre Section Contact
-            type: string
-          - name: social_title
-            label: Titre Suivez-nous
-            type: string
-          - name: rights
-            label: Label Droits Réservés
-            type: string
+            label: Bouton Rechercher
+            type: object
+            fields: *lang_fields
 
-  - name: pages
-    label: "3. Contenu des Pages"
-    type: collection
-    path: src/translations/pages
-    extension: json
-    view:
-      primary: title
-    fields:
-      - name: title
-        label: Nom de la Langue
-        type: string
-      - name: accueil
-        label: Page d'Accueil
-        type: object
-        fields:
-          - name: intro_title
-            label: Titre d'Introduction
-            type: string
-          - name: intro_text
-            label: Texte d'Introduction (Paragraphe 1)
-            type: text
-          - name: intro_subtext
-            label: Texte d'Introduction (Paragraphe 2)
-            type: text
-          - name: card_view_title
-            label: Titre - Vue Panoramique
-            type: string
-          - name: card_view_text
-            label: Texte - Vue Panoramique
-            type: text
-          - name: card_pool_title
-            label: Titre - Piscine & Jardin
-            type: string
-          - name: card_pool_text
-            label: Texte - Piscine & Jardin
-            type: text
-          - name: card_breakfast_title
-            label: Titre - Petit-déjeuner Face Mer
-            type: string
-          - name: card_breakfast_text
-            label: Texte - Petit-déjeuner Face Mer
-            type: text
-          - name: card_location_title
-            label: Titre - Emplacement Idéal
-            type: string
-          - name: card_location_text
-            label: Texte - Emplacement Idéal
-            type: text
-
-      - name: rooms
-        label: Page Chambres & Tarifs
-        type: object
-        fields:
-          - name: title
-            label: Titre Principal
-            type: string
-          - name: subtitle
-            label: Sous-titre
-            type: string
-          - name: cta
-            label: Bouton CTA
-            type: string
-          - name: garden_title
-            label: Chambre Standard Jardin - Titre
-            type: string
-          - name: garden_desc
-            label: Chambre Standard Jardin - Description
-            type: text
-          - name: mer_title
-            label: Chambre Supérieure Mer - Titre
-            type: string
-          - name: mer_desc
-            label: Chambre Supérieure Mer - Description
-            type: text
-          - name: pavillons_title
-            label: Pavillon Suite - Titre
-            type: string
-          - name: pavillons_desc
-            label: Pavillon Suite - Description
-            type: text
-
-      - name: services
-        label: Page Services & Activités
-        type: object
-        fields:
-          - name: title
-            label: Titre Principal
-            type: string
-          - name: subtitle
-            label: Sous-titre
-            type: string
-          - name: hotel_services_title
-            label: Titre Services de l'Hôtel
-            type: string
-          - name: hotel_services_desc
-            label: Description Services de l'Hôtel
-            type: text
-          - name: service_pool_title
-            label: Service - Piscine chauffée
-            type: string
-          - name: service_pool_desc
-            label: Description - Piscine chauffée
-            type: text
-          - name: service_garden_title
-            label: Service - Jardin
-            type: string
-          - name: service_garden_desc
-            label: Description - Jardin
-            type: text
-          - name: service_breakfast_title
-            label: Service - Petit-déjeuner
-            type: string
-          - name: service_breakfast_desc
-            label: Description - Petit-déjeuner
-            type: text
-
-      - name: gallery
-        label: Page Galerie (Filtres)
-        type: object
-        fields:
-          - name: title
-            label: Titre Principal
-            type: string
-          - name: subtitle
-            label: Sous-titre
-            type: string
-          - name: filter_all
-            label: Filtre - Tout
-            type: string
-          - name: filter_view
-            label: Filtre - Vue
-            type: string
-          - name: filter_pool
-            label: Filtre - Piscine
-            type: string
-          - name: filter_rooms
-            label: Filtre - Chambres
-            type: string
-          - name: filter_breakfast
-            label: Filtre - Petit-déjeuner
-            type: string
-
-      - name: contact
-        label: Page Contact
-        type: object
-        fields:
-          - name: title
-            label: Titre Principal
-            type: string
-          - name: subtitle
-            label: Sous-titre
-            type: string
-          - name: info_title
-            label: Titre Section Coordonnées
-            type: string
-          - name: form_title
-            label: Titre Formulaire
-            type: string
-          - name: form_submit
-            label: Bouton Envoyer
-            type: string
-
-  - name: reviews
-    label: "4. Témoignages (TripAdvisor)"
-    type: collection
-    path: src/translations/reviews
-    extension: json
-    view:
-      primary: title
-    fields:
-      - name: title
-        label: Nom de la Langue
-        type: string
       - name: reviews
-        label: Section TripAdvisor
+        label: Avis clients (TripAdvisor)
         type: object
         fields:
           - name: title
             label: Titre Principal
-            type: string
+            type: object
+            fields: *lang_fields
           - name: subtitle
             label: Sous-titre
-            type: string
+            type: object
+            fields: *lang_fields
           - name: read_more
-            label: Bouton Lire plus
-            type: string
+            label: Lien TripAdvisor
+            type: object
+            fields: *lang_fields
           - name: items
-            label: Liste des Témoignages
+            label: Liste des avis
             type: object
             list: true
             fields:
               - name: author
-                label: Nom du Client
+                label: Client
                 type: string
               - name: date
                 label: Date
@@ -331,14 +266,750 @@ content:
                 label: Note (sur 5)
                 type: number
               - name: title
-                label: Titre de l'avis
-                type: string
+                label: Titre de l'Avis
+                type: object
+                fields: *lang_fields
               - name: text
-                label: Message
+                label: Contenu de l'Avis
+                type: object
+                fields:
+                  - name: fr
+                    label: Français
+                    type: text
+                  - name: en
+                    label: English
+                    type: text
+                  - name: en_au
+                    label: English AU
+                    type: text
+                  - name: de
+                    label: Deutsch
+                    type: text
+                  - name: it
+                    label: Italiano
+                    type: text
+                  - name: es
+                    label: Español
+                    type: text
+                  - name: ru
+                    label: Русский
+                    type: text
+
+      - name: footer
+        label: Pied de page (Footer)
+        type: object
+        fields:
+          - name: desc
+            label: Description Sous-Logo
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          - name: links_title
+            label: Titre Liens Rapides
+            type: object
+            fields: *lang_fields
+          - name: contact_title
+            label: Titre Contact
+            type: object
+            fields: *lang_fields
+          - name: social_title
+            label: Titre Réseaux
+            type: object
+            fields: *lang_fields
+          - name: rights
+            label: Droits réservés
+            type: object
+            fields: *lang_fields
+
+  - name: accueil
+    label: "1. Page d'Accueil"
+    type: file
+    path: src/data/accueil.json
+    format: json
+    fields:
+      - name: hero
+        label: Diaporama d'Accueil (Hero Banner)
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: object
+            fields: *lang_fields
+          - name: subtitle
+            label: Sous-titre
+            type: object
+            fields: *lang_fields
+          - name: cta
+            label: Texte du Bouton
+            type: object
+            fields: *lang_fields
+      - name: accueil
+        label: Contenu de la Page d'Accueil
+        type: object
+        fields:
+          - name: intro_title
+            label: Titre d'Introduction
+            type: object
+            fields: *lang_fields
+          - name: intro_text
+            label: Paragraphe 1
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          - name: intro_subtext
+            label: Paragraphe 2
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+                
+          # Card 1: Vue
+          - name: card_view_image
+            label: "Carte 1 : Photo - Vue Panoramique"
+            type: image
+          - name: card_view_title
+            label: "Carte 1 : Titre"
+            type: object
+            fields: *lang_fields
+          - name: card_view_text
+            label: "Carte 1 : Texte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Card 2: Piscine
+          - name: card_pool_image
+            label: "Carte 2 : Photo - Piscine & Jardin"
+            type: image
+          - name: card_pool_title
+            label: "Carte 2 : Titre"
+            type: object
+            fields: *lang_fields
+          - name: card_pool_text
+            label: "Carte 2 : Texte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Card 3: Breakfast
+          - name: card_breakfast_image
+            label: "Carte 3 : Photo - Petit-déjeuner Face Mer"
+            type: image
+          - name: card_breakfast_title
+            label: "Carte 3 : Titre"
+            type: object
+            fields: *lang_fields
+          - name: card_breakfast_text
+            label: "Carte 3 : Texte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Card 4: Location
+          - name: card_location_image
+            label: "Carte 4 : Photo - Emplacement Idéal"
+            type: image
+          - name: card_location_title
+            label: "Carte 4 : Titre"
+            type: object
+            fields: *lang_fields
+          - name: card_location_text
+            label: "Carte 4 : Texte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Bottom teaser block
+          - name: explore_rooms_title
+            label: Teaser Chambres - Titre
+            type: object
+            fields: *lang_fields
+          - name: explore_rooms_text
+            label: Teaser Chambres - Texte
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+  - name: chambres
+    label: "2. Page Chambres & Tarifs"
+    type: file
+    path: src/data/chambres.json
+    format: json
+    fields:
+      - name: rooms
+        label: Page Chambres
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: object
+            fields: *lang_fields
+          - name: subtitle
+            label: Sous-titre
+            type: object
+            fields: *lang_fields
+          - name: cta
+            label: Bouton de Réservation (Chambres)
+            type: object
+            fields: *lang_fields
+            
+          # Room 1: Garden
+          - name: garden_image
+            label: "Chambre Jardin : Photo"
+            type: image
+          - name: garden_title
+            label: "Chambre Jardin : Titre"
+            type: object
+            fields: *lang_fields
+          - name: garden_desc
+            label: "Chambre Jardin : Description courte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          - name: garden_details
+            label: "Chambre Jardin : Détails complets"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Room 2: Mer
+          - name: mer_image
+            label: "Chambre Vue Mer : Photo"
+            type: image
+          - name: mer_title
+            label: "Chambre Vue Mer : Titre"
+            type: object
+            fields: *lang_fields
+          - name: mer_desc
+            label: "Chambre Vue Mer : Description courte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          - name: mer_details
+            label: "Chambre Vue Mer : Détails complets"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Room 3: Pavillons
+          - name: pavillons_image
+            label: "Pavillons Suite : Photo"
+            type: image
+          - name: pavillons_title
+            label: "Pavillons Suite : Titre"
+            type: object
+            fields: *lang_fields
+          - name: pavillons_desc
+            label: "Pavillons Suite : Description courte"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          - name: pavillons_details
+            label: "Pavillons Suite : Détails complets"
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Specs / Icons labels
+          - name: amenities_title
+            label: Titre Équipements Inclus
+            type: object
+            fields: *lang_fields
+          - name: specs
+            label: Labels Spécifications
+            type: object
+            fields:
+              - name: size
+                label: Superficie
+                type: object
+                fields: *lang_fields
+              - name: capacity
+                label: Capacité
+                type: object
+                fields: *lang_fields
+              - name: bed
+                label: Literie
+                type: object
+                fields: *lang_fields
+              - name: wifi
+                label: Wifi
+                type: object
+                fields: *lang_fields
+              - name: courtesy
+                label: Plateau de courtoisie
+                type: object
+                fields: *lang_fields
+              - name: hairdryer
+                label: Sèche-cheveux
+                type: object
+                fields: *lang_fields
+              - name: products
+                label: Produits d'accueil
+                type: object
+                fields: *lang_fields
+
+          # Footer / contact teaser
+          - name: footer_question
+            label: Teaser Bas de Page - Question
+            type: object
+            fields: *lang_fields
+          - name: footer_cta
+            label: Teaser Bas de Page - Label Bouton
+            type: object
+            fields: *lang_fields
+
+  - name: services
+    label: "3. Page Services & Activités"
+    type: file
+    path: src/data/services.json
+    format: json
+    fields:
+      - name: services
+        label: Page Services
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: object
+            fields: *lang_fields
+          - name: subtitle
+            label: Sous-titre
+            type: object
+            fields: *lang_fields
+            
+          # Section 1: Services
+          - name: hotel_services_title
+            label: Section Services - Titre
+            type: object
+            fields: *lang_fields
+          - name: hotel_services_desc
+            label: Section Services - Description
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          # Service 1: Piscine
+          - name: service_pool_title
+            label: Service 1 - Titre
+            type: object
+            fields: *lang_fields
+          - name: service_pool_desc
+            label: Service 1 - Description
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          # Service 2: Jardin
+          - name: service_garden_title
+            label: Service 2 - Titre
+            type: object
+            fields: *lang_fields
+          - name: service_garden_desc
+            label: Service 2 - Description
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+          # Service 3: Petit-déjeuner
+          - name: service_breakfast_title
+            label: Service 3 - Titre
+            type: object
+            fields: *lang_fields
+          - name: service_breakfast_desc
+            label: Service 3 - Description
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
+                type: text
+
+          # Section 2: Activities
+          - name: activities_title
+            label: Section Activités - Titre
+            type: object
+            fields: *lang_fields
+          - name: activities_desc
+            label: Section Activités - Description
+            type: object
+            fields:
+              - name: fr
+                label: Français
+                type: text
+              - name: en
+                label: English
+                type: text
+              - name: en_au
+                label: English AU
+                type: text
+              - name: de
+                label: Deutsch
+                type: text
+              - name: it
+                label: Italiano
+                type: text
+              - name: es
+                label: Español
+                type: text
+              - name: ru
+                label: Русский
                 type: text
 
   - name: gallery
-    label: "5. Galerie Photos"
+    label: "4. Galerie Photos"
     type: file
     path: src/data/gallery.json
     format: json
