@@ -25,7 +25,7 @@ collections:
     files:
       - name: accueil
         label: "Page d'Accueil"
-        file: "src/translations/seo/accueil"
+        file: "src/translations/seo/accueil.json"
         i18n: true
         format: json
         extension: json
@@ -41,7 +41,7 @@ collections:
 
       - name: chambres
         label: "Page Chambres & Pavillons"
-        file: "src/translations/seo/chambres"
+        file: "src/translations/seo/chambres.json"
         i18n: true
         format: json
         extension: json
@@ -57,7 +57,7 @@ collections:
 
       - name: services
         label: "Page Services & Activités"
-        file: "src/translations/seo/services"
+        file: "src/translations/seo/services.json"
         i18n: true
         format: json
         extension: json
@@ -73,7 +73,7 @@ collections:
 
       - name: galerie
         label: "Page Galerie"
-        file: "src/translations/seo/galerie"
+        file: "src/translations/seo/galerie.json"
         i18n: true
         format: json
         extension: json
@@ -89,7 +89,7 @@ collections:
 
       - name: contact
         label: "Page Contact"
-        file: "src/translations/seo/contact"
+        file: "src/translations/seo/contact.json"
         i18n: true
         format: json
         extension: json
@@ -113,7 +113,7 @@ collections:
     files:
       - name: layout
         label: "Configuration En-tête & Pied de page"
-        file: "src/translations/navigation/index"
+        file: "src/translations/navigation/index.json"
         i18n: true
         format: json
         extension: json
@@ -168,7 +168,7 @@ collections:
     files:
       - name: accueil
         label: "Page d'Accueil"
-        file: "src/translations/pages/accueil"
+        file: "src/translations/pages/accueil.json"
         i18n: true
         format: json
         extension: json
@@ -199,7 +199,7 @@ collections:
 
       - name: chambres
         label: "Page Chambres"
-        file: "src/translations/pages/chambres"
+        file: "src/translations/pages/chambres.json"
         i18n: true
         format: json
         extension: json
@@ -243,7 +243,7 @@ collections:
 
       - name: services
         label: "Page Services"
-        file: "src/translations/pages/services"
+        file: "src/translations/pages/services.json"
         i18n: true
         format: json
         extension: json
@@ -269,7 +269,7 @@ collections:
 
       - name: galerie_textes
         label: "Page Galerie (Textes)"
-        file: "src/translations/pages/galerie"
+        file: "src/translations/pages/galerie.json"
         i18n: true
         format: json
         extension: json
@@ -290,7 +290,7 @@ collections:
 
       - name: contact
         label: "Page Contact"
-        file: "src/translations/pages/contact"
+        file: "src/translations/pages/contact.json"
         i18n: true
         format: json
         extension: json
@@ -317,7 +317,7 @@ collections:
 
       - name: galerie
         label: "Galerie Photos"
-        file: "src/translations/gallery/index"
+        file: "src/translations/gallery/index.json"
         i18n: false  # Global management for easy alt tags next to image
         fields:
           - name: items
