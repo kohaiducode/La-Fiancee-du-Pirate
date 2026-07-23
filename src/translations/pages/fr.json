@@ -1,5 +1,5 @@
 {
-  "title": "Français (FR)",
+  "title": "",
   "accueil": {
     "intro_title": "Bienvenue à La Fiancée du Pirate",
     "intro_text": "Niché sur la moyenne corniche entre Nice et Monaco, notre boutique-hôtel intimiste et unique de 15 chambres vous offre un cadre exceptionnel et une vue panoramique imprenable sur la mer Méditerranée.",
@@ -11,10 +11,108 @@
     "card_breakfast_title": "Petit-déjeuner Face Mer",
     "card_breakfast_text": "Un délicieux buffet servi tous les jours de 8h30 à 10h30 sur notre terrasse panoramique face à la mer.",
     "card_location_title": "Emplacement Idéal",
-    "card_location_text": "Situé de manière privilégiée sur la moyenne corniche, avec accès direct par escalier à la vieille ville et aux plages."
+    "card_location_text": "Situé de manière privilégiée sur la moyenne corniche, avec accès direct par escalier à la vieille ville et aux plages.",
+    "explore_rooms_title": "Nos Chambres & Pavillons",
+    "explore_rooms_text": "Entièrement rénovées, climatisées et équipées de lits queen ou king-size pour un confort optimal.",
+    "myblackcab_title": "Partenaire de transport personnalisé",
+    "myblackcab_text": "Pour tous vos déplacements sur la Riviera, contactez directement notre partenaire Myblackcab pour un service de transport privé haut de gamme."
   },
-  "rooms": {},
-  "services": {},
-  "gallery": {},
-  "contact": {}
+  "rooms": {
+    "title": "Nos Chambres & Pavillons",
+    "subtitle": "Rénovés pour votre plus grand confort, offrant calme, intimité et élégance.",
+    "cta": "Réserver cette chambre",
+    "garden_title": "Chambre Côté Jardin",
+    "garden_desc": "Ces chambres agréables vous permettent de profiter pleinement du jardin grâce à leur terrasse privative.",
+    "garden_details": "Disponibles en version Double, Triple et Familiale, elles disposent d'une terrasse intime donnant sur notre écrin de verdure.",
+    "mer_title": "Chambre Vue Mer",
+    "mer_desc": "Spacieuses et accueillantes, ces chambres vous offrent une vue panoramique imprenable sur la baie de Villefranche-sur-Mer et le Cap Ferrat.",
+    "mer_details": "Disponibles en version Double, Triple ou Quadruple. Réveillez-vous face au bleu de la Méditerranée.",
+    "pavillons_title": "Nos Pavillons Privatifs",
+    "pavillons_desc": "Séparés du bâtiment principal, nos deux pavillons privatifs offrent un espace unique de liberté et de bien-être.",
+    "pavillons_details": "Le Pavillon de la Fiancée ravira les couples en quête de romantisme. Le Pavillon du Pirate séduira les familles par son emplacement privilégié.",
+    "amenities_title": "Équipements inclus",
+    "specs": {
+      "size": "Superficie",
+      "capacity": "Capacité",
+      "bed": "Literie",
+      "wifi": "Wifi Gratuit",
+      "courtesy": "Plateau de courtoisie",
+      "hairdryer": "Sèche-cheveux",
+      "products": "Produits d'accueil"
+    },
+    "garden_specs": {
+      "size": "16 à 25 m²",
+      "capacity": "1 à 4 personnes",
+      "bed": "Lit Queen Size ou lits jumeaux"
+    },
+    "mer_specs": {
+      "size": "16 à 31 m²",
+      "capacity": "1 à 4 personnes",
+      "bed": "Lit King Size ou Queen Size"
+    },
+    "pavillons_specs": {
+      "size": "20 ou 26 m²",
+      "capacity": "2 ou 4 personnes",
+      "bed": "Lit Queen Size ou King Size"
+    },
+    "footer_question": "Vous avez des questions sur nos équipements ?",
+    "footer_cta": "Contactez-nous"
+  },
+  "services": {
+    "title": "Services & Activités",
+    "subtitle": "Tout ce dont vous avez besoin pour un séjour d'exception sur la Côte d'Azur.",
+    "hotel_services_title": "Les Services de l'Hôtel",
+    "hotel_services_desc": "Profitez de nos installations haut de gamme conçues pour votre détente et votre confort.",
+    "service_pool_title": "Piscine & Jacuzzi",
+    "service_pool_desc": "Une piscine extérieure chauffée selon la saison et un jacuzzi sur demande pour vos moments de bien-être.",
+    "service_garden_title": "Jardin & Salons",
+    "service_garden_desc": "Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.",
+    "service_breakfast_title": "Petit-déjeuner Buffet",
+    "service_breakfast_desc": "Servi sur la terrasse face à la mer, composé de produits frais pour bien démarrer votre journée.",
+    "service_cab_title": "Transport & Excursions",
+    "service_cab_desc": "Transfert aéroport en 20 min, bus pour Nice et Monaco à proximité, et notre partenaire de taxi privé Myblackcab.",
+    "activities_title": "Découvrir Villefranche-sur-Mer",
+    "activities_desc": "Un village d'art et d'histoire au charme intemporel.",
+    "citadelle_title": "La Citadelle Saint-Elme",
+    "citadelle_desc": "Imposante forteresse du XVIe siècle construite pour protéger la rade. Elle abrite aujourd'hui la Mairie et 4 musées (dont le Musée Volti et le Musée Goetz-Boumeester). Entrée libre.",
+    "chapelle_title": "La Chapelle Saint-Pierre",
+    "chapelle_desc": "Entièrement restaurée et décorée en 1956 par le célèbre artiste Jean Cocteau, c'est un chef-d'œuvre incontournable dédié au patron des pêcheurs.",
+    "rue_title": "La Rue Obscure",
+    "rue_desc": "Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.",
+    "port_title": "Le Port Royal de la Darse",
+    "port_desc": "Bassin historique du XVIe siècle avec ses remparts, son phare historique, sa corderie et son port de plaisance actif.",
+    "surroundings_title": "Aux alentours sur la Riviera",
+    "surroundings_desc": "Notre hôtel est le point de départ idéal pour explorer la Côte d'Azur :",
+    "surroundings_nice": "Nice (10 min) : le vieux Nice, le marché du cours Saleya, la Promenade des Anglais (accès rapide en bus).",
+    "surroundings_monaco": "Monaco (20 min) : le Rocher, le Casino de Monte-Carlo, le Musée Océanographique.",
+    "surroundings_villages": "Les villages perchés d'Eze et de Saint-Paul-de-Vence pour une escapade pittoresque.",
+    "surroundings_italy": "L'Italie à seulement 7 stations de train (départs réguliers de la gare de Villefranche)."
+  },
+  "gallery": {
+    "title": "Notre Galerie Photos",
+    "subtitle": "Découvrez en images le cadre enchanteur de notre boutique-hôtel.",
+    "filter_all": "Tout",
+    "filter_view": "Hôtel & Vue",
+    "filter_pool": "Piscine & Jardin",
+    "filter_rooms": "Chambres",
+    "filter_breakfast": "Petit-Déjeuner"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question ? Une demande de réservation spécifique ? Notre équipe est à votre écoute.",
+    "info_title": "Coordonnées",
+    "info_address": "8 Boulevard de La Corne d'Or\nMoyenne Corniche\n06230 Villefranche-sur-Mer, France",
+    "info_phone": "+33 4 93 76 67 40 / +33 7 45 28 29 37",
+    "info_email": "info@fianceedupirate.com",
+    "form_title": "Envoyer un message",
+    "form_name": "Nom complet",
+    "form_email": "Adresse e-mail",
+    "form_phone": "Téléphone",
+    "form_message": "Message",
+    "form_submit": "Envoyer le message",
+    "form_success": "Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
+    "form_error": "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter par e-mail.",
+    "map_title": "Nous localiser",
+    "open_in_maps": "Ouvrir dans Google Maps"
+  }
 }

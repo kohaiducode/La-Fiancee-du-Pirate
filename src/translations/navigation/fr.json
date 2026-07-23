@@ -1,11 +1,12 @@
 {
-  "title": "Français (FR)",
+  "title": "",
   "nav": {
     "home": "Accueil",
     "rooms": "Chambres",
     "services": "Services & Activités",
     "gallery": "Galerie",
-    "contact": "Contact"
+    "contact": "Contact",
+    "book": "Réserver"
   },
   "hero": {
     "title": "Une parenthèse suspendue sur la Côte d'Azur",
@@ -19,9 +20,11 @@
     "search": "Réserver"
   },
   "footer": {
+    "desc": "La Fiancée du Pirate, boutique-hôtel intimiste de 15 chambres niché sur les hauteurs de Villefranche-sur-Mer, entre Nice et Monaco.",
     "links_title": "Navigation",
     "contact_title": "Contact",
     "social_title": "Suivez-nous",
-    "rights": "Tous droits réservés. Mentions Légales."
+    "rights": "Tous droits réservés. Mentions Légales.",
+    "tripadvisor_badge": "Classé Excellent sur TripAdvisor"
   }
 }
