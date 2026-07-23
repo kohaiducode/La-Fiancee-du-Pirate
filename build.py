@@ -130,7 +130,7 @@ def compile_site():
             return {k: resolve_image_paths(v) for k, v in obj.items()}
         elif isinstance(obj, list):
             return [resolve_image_paths(item) for item in obj]
-        elif isinstance(obj, str) and obj.startswith('Photos/'):
+        elif isinstance(obj, str) and (obj.startswith('Photos/') or obj.startswith('/Photos/')):
             return get_optimized_image_path(obj)
         return obj
 
