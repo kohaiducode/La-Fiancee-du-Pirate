@@ -1,0 +1,176 @@
+# Configuration Pages CMS (pagescms.org) pour La Fiancée du Pirate
+
+media:
+  input: Photos
+  output: /Photos
+
+content:
+  - name: translations
+    label: Traductions & Textes
+    type: collection
+    path: src/translations
+    extension: json
+    fields:
+      - name: seo
+        label: Référencement (SEO Google)
+        type: object
+        fields:
+          - name: home_title
+            label: Titre - Page d'Accueil
+            type: string
+          - name: home_desc
+            label: Description - Page d'Accueil
+            type: text
+          - name: rooms_title
+            label: Titre - Page Chambres
+            type: string
+          - name: rooms_desc
+            label: Description - Page Chambres
+            type: text
+          - name: services_title
+            label: Titre - Page Services
+            type: string
+          - name: services_desc
+            label: Description - Page Services
+            type: text
+          - name: gallery_title
+            label: Titre - Page Galerie
+            type: string
+          - name: gallery_desc
+            label: Description - Page Galerie
+            type: text
+          - name: contact_title
+            label: Titre - Page Contact
+            type: string
+          - name: contact_desc
+            label: Description - Page Contact
+            type: text
+            
+      - name: nav
+        label: Menu de Navigation
+        type: object
+        fields:
+          - name: home
+            label: Accueil
+            type: string
+          - name: rooms
+            label: Chambres
+            type: string
+          - name: services
+            label: Services
+            type: string
+          - name: gallery
+            label: Galerie
+            type: string
+          - name: contact
+            label: Contact
+            type: string
+            
+      - name: booking_bar
+        label: Barre de Réservation
+        type: object
+        fields:
+          - name: check_in
+            label: Label Date d'arrivée
+            type: string
+          - name: check_out
+            label: Label Date de départ
+            type: string
+          - name: guests
+            label: Label Voyageurs
+            type: string
+          - name: search
+            label: Label Bouton Rechercher
+            type: string
+            
+      - name: accueil
+        label: Contenu de la Page d'Accueil
+        type: object
+        fields:
+          - name: intro_title
+            label: Titre d'Introduction
+            type: string
+          - name: intro_text
+            label: Texte d'Introduction (Paragraphe 1)
+            type: text
+          - name: intro_subtext
+            label: Texte d'Introduction (Paragraphe 2)
+            type: text
+          - name: card_view_title
+            label: Titre - Vue Panoramique
+            type: string
+          - name: card_view_text
+            label: Texte - Vue Panoramique
+            type: text
+          - name: card_pool_title
+            label: Titre - Piscine & Jardin
+            type: string
+          - name: card_pool_text
+            label: Texte - Piscine & Jardin
+            type: text
+          - name: card_breakfast_title
+            label: Titre - Petit-déjeuner Face Mer
+            type: string
+          - name: card_breakfast_text
+            label: Texte - Petit-déjeuner Face Mer
+            type: text
+          - name: card_location_title
+            label: Titre - Emplacement Idéal
+            type: string
+          - name: card_location_text
+            label: Texte - Emplacement Idéal
+            type: text
+
+      - name: reviews
+        label: Section des Témoignages (TripAdvisor)
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: read_more
+            label: Label Bouton Lire plus
+            type: string
+          - name: items
+            label: Liste des Avis Clients
+            type: object
+            list: true
+            fields:
+              - name: author
+                label: Nom de l'Auteur
+                type: string
+              - name: date
+                label: Date du séjour
+                type: string
+              - name: rating
+                label: Note (sur 5)
+                type: number
+              - name: title
+                label: Titre du message
+                type: string
+              - name: text
+                label: Message complet
+                type: text
+
+      - name: footer
+        label: Pied de page (Footer)
+        type: object
+        fields:
+          - name: subtitle
+            label: Description Sous-Logo
+            type: string
+          - name: links_title
+            label: Titre Liens Rapides
+            type: string
+          - name: contact_title
+            label: Titre Section Contact
+            type: string
+          - name: social_title
+            label: Titre Suivez-nous
+            type: string
+          - name: rights
+            label: Label Droits Réservés
+            type: string
