@@ -114,7 +114,7 @@ content:
         label: Pied de page (Footer)
         type: object
         fields:
-          - name: subtitle
+          - name: desc
             label: Description Sous-Logo
             type: string
           - name: links_title
