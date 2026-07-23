@@ -169,12 +169,19 @@ def compile_site():
         
         # Build Photo Gallery Grid HTML for this language
         gallery_html = ""
-        gallery_data = load_json(os.path.join(translations_dir, "gallery", f"{lang}.json"))
-        gallery_items = gallery_data.get("items", [])
+        gallery_file = os.path.join(src_dir, "data", "gallery.json")
+        gallery_items = []
+        if os.path.exists(gallery_file):
+            gallery_data = load_json(gallery_file)
+            gallery_items = gallery_data.get("items", [])
+            
         for item in gallery_items:
             img_path = get_optimized_image_path(item.get("image", ""))
             category = item.get("category", "")
-            alt = item.get("alt", "")
+            
+            # Get language-specific Alt SEO tag
+            alt_key = f"alt_{lang.replace('-', '_')}"
+            alt = item.get(alt_key, "")
             
             gallery_html += f"""
             <div class="gallery-item" data-category="{category}">

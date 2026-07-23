@@ -339,15 +339,10 @@ content:
 
   - name: gallery
     label: "5. Galerie Photos"
-    type: collection
-    path: src/translations/gallery
-    extension: json
-    view:
-      primary: title
+    type: file
+    path: src/data/gallery.json
+    format: json
     fields:
-      - name: title
-        label: Nom de la Langue
-        type: string
       - name: items
         label: Liste des Photos
         type: object
@@ -368,6 +363,24 @@ content:
                 label: Chambres
               - value: breakfast
                 label: Petit-déjeuner
-          - name: alt
-            label: Balise Alt SEO (Description de l'image)
+          - name: alt_fr
+            label: Balise Alt SEO (Français)
+            type: string
+          - name: alt_en
+            label: Balise Alt SEO (English)
+            type: string
+          - name: alt_en_au
+            label: Balise Alt SEO (English AU)
+            type: string
+          - name: alt_de
+            label: Balise Alt SEO (Deutsch)
+            type: string
+          - name: alt_it
+            label: Balise Alt SEO (Italiano)
+            type: string
+          - name: alt_es
+            label: Balise Alt SEO (Español)
+            type: string
+          - name: alt_ru
+            label: Balise Alt SEO (Русский)
             type: string
