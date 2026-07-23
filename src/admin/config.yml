@@ -4,7 +4,6 @@ backend:
   branch: main
   pkce: true
   app_id: "Ov23li1J9CHmInhZTTxk"
-  base_url: "https://kohaiducode.github.io"
 
 # Configuration de la gestion des médias
 media_folder: Photos
