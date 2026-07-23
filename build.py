@@ -148,11 +148,12 @@ def compile_site():
                 seo_data["seo"].update(lang_specific_data.get("seo", {}))
         lang_data.update(seo_data)
         
-        # Load navigation layout
-        path = os.path.join(translations_dir, "navigation", "index.json")
-        if os.path.exists(path):
-            loaded = load_json(path)
-            lang_data.update(loaded.get(lang, {}))
+        # Load navigation (header and footer)
+        for name in ["header", "footer"]:
+            path = os.path.join(translations_dir, "navigation", f"{name}.json")
+            if os.path.exists(path):
+                loaded = load_json(path)
+                lang_data.update(loaded.get(lang, {}))
             
         # Load content pages
         for name in ["accueil", "chambres", "services", "galerie", "contact"]:

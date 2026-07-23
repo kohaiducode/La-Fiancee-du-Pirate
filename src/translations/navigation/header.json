@@ -19,14 +19,6 @@
       "search": "Réserver",
       "check_in": "Arrivée",
       "check_out": "Départ"
-    },
-    "footer": {
-      "contact_title": "Contact",
-      "tripadvisor_badge": "Classé Excellent sur TripAdvisor",
-      "rights": "Tous droits réservés. Mentions Légales.",
-      "desc": "La Fiancée du Pirate, boutique-hôtel intimiste de 15 chambres niché sur les hauteurs de Villefranche-sur-Mer, entre Nice et Monaco.",
-      "links_title": "Navigation",
-      "social_title": "Suivez-nous"
     }
   },
   "en": {
@@ -49,14 +41,6 @@
       "search": "Check Availability",
       "check_in": "Arrival",
       "check_out": "Departure"
-    },
-    "footer": {
-      "contact_title": "Contact",
-      "tripadvisor_badge": "Rated Excellent on TripAdvisor",
-      "rights": "All rights reserved. Legal Notice.",
-      "desc": "La Fiancée du Pirate, an intimate 15-room boutique hotel nestled on the heights of Villefranche-sur-Mer, between Nice and Monaco.",
-      "links_title": "Navigation",
-      "social_title": "Follow Us"
     }
   },
   "en-au": {
@@ -79,14 +63,6 @@
       "search": "Check Availability",
       "check_in": "Arrival",
       "check_out": "Departure"
-    },
-    "footer": {
-      "contact_title": "Contact",
-      "tripadvisor_badge": "Rated Excellent on TripAdvisor",
-      "rights": "All rights reserved. Legal Notice.",
-      "desc": "La Fiancée du Pirate, an intimate 15-room boutique hotel nestled on the heights of Villefranche-sur-Mer, between Nice and Monaco.",
-      "links_title": "Navigation",
-      "social_title": "Follow Us"
     }
   },
   "de": {
@@ -109,14 +85,6 @@
       "search": "Verfügbarkeit prüfen",
       "check_in": "Anreise",
       "check_out": "Abreise"
-    },
-    "footer": {
-      "contact_title": "Kontakt",
-      "tripadvisor_badge": "Auf TripAdvisor als Ausgezeichnet bewertet",
-      "rights": "Alle Rechte vorbehalten. Impressum.",
-      "desc": "La Fiancée du Pirate, ein gemütliches Boutique-Hotel mit 15 Zimmern auf den Höhen von Villefranche-sur-Mer, zwischen Nizza und Monaco.",
-      "links_title": "Navigation",
-      "social_title": "Folgen Sie uns"
     }
   },
   "it": {
@@ -139,14 +107,6 @@
       "search": "Verifica disponibilità",
       "check_in": "Arrivo",
       "check_out": "Partenza"
-    },
-    "footer": {
-      "contact_title": "Contatti",
-      "tripadvisor_badge": "Valutato Eccellente su TripAdvisor",
-      "rights": "Tutti i diritti riservati. Note Legali.",
-      "desc": "La Fiancée du Pirate, boutique hotel intimo di 15 camere sulle alture di Villefranche-sur-Mer, tra Nizza e Monaco.",
-      "links_title": "Navigazione",
-      "social_title": "Seguici su"
     }
   },
   "es": {
@@ -169,14 +129,6 @@
       "search": "Comprobar disponibilidad",
       "check_in": "Llegada",
       "check_out": "Salida"
-    },
-    "footer": {
-      "contact_title": "Contacto",
-      "tripadvisor_badge": "Valorado como Excelente en TripAdvisor",
-      "rights": "Todos los derechos reservados. Aviso Legal.",
-      "desc": "La Fiancée du Pirate, hotel boutique íntimo de 15 habitaciones situado en las colinas de Villefranche-sur-Mer, entre Niza y Mónaco.",
-      "links_title": "Navegación",
-      "social_title": "Síganos"
     }
   },
   "ru": {
@@ -199,14 +151,6 @@
       "search": "Проверить наличие",
       "check_in": "Заезд",
       "check_out": "Выезд"
-    },
-    "footer": {
-      "contact_title": "Контакты",
-      "tripadvisor_badge": "Оценка «Отлично» на TripAdvisor",
-      "rights": "Все права защищены. Правовая информация.",
-      "desc": "La Fiancée du Pirate — уютный бутик-отель на 15 номеров, расположенный на холмах Вильфранш-сюр-Мер, между Ниццей и Монако.",
-      "links_title": "Разделы",
-      "social_title": "Мы в соцсетях"
     }
   }
 }
