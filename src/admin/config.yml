@@ -2,6 +2,8 @@ backend:
   name: github
   repo: kohaiducode/La-Fiancee-du-Pirate
   branch: main
+  pkce: true
+  app_id: "VOTRE_CLIENT_ID_ICI"
 
 # Configuration de la gestion des médias
 media_folder: Photos
