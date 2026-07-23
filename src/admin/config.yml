@@ -7,41 +7,93 @@ backend:
 media_folder: Photos
 public_folder: /Photos
 
-# Configuration Multilingue Native
+# Configuration de l'i18n globale
 i18n:
   structure: multiple_files
   locales: [fr, en, en-au, de, it, es, ru]
   default_locale: fr
 
 collections:
-  - name: content
-    label: "Pages & Textes"
-    i18n: true
+  - name: seo
+    label: "1. Référencement (SEO)"
+    i18n:
+      structure: multiple_files
+      locales: [fr, en, en-au, de, it, es, ru]
     files:
-      - name: seo
-        label: "1. Référencement (SEO)"
-        file: "src/translations/seo/index.json"
+      - name: accueil
+        label: "Page d'Accueil"
+        file: "src/translations/seo/accueil.{{locale}}.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
           - name: seo
-            label: "Métadonnées de référencement"
+            label: "Métadonnées"
             widget: object
             fields:
-              - { label: "Titre - Accueil", name: home_title, widget: string, i18n: true }
-              - { label: "Description - Accueil", name: home_desc, widget: text, i18n: true }
-              - { label: "Titre - Chambres", name: rooms_title, widget: string, i18n: true }
-              - { label: "Description - Chambres", name: rooms_desc, widget: text, i18n: true }
-              - { label: "Titre - Services", name: services_title, widget: string, i18n: true }
-              - { label: "Description - Services", name: services_desc, widget: text, i18n: true }
-              - { label: "Titre - Galerie", name: gallery_title, widget: string, i18n: true }
-              - { label: "Description - Galerie", name: gallery_desc, widget: text, i18n: true }
-              - { label: "Titre - Contact", name: contact_title, widget: string, i18n: true }
-              - { label: "Description - Contact", name: contact_desc, widget: text, i18n: true }
+              - { label: "Titre Google - Accueil", name: home_title, widget: string, i18n: true }
+              - { label: "Description Google - Accueil", name: home_desc, widget: text, i18n: true }
 
-      - name: navigation
-        label: "2. En-tête & Pied de page"
-        file: "src/translations/navigation/index.json"
+      - name: chambres
+        label: "Page Chambres & Pavillons"
+        file: "src/translations/seo/chambres.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: seo
+            label: "Métadonnées"
+            widget: object
+            fields:
+              - { label: "Titre Google - Chambres", name: rooms_title, widget: string, i18n: true }
+              - { label: "Description Google - Chambres", name: rooms_desc, widget: text, i18n: true }
+
+      - name: services
+        label: "Page Services & Activités"
+        file: "src/translations/seo/services.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: seo
+            label: "Métadonnées"
+            widget: object
+            fields:
+              - { label: "Titre Google - Services", name: services_title, widget: string, i18n: true }
+              - { label: "Description Google - Services", name: services_desc, widget: text, i18n: true }
+
+      - name: galerie
+        label: "Page Galerie"
+        file: "src/translations/seo/galerie.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: seo
+            label: "Métadonnées"
+            widget: object
+            fields:
+              - { label: "Titre Google - Galerie", name: gallery_title, widget: string, i18n: true }
+              - { label: "Description Google - Galerie", name: gallery_desc, widget: text, i18n: true }
+
+      - name: contact
+        label: "Page Contact"
+        file: "src/translations/seo/contact.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - name: seo
+            label: "Métadonnées"
+            widget: object
+            fields:
+              - { label: "Titre Google - Contact", name: contact_title, widget: string, i18n: true }
+              - { label: "Description Google - Contact", name: contact_desc, widget: text, i18n: true }
+
+  - name: navigation
+    label: "2. En-tête & Pied de page"
+    i18n:
+      structure: multiple_files
+      locales: [fr, en, en-au, de, it, es, ru]
+    files:
+      - name: layout
+        label: "Configuration En-tête & Pied de page"
+        file: "src/translations/navigation/index.{{locale}}.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -80,14 +132,20 @@ collections:
               - { label: "Titre Suivez-nous", name: social_title, widget: string, i18n: true }
               - { label: "Droits Réservés", name: rights, widget: string, i18n: true }
 
-      - name: pages
-        label: "3. Contenu des Pages"
-        file: "src/translations/pages/index.json"
+  - name: pages
+    label: "3. Pages"
+    i18n:
+      structure: multiple_files
+      locales: [fr, en, en-au, de, it, es, ru]
+    files:
+      - name: accueil
+        label: "Page d'Accueil"
+        file: "src/translations/pages/accueil.{{locale}}.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
           - name: accueil
-            label: "Page d'Accueil"
+            label: "Contenu"
             widget: object
             fields:
               - { label: "Titre d'Introduction", name: intro_title, widget: string, i18n: true }
@@ -107,8 +165,15 @@ collections:
               - { label: "Carte 4 (Emplacement) - Texte", name: card_location_text, widget: text, i18n: true }
               - { label: "Teaser Chambres - Titre", name: explore_rooms_title, widget: string, i18n: true }
               - { label: "Teaser Chambres - Texte", name: explore_rooms_text, widget: text, i18n: true }
+
+      - name: chambres
+        label: "Page Chambres"
+        file: "src/translations/pages/chambres.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
           - name: rooms
-            label: "Page Chambres"
+            label: "Contenu"
             widget: object
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
@@ -140,8 +205,15 @@ collections:
                   - { label: "Produits d'accueil", name: products, widget: string, i18n: true }
               - { label: "Teaser Bas - Question", name: footer_question, widget: string, i18n: true }
               - { label: "Teaser Bas - Bouton", name: footer_cta, widget: string, i18n: true }
+
+      - name: services
+        label: "Page Services"
+        file: "src/translations/pages/services.{{locale}}.json"
+        i18n: true
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
           - name: services
-            label: "Page Services"
+            label: "Contenu"
             widget: object
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
@@ -157,49 +229,50 @@ collections:
               - { label: "Activités - Titre", name: activities_title, widget: string, i18n: true }
               - { label: "Activités - Desc", name: activities_desc, widget: text, i18n: true }
 
-      - name: reviews
-        label: "4. Témoignages (TripAdvisor)"
-        file: "src/translations/reviews/index.json"
-        i18n: true
-        fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
-          - name: reviews
-            label: "Section TripAdvisor"
-            widget: object
-            fields:
-              - { label: "Titre Principal", name: title, widget: string, i18n: true }
-              - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
-              - { label: "Label Bouton Lire Plus", name: read_more, widget: string, i18n: true }
-              - name: items
-                label: "Liste des avis"
-                widget: list
-                i18n: true
-                fields:
-                  - { label: "Nom du Client", name: author, widget: string, i18n: duplicate }
-                  - { label: "Date du séjour", name: date, widget: string, i18n: duplicate }
-                  - { label: "Note (sur 5)", name: rating, widget: number, i18n: duplicate }
-                  - { label: "Titre de l'avis", name: title, widget: string, i18n: true }
-                  - { label: "Message de l'avis", name: text, widget: text, i18n: true }
-
-      - name: gallery
-        label: "5. Galerie Photos"
+      - name: galerie
+        label: "Galerie Photos"
         file: "src/translations/gallery/index.json"
-        i18n: true
+        i18n: false  # Global management for easy alt tags next to image
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
           - name: items
-            label: "Liste des Photos"
+            label: "Liste des Photos de la Galerie"
             widget: list
-            i18n: true
             fields:
-              - { label: "Photo (Image)", name: image, widget: image, i18n: duplicate }
+              - { label: "Photo (Image)", name: image, widget: image }
               - label: "Catégorie"
                 name: category
                 widget: select
-                i18n: duplicate
                 options:
                   - { label: "Vue", value: "view" }
                   - { label: "Piscine", value: "pool" }
                   - { label: "Chambres", value: "rooms" }
                   - { label: "Petit-déjeuner", value: "breakfast" }
-              - { label: "Balise Alt SEO (Description)", name: alt, widget: string, i18n: true }
+              - { label: "Balise Alt SEO (Français)", name: alt_fr, widget: string }
+              - { label: "Balise Alt SEO (English)", name: alt_en, widget: string }
+              - { label: "Balise Alt SEO (English AU)", name: alt_en_au, widget: string }
+              - { label: "Balise Alt SEO (Deutsch)", name: alt_de, widget: string }
+              - { label: "Balise Alt SEO (Italiano)", name: alt_it, widget: string }
+              - { label: "Balise Alt SEO (Español)", name: alt_es, widget: string }
+              - { label: "Balise Alt SEO (Русский)", name: alt_ru, widget: string }
+
+  - name: reviews
+    label: "4. Témoignages (TripAdvisor)"
+    folder: "src/translations/reviews"
+    extension: json
+    format: json
+    i18n:
+      structure: multiple_files
+      locales: [fr, en, en-au, de, it, es, ru]
+    create: true
+    delete: true
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - { label: "Nom du Client", name: author, widget: string, i18n: duplicate }
+      - { label: "Date du séjour", name: date, widget: string, i18n: duplicate }
+      - { label: "Note (sur 5)", name: rating, widget: number, i18n: duplicate }
+      - name: review
+        label: "Avis"
+        widget: object
+        fields:
+          - { label: "Titre de l'avis", name: title, widget: string, i18n: true }
+          - { label: "Message de l'avis", name: text, widget: text, i18n: true }

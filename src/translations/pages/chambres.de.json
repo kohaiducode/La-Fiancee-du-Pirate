@@ -1,0 +1,47 @@
+{
+  "title": "",
+  "rooms": {
+    "footer_cta": "Kontaktieren Sie uns",
+    "pavillons_title": "Unsere privaten Pavillons",
+    "mer_title": "Zimmer mit Meerblick",
+    "footer_question": "Haben Sie Fragen zur Ausstattung unserer Zimmer?",
+    "garden_title": "Zimmer zur Gartenseite",
+    "pavillons_details": "Der Pavillon de la Fiancée ist ideal für Paare, die Romantik suchen. Der Pavillon du Pirate ist dank seiner Lage ideal für Familien.",
+    "pavillons_desc": "Getrennt vom Hauptgebäude bieten unsere beiden privaten Pavillons einzigartigen Freiraum und Wohlbefinden.",
+    "mer_details": "Verfügbar als Doppel-, Dreibett- oder Vierbettzimmer. Wachen Sie direkt vor dem blauen Mittelmeer auf.",
+    "specs": {
+      "capacity": "Kapazität",
+      "products": "Pflegeprodukte",
+      "courtesy": "Kaffee- und Teezubereiter",
+      "bed": "Betten",
+      "wifi": "Kostenloses WLAN",
+      "hairdryer": "Haartrockner",
+      "size": "Größe"
+    },
+    "pavillons_specs": {
+      "bed": "Queensize- oder Kingsize-Bett",
+      "capacity": "2 oder 4 Personen",
+      "size": "20 oder 26 m²"
+    },
+    "mer_desc": "Geräumig und einladend bieten diese Zimmer einen unvergesslichen Panoramablick auf die Bucht von Villefranche-sur-Mer und das Cap Ferrat.",
+    "amenities_title": "Inklusive Leistungen",
+    "subtitle": "Renoviert für höchsten Komfort, Ruhe, Privatsphäre und Eleganz.",
+    "garden_specs": {
+      "bed": "Queensize-Bett oder getrennte Betten",
+      "capacity": "1 bis 4 Personen",
+      "size": "16 bis 25 m²"
+    },
+    "garden_details": "Verfügbar als Doppel-, Dreibett- und Familienzimmer, bieten sie eine private Terrasse mit Blick in die Natur.",
+    "mer_specs": {
+      "bed": "Kingsize- oder Queensize-Bett",
+      "capacity": "1 to 4 Personen",
+      "size": "16 bis 31 m²"
+    },
+    "garden_desc": "Diese gemütlichen Zimmer verfügen über eine eigene Terrasse, auf der Sie den Garten in vollen Zügen genießen können.",
+    "cta": "Dieses Zimmer buchen",
+    "title": "Unsere Zimmer & Pavillons",
+    "garden_image": "Photos/Accueil/snacks_by_the_pool.jpg",
+    "mer_image": "Photos/Accueil/room_with_view.jpg",
+    "pavillons_image": "Photos/Accueil/jacuzzi_and_pool.jpg"
+  }
+}

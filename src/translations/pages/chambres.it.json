@@ -1,0 +1,47 @@
+{
+  "title": "",
+  "rooms": {
+    "footer_cta": "Contattateci",
+    "pavillons_title": "I Nostri Padiglioni Privati",
+    "mer_title": "Camera Vista Mare",
+    "footer_question": "Avete domande sui servizi delle nostre camere?",
+    "garden_title": "Camera Lato Giardino",
+    "pavillons_details": "Il Pavillon de la Fiancée incanterà le coppie in cerca di romanticismo. Il Pavillon du Pirate conquisterà le famiglie grazie alla sua posizione ideale.",
+    "pavillons_desc": "Separati dal corpo principale, i nostri due padiglioni privati offrono uno spazio unico di libertà e benessere.",
+    "mer_details": "Disponibili in versione Doppia, Tripla o Quadrupla. Svegliatevi di fronte all'azzurro del Mediterraneo.",
+    "specs": {
+      "capacity": "Capacità",
+      "products": "Prodotti da bagno omaggio",
+      "courtesy": "Set di cortesia (tè/caffè)",
+      "bed": "Letti",
+      "wifi": "Wi-Fi Gratuito",
+      "hairdryer": "Asciugacapelli",
+      "size": "Superficie"
+    },
+    "pavillons_specs": {
+      "bed": "Letto Queen Size o King Size",
+      "capacity": "2 o 4 persone",
+      "size": "20 o 26 m²"
+    },
+    "mer_desc": "Spaziose e accoglienti, queste camere offrono una vista panoramica spettacolare sulla baia di Villefranche-sur-Mer e su Cap Ferrat.",
+    "amenities_title": "Servizi inclusi",
+    "subtitle": "Rinnovate per il vostro massimo comfort, all'insegna di tranquillità, privacy ed eleganza.",
+    "garden_specs": {
+      "bed": "Letto Queen Size o letti singoli",
+      "capacity": "Da 1 a 4 persone",
+      "size": "Da 16 a 25 m²"
+    },
+    "garden_details": "Disponibili in versione Doppia, Tripla e Familiare, dispongono di una terrazza privata che si affaccia sulla nostra oasi di verde.",
+    "mer_specs": {
+      "bed": "Letto King Size o Queen Size",
+      "capacity": "Da 1 a 4 persone",
+      "size": "Da 16 a 31 m²"
+    },
+    "garden_desc": "Queste piacevoli camere vi consentono di godere appieno del giardino grazie alle loro terrazze private.",
+    "cta": "Prenota questa camera",
+    "title": "Le Nostre Camere & Padiglioni",
+    "garden_image": "Photos/Accueil/snacks_by_the_pool.jpg",
+    "mer_image": "Photos/Accueil/room_with_view.jpg",
+    "pavillons_image": "Photos/Accueil/jacuzzi_and_pool.jpg"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "image": "Photos/Galerie/hotel_view.jpg",
+      "category": "view",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/pool_and_hotel.jpg",
+      "category": "pool",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/by_the_pool.jpg",
+      "category": "pool",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/jacuzzi_and_pool.jpg",
+      "category": "pool",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/snacks_by_the_pool.jpg",
+      "category": "pool",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/room_with_view.jpg",
+      "category": "rooms",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/dinner_room.jpg",
+      "category": "breakfast",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    },
+    {
+      "image": "Photos/Galerie/breakfast.jpg",
+      "category": "breakfast",
+      "alt_fr": "",
+      "alt_en": "",
+      "alt_en_au": "",
+      "alt_de": "",
+      "alt_it": "",
+      "alt_es": "",
+      "alt_ru": ""
+    }
+  ]
+}

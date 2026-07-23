@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "services": {
+    "service_garden_desc": "Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.",
+    "rue_desc": "Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.",
+    "service_cab_title": "Transport & Excursions",
+    "surroundings_italy": "L'Italie à seulement 7 stations de train (départs réguliers de la gare de Villefranche).",
+    "surroundings_nice": "Nice (10 min) : le vieux Nice, le marché du cours Saleya, la Promenade des Anglais (accès rapide en bus).",
+    "citadelle_title": "La Citadelle Saint-Elme",
+    "service_breakfast_desc": "Servi sur la terrasse face à la mer, composé de produits frais pour bien démarrer votre journée.",
+    "surroundings_villages": "Les villages perchés d'Eze et de Saint-Paul-de-Vence pour une escapade pittoresque.",
+    "service_pool_title": "Piscine & Jacuzzi",
+    "port_desc": "Bassin historique du XVIe siècle avec ses remparts, son phare historique, sa corderie et son port de plaisance actif.",
+    "service_cab_desc": "Transfert aéroport en 20 min, bus pour Nice et Monaco à proximité, et notre partenaire de taxi privé Myblackcab.",
+    "service_garden_title": "Jardin & Salons",
+    "service_pool_desc": "Une piscine extérieure chauffée selon la saison et un jacuzzi sur demande pour vos moments de bien-être.",
+    "activities_desc": "Un village d'art et d'histoire au charme intemporel.",
+    "port_title": "Le Port Royal de la Darse",
+    "chapelle_title": "La Chapelle Saint-Pierre",
+    "surroundings_monaco": "Monaco (20 min) : le Rocher, le Casino de Monte-Carlo, le Musée Océanographique.",
+    "hotel_services_title": "Les Services de l'Hôtel",
+    "subtitle": "Tout ce dont vous avez besoin pour un séjour d'exception sur la Côte d'Azur.",
+    "surroundings_title": "Aux alentours sur la Riviera",
+    "chapelle_desc": "Entièrement restaurée et décorée en 1956 par le célèbre artiste Jean Cocteau, c'est un chef-d'œuvre incontournable dédié au patron des pêcheurs.",
+    "surroundings_desc": "Notre hôtel est le point de départ idéal pour explorer la Côte d'Azur :",
+    "rue_title": "La Rue Obscure",
+    "activities_title": "Découvrir Villefranche-sur-Mer",
+    "citadelle_desc": "Imposante forteresse du XVIe siècle construite pour protéger la rade. Elle abrite aujourd'hui la Mairie et 4 musées (dont le Musée Volti et le Musée Goetz-Boumeester). Entrée libre.",
+    "hotel_services_desc": "Profitez de nos installations haut de gamme conçues pour votre détente et votre confort.",
+    "service_breakfast_title": "Petit-déjeuner Buffet",
+    "title": "Services & Activités"
+  }
+}

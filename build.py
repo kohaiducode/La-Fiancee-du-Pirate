@@ -136,12 +136,50 @@ def compile_site():
 
     # 4. Process each language
     for lang in languages:
-        # Load language translation files from subfolders and merge them
         lang_data = {}
-        for folder in ["seo", "navigation", "pages", "reviews", "gallery"]:
-            folder_file = os.path.join(translations_dir, folder, f"index.{lang}.json")
-            if os.path.exists(folder_file):
-                lang_data.update(load_json(folder_file))
+        
+        # Load SEO pages
+        seo_data = {"seo": {}}
+        for name in ["accueil", "chambres", "services", "galerie", "contact"]:
+            path = os.path.join(translations_dir, "seo", f"{name}.{lang}.json")
+            if os.path.exists(path):
+                loaded = load_json(path)
+                seo_data["seo"].update(loaded.get("seo", {}))
+        lang_data.update(seo_data)
+        
+        # Load navigation layout
+        path = os.path.join(translations_dir, "navigation", f"index.{lang}.json")
+        if os.path.exists(path):
+            lang_data.update(load_json(path))
+            
+        # Load content pages
+        for name in ["accueil", "chambres", "services"]:
+            path = os.path.join(translations_dir, "pages", f"{name}.{lang}.json")
+            if os.path.exists(path):
+                lang_data.update(load_json(path))
+                
+        # Load reviews folder collection
+        reviews_list = []
+        reviews_dir = os.path.join(translations_dir, "reviews")
+        if os.path.exists(reviews_dir):
+            file_suffix = f".{lang}.json"
+            files = sorted([f for f in os.listdir(reviews_dir) if f.endswith(file_suffix)])
+            for file in files:
+                loaded = load_json(os.path.join(reviews_dir, file))
+                rev_content = loaded.get("review", {})
+                reviews_list.append({
+                    "author": loaded.get("author", ""),
+                    "date": loaded.get("date", ""),
+                    "rating": int(loaded.get("rating", 5)),
+                    "title": rev_content.get("title", ""),
+                    "text": rev_content.get("text", "")
+                })
+        lang_data["reviews"] = {
+            "title": lang_data.get("reviews", {}).get("title", "Avis Clients"),
+            "subtitle": lang_data.get("reviews", {}).get("subtitle", ""),
+            "read_more": lang_data.get("reviews", {}).get("read_more", ""),
+            "items": reviews_list
+        }
                 
         # Resolve image paths in the dictionary
         lang_data = resolve_image_paths(lang_data)
@@ -186,7 +224,7 @@ def compile_site():
         
         # Build Photo Gallery Grid HTML for this language
         gallery_html = ""
-        gallery_file = os.path.join(src_dir, "data", "gallery.json")
+        gallery_file = os.path.join(translations_dir, "gallery", "index.json")
         gallery_items = []
         if os.path.exists(gallery_file):
             gallery_data = load_json(gallery_file)
