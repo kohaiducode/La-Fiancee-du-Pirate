@@ -1,5 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
+    // 0. Hero Background Slider
+    // ==========================================================================
+    const heroSlides = document.querySelectorAll('.hero-bg-slide');
+    const heroDotsContainer = document.getElementById('heroDots');
+    
+    if (heroSlides.length > 1) {
+        let currentHeroIdx = 0;
+        const slideInterval = 5000; // transition every 5 seconds
+        let autoPlayTimer = null;
+        
+        // Generate dots dynamically
+        if (heroDotsContainer) {
+            heroSlides.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.classList.add('hero-dot');
+                if (idx === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', `Slide ${idx + 1}`);
+                
+                dot.addEventListener('click', () => {
+                    goToSlide(idx);
+                    resetTimer();
+                });
+                
+                heroDotsContainer.appendChild(dot);
+            });
+        }
+        
+        const dots = heroDotsContainer ? heroDotsContainer.querySelectorAll('.hero-dot') : [];
+        
+        function goToSlide(idx) {
+            heroSlides[currentHeroIdx].classList.remove('active');
+            if (dots.length > 0) dots[currentHeroIdx].classList.remove('active');
+            
+            currentHeroIdx = idx;
+            
+            heroSlides[currentHeroIdx].classList.add('active');
+            if (dots.length > 0) dots[currentHeroIdx].classList.add('active');
+        }
+        
+        function nextSlide() {
+            const nextIdx = (currentHeroIdx + 1) % heroSlides.length;
+            goToSlide(nextIdx);
+        }
+        
+        function startAutoPlay() {
+            autoPlayTimer = setInterval(nextSlide, slideInterval);
+        }
+        
+        function stopAutoPlay() {
+            if (autoPlayTimer) {
+                clearInterval(autoPlayTimer);
+            }
+        }
+        
+        function resetTimer() {
+            stopAutoPlay();
+            startAutoPlay();
+        }
+        
+        // Start playing
+        startAutoPlay();
+    }
+
+    // ==========================================================================
     // 1. Mobile Menu Toggle
     // ==========================================================================
     const menuToggle = document.getElementById('menuToggle');
@@ -183,8 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const outVal = barCheckOut.value;
             const adultsVal = document.getElementById('barGuests').value;
             
-            // Build dynamic url: .../booking/room?check_in=YYYY-MM-DD&check_out=YYYY-MM-DD&adults=X
-            const finalUrl = `${actionUrl}?check_in=${inVal}&check_out=${outVal}&adults=${adultsVal}`;
+            // Build dynamic url: .../booking/room?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&adults=X&children=0#RoomSelection-BE
+            const finalUrl = `${actionUrl}?start_date=${inVal}&end_date=${outVal}&adults=${adultsVal}&children=0#RoomSelection-BE`;
             window.open(finalUrl, '_blank', 'noopener');
         });
     }
@@ -301,11 +365,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactError = document.getElementById('contactError');
     
     if (contactForm) {
+        // reCAPTCHA key selection based on hostname (Local vs Production)
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const siteKey = isLocal ? '6Ld7y2AtAAAAAJBrVvBYBTNzBpDXkuv63a4ZxYnA' : '6LcNy2AtAAAAAOojzTnLrjQm_jwW8pd1z3RXFK68';
+        
+        // Dynamically load Google reCAPTCHA v3 script
+        const recaptchaScript = document.createElement('script');
+        recaptchaScript.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+        recaptchaScript.async = true;
+        document.head.appendChild(recaptchaScript);
+        
+        // Google Apps Script Web App URL (Option A: Combined single script URL)
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7HniCOh8mLk68NxUrcrSJ5cDxVdcKB4IYAUp9wroS4Aa5BtPBehIi9TtIQSLUPHmA_A/exec';
+        
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
             const nameInput = document.getElementById('contactName');
             const emailInput = document.getElementById('contactEmail');
+            const subjectInput = document.getElementById('contactSubject');
             const messageInput = document.getElementById('contactMessage');
             
             let isValid = true;
@@ -347,20 +425,59 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             if (isValid) {
-                // Mock form submission success
                 const submitBtn = document.getElementById('contactSubmitBtn');
                 const origBtnText = submitBtn.textContent;
                 
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Envoi en cours...';
+                // Translated sending status
+                const lang = document.documentElement.lang || 'fr';
+                let loadingText = 'Sending...';
+                if (lang === 'fr') loadingText = 'Envoi en cours...';
+                else if (lang === 'de') loadingText = 'Wird gesendet...';
+                else if (lang === 'it') loadingText = 'Invio in corso...';
+                else if (lang === 'es') loadingText = 'Enviando...';
+                else if (lang === 'ru') loadingText = 'Отправка...';
                 
-                setTimeout(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = origBtnText;
-                    
-                    if (contactSuccess) contactSuccess.classList.remove('d-none');
-                    contactForm.reset();
-                }, 1500);
+                submitBtn.disabled = true;
+                submitBtn.textContent = loadingText;
+                
+                // Execute reCAPTCHA to get token
+                grecaptcha.ready(() => {
+                    grecaptcha.execute(siteKey, {action: 'submit'}).then((token) => {
+                        const payload = {
+                            name: nameInput.value.trim(),
+                            email: emailInput.value.trim(),
+                            subject: subjectInput ? subjectInput.value.trim() : '',
+                            message: messageInput.value.trim(),
+                            recaptchaToken: token,
+                            isLocal: isLocal
+                        };
+                        
+                        fetch(APPS_SCRIPT_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'text/plain;charset=utf-8'
+                            },
+                            body: JSON.stringify(payload)
+                        })
+                        .then(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = origBtnText;
+                            if (contactSuccess) contactSuccess.classList.remove('d-none');
+                            contactForm.reset();
+                        })
+                        .catch((err) => {
+                            console.error('Error submitting form:', err);
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = origBtnText;
+                            if (contactError) contactError.classList.remove('d-none');
+                        });
+                    }).catch((err) => {
+                        console.error('reCAPTCHA token error:', err);
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = origBtnText;
+                        if (contactError) contactError.classList.remove('d-none');
+                    });
+                });
             } else {
                 if (contactError) contactError.classList.remove('d-none');
             }
