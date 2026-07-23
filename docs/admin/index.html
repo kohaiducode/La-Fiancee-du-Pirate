@@ -14,5 +14,48 @@
       onload="SVELTIA.start()"
       onerror="document.body.innerHTML='<h3>Erreur de chargement du CMS. Veuillez vérifier votre connexion internet.</h3>'"
     ></script>
+    <!-- UI Customization Script for Sveltia -->
+    <script>
+      setInterval(() => {
+        const allElements = document.querySelectorAll('button, select');
+        const localeBtns = Array.from(allElements).filter(el => {
+          const txt = el.textContent.trim().toLowerCase();
+          return ['français', 'fr', 'english', 'en', 'deutsch', 'de', 'italiano', 'it', 'español', 'es', 'русский', 'ru'].includes(txt);
+        });
+
+        if (localeBtns.length === 2) {
+          const leftBtn = localeBtns[0];
+          const rightBtn = localeBtns[1];
+
+          if (!leftBtn.dataset.hacked) {
+            leftBtn.dataset.hacked = 'true';
+            leftBtn.style.pointerEvents = 'none';
+            leftBtn.style.opacity = '0.8';
+            
+            const leftLabel = document.createElement('div');
+            leftLabel.textContent = 'FRANÇAIS (TEXTE SOURCE)';
+            leftLabel.style.fontSize = '12px';
+            leftLabel.style.fontWeight = 'bold';
+            leftLabel.style.color = '#4b5563';
+            leftLabel.style.marginBottom = '6px';
+            leftLabel.style.textTransform = 'uppercase';
+            leftBtn.parentNode.insertBefore(leftLabel, leftBtn);
+          }
+
+          if (!rightBtn.dataset.hacked) {
+            rightBtn.dataset.hacked = 'true';
+            
+            const rightLabel = document.createElement('div');
+            rightLabel.textContent = 'TEXTE CIBLE (CHOISIR LA LANGUE)';
+            rightLabel.style.fontSize = '12px';
+            rightLabel.style.fontWeight = 'bold';
+            rightLabel.style.color = '#2563eb';
+            rightLabel.style.marginBottom = '6px';
+            rightLabel.style.textTransform = 'uppercase';
+            rightBtn.parentNode.insertBefore(rightLabel, rightBtn);
+          }
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
