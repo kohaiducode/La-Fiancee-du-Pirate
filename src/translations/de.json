@@ -130,7 +130,8 @@
     "form_submit": "Nachricht senden",
     "form_success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
     "form_error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.",
-    "map_title": "Standort"
+    "map_title": "Standort",
+    "open_in_maps": "Auf Google Maps öffnen"
   },
   "reviews": {
     "title": "Was unsere Gäste sagen",

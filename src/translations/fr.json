@@ -130,7 +130,8 @@
     "form_submit": "Envoyer le message",
     "form_success": "Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
     "form_error": "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter par e-mail.",
-    "map_title": "Nous localiser"
+    "map_title": "Nous localiser",
+    "open_in_maps": "Ouvrir dans Google Maps"
   },
   "reviews": {
     "title": "Ce que nos clients disent",

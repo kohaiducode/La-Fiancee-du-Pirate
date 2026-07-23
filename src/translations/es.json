@@ -130,7 +130,8 @@
     "form_submit": "Enviar mensaje",
     "form_success": "¡Gracias! Su mensaje ha sido enviado con éxito. Le responderemos lo antes posible.",
     "form_error": "Ocurrió un error al enviar. Por favor, inténtelo de nuevo o contáctenos directamente por correo electrónico.",
-    "map_title": "Ubicación"
+    "map_title": "Ubicación",
+    "open_in_maps": "Abrir en Google Maps"
   },
   "reviews": {
     "title": "Lo que dicen nuestros huéspedes",
