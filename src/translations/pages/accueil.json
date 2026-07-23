@@ -20,7 +20,10 @@
       "explore_rooms_title": "Nos Chambres & Pavillons",
       "explore_rooms_text": "Entièrement rénovées, climatisées et équipées de lits queen ou king-size pour un confort optimal.",
       "myblackcab_title": "Partenaire de transport personnalisé",
-      "myblackcab_text": "Pour tous vos déplacements sur la Riviera, contactez directement notre partenaire Myblackcab pour un service de transport privé haut de gamme."
+      "myblackcab_text": "Pour tous vos déplacements sur la Riviera, contactez directement notre partenaire Myblackcab pour un service de transport privé haut de gamme.",
+      "reviews_title": "Ce qu'en disent nos clients",
+      "reviews_subtitle": "Découvrez pourquoi nos hôtes aiment séjourner à La Fiancée du Pirate",
+      "reviews_read_more": "Voir sur TripAdvisor"
     }
   },
   "en": {
@@ -44,7 +47,10 @@
       "explore_rooms_title": "Our Rooms & Pavilions",
       "explore_rooms_text": "Fully renovated, air-conditioned, and equipped with queen or king-size beds for ultimate comfort.",
       "myblackcab_title": "Private Transport Partner",
-      "myblackcab_text": "For all your travels along the Riviera, contact our partner Myblackcab directly for a premium private chauffeur service."
+      "myblackcab_text": "For all your travels along the Riviera, contact our partner Myblackcab directly for a premium private chauffeur service.",
+      "reviews_title": "What Our Guests Say",
+      "reviews_subtitle": "Discover why guests love staying at La Fiancée du Pirate",
+      "reviews_read_more": "Read more on TripAdvisor"
     }
   },
   "en-au": {
@@ -68,7 +74,10 @@
       "explore_rooms_title": "Our Rooms & Pavilions",
       "explore_rooms_text": "Fully renovated, air-conditioned, and equipped with queen or king-size beds for ultimate comfort.",
       "myblackcab_title": "Private Transport Partner",
-      "myblackcab_text": "For all your travels along the Riviera, contact our partner Myblackcab directly for a premium private chauffeur service."
+      "myblackcab_text": "For all your travels along the Riviera, contact our partner Myblackcab directly for a premium private chauffeur service.",
+      "reviews_title": "What Our Guests Say",
+      "reviews_subtitle": "Discover why guests love staying at La Fiancée du Pirate",
+      "reviews_read_more": "Read more on TripAdvisor"
     }
   },
   "de": {
@@ -92,7 +101,10 @@
       "explore_rooms_title": "Zimmer & Pavillons",
       "explore_rooms_text": "Vollständig renoviert, klimatisiert und mit Queen- oder Kingsize-Betten für optimalen Komfort ausgestattet.",
       "myblackcab_title": "Partner für Privattransfers",
-      "myblackcab_text": "Für alle Fahrten an der Riviera kontaktieren Sie direkt unseren Partner Myblackcab für einen erstklassigen Chauffeurservice."
+      "myblackcab_text": "Für alle Fahrten an der Riviera kontaktieren Sie direkt unseren Partner Myblackcab für einen erstklassigen Chauffeurservice.",
+      "reviews_title": "Was unsere Gäste sagen",
+      "reviews_subtitle": "Entdecken Sie, warum unsere Gäste so gerne im La Fiancée du Pirate übernachten",
+      "reviews_read_more": "Mehr auf TripAdvisor lesen"
     }
   },
   "it": {
@@ -116,7 +128,10 @@
       "explore_rooms_title": "Camere & Padiglioni",
       "explore_rooms_text": "Interamente rinnovate, climatizzate e dotate di letti queen o king-size per il massimo comfort.",
       "myblackcab_title": "Partner di Trasporto Privato",
-      "myblackcab_text": "Per tutti i vostri spostamenti sulla Riviera, contattate direttamente il nostro partner Myblackcab per un servizio di autista privato di lusso."
+      "myblackcab_text": "Per tutti i vostri spostamenti sulla Riviera, contattate direttamente il nostro partner Myblackcab per un servizio di autista privato di lusso.",
+      "reviews_title": "Cosa dicono i nostri ospiti",
+      "reviews_subtitle": "Scopri perché i nostri ospiti amano soggiornare a La Fiancée du Pirate",
+      "reviews_read_more": "Leggi altro su TripAdvisor"
     }
   },
   "es": {
@@ -140,7 +155,10 @@
       "explore_rooms_title": "Habitaciones & Pabellones",
       "explore_rooms_text": "Totalmente renovadas, climatizadas y equipadas con camas queen o king-size para su máximo confort.",
       "myblackcab_title": "Socio de Transporte Privado",
-      "myblackcab_text": "Para todos sus traslados por la Riviera, contacte directamente con nuestro socio Myblackcab para un servicio de chófer privado premium."
+      "myblackcab_text": "Para todos sus traslados por la Riviera, contacte directamente con nuestro socio Myblackcab para un servicio de chófer privado premium.",
+      "reviews_title": "Lo que dicen nuestros huéspedes",
+      "reviews_subtitle": "Descubra por qué a los huéspedes les encanta alojarse en La Fiancée du Pirate",
+      "reviews_read_more": "Leer más en TripAdvisor"
     }
   },
   "ru": {
@@ -164,7 +182,10 @@
       "explore_rooms_title": "Наши номера и павильоны",
       "explore_rooms_text": "Полностью отремонтированные номера с кондиционером, оснащенные кроватями queen-size или king-size для вашего комфорта.",
       "myblackcab_title": "Партнер по трансферу Myblackcab",
-      "myblackcab_text": "Для комфортных поездок по Ривьере свяжитесь напрямую с нашим партнером Myblackcab для заказа личного трансфера премиум-класса."
+      "myblackcab_text": "Для комфортных поездок по Ривьере свяжитесь напрямую с нашим партнером Myblackcab для заказа личного трансфера премиум-класса.",
+      "reviews_title": "Отзывы наших гостей",
+      "reviews_subtitle": "Узнайте, что о нас пишут путешественники на TripAdvisor",
+      "reviews_read_more": "Читать все отзывы на TripAdvisor"
     }
   }
 }

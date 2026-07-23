@@ -208,7 +208,9 @@ collections:
               - { label: "Carte 4 (Emplacement) - Texte", name: card_location_text, widget: text, i18n: true }
               - { label: "Teaser Chambres - Titre", name: explore_rooms_title, widget: string, i18n: true }
               - { label: "Teaser Chambres - Texte", name: explore_rooms_text, widget: text, i18n: true }
-
+              - { label: "Titre Section Avis", name: reviews_title, widget: string, i18n: true }
+              - { label: "Sous-titre Section Avis", name: reviews_subtitle, widget: string, i18n: true }
+              - { label: "Texte bouton TripAdvisor", name: reviews_read_more, widget: string, i18n: true }
       - name: chambres
         label: "Chambres"
         file: "src/translations/pages/chambres.json"

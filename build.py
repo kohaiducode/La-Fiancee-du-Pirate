@@ -189,9 +189,9 @@ def compile_site():
                     "text": rev_content.get("text", "")
                 })
         lang_data["reviews"] = {
-            "title": lang_data.get("reviews", {}).get("title", "Avis Clients"),
-            "subtitle": lang_data.get("reviews", {}).get("subtitle", ""),
-            "read_more": lang_data.get("reviews", {}).get("read_more", ""),
+            "title": lang_data.get("accueil", {}).get("reviews_title", "Avis Clients"),
+            "subtitle": lang_data.get("accueil", {}).get("reviews_subtitle", ""),
+            "read_more": lang_data.get("accueil", {}).get("reviews_read_more", ""),
             "items": reviews_list
         }
                 
