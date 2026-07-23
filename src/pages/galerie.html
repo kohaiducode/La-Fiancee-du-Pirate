@@ -1,0 +1,98 @@
+<!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}assets/images/accueil/pool_and_hotel.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">{{gallery.title}}</h1>
+        <p class="page-header-subtitle">{{gallery.subtitle}}</p>
+    </div>
+</section>
+
+<!-- Gallery Filter Section -->
+<section class="gallery-section section-padding">
+    <div class="container">
+        <!-- Filter Tabs -->
+        <div class="gallery-filters" id="galleryFilters">
+            <button class="filter-btn active" data-filter="all">{{gallery.filter_all}}</button>
+            <button class="filter-btn" data-filter="view">{{gallery.filter_view}}</button>
+            <button class="filter-btn" data-filter="pool">{{gallery.filter_pool}}</button>
+            <button class="filter-btn" data-filter="rooms">{{gallery.filter_rooms}}</button>
+            <button class="filter-btn" data-filter="breakfast">{{gallery.filter_breakfast}}</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Item 1: Hotel view -->
+            <div class="gallery-item" data-category="view">
+                <img src="{{path_prefix}}assets/images/accueil/hotel_view.webp" alt="Hotel View" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 2: Pool and hotel -->
+            <div class="gallery-item" data-category="pool">
+                <img src="{{path_prefix}}assets/images/accueil/pool_and_hotel.webp" alt="Pool & Hotel" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 3: By the pool -->
+            <div class="gallery-item" data-category="pool">
+                <img src="{{path_prefix}}assets/images/accueil/by_the_pool.webp" alt="By the Pool" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 4: Jacuzzi and pool -->
+            <div class="gallery-item" data-category="pool">
+                <img src="{{path_prefix}}assets/images/accueil/jacuzzi_and_pool.webp" alt="Jacuzzi & Pool" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 5: Snacks by the pool -->
+            <div class="gallery-item" data-category="pool">
+                <img src="{{path_prefix}}assets/images/accueil/snacks_by_the_pool.webp" alt="Snacks by the Pool" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 6: Room view -->
+            <div class="gallery-item" data-category="rooms">
+                <img src="{{path_prefix}}assets/images/accueil/room_with_view.webp" alt="Room View" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 7: Dinner room -->
+            <div class="gallery-item" data-category="breakfast">
+                <img src="{{path_prefix}}assets/images/accueil/dinner_room.webp" alt="Breakfast Room" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+            
+            <!-- Item 8: Breakfast -->
+            <div class="gallery-item" data-category="breakfast">
+                <img src="{{path_prefix}}assets/images/accueil/breakfast.webp" alt="Breakfast Buffet" class="gallery-img" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg">
+    </div>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+</div>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши номера и павильоны | La Fiancée du Pirate</title>
+    <meta name="description" content="Откройте для себя наши номера с садом и террасой, панорамные номера с видом на море и отдельные павильоны для уединенного отдыха.">
+    
+    <!-- SEO & Accessibility -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a2b49">
+    
+    <!-- Open Graph (Facebook/Instagram sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Наши номера и павильоны | La Fiancée du Pirate">
+    <meta property="og:description" content="Откройте для себя наши номера с садом и террасой, панорамные номера с видом на море и отдельные павильоны для уединенного отдыха.">
+    <meta property="og:image" content="../assets/images/accueil/hotel_view.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-{{page_name}}">
+    <!-- Header -->
+    <header class="main-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <a href="../ru/index.html" class="logo-link" aria-label="La Fiancée du Pirate">
+            <img src="../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="logo-img">
+        </a>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../ru/index.html" class="nav-link ">Главная</a></li>
+                <li class="nav-item"><a href="../ru/chambres.html" class="nav-link active">Номера</a></li>
+                <li class="nav-item"><a href="../ru/services.html" class="nav-link ">Услуги и развлечения</a></li>
+                <li class="nav-item"><a href="../ru/galerie.html" class="nav-link ">Галерея</a></li>
+                <li class="nav-item"><a href="../ru/contact.html" class="nav-link ">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Menu Actions (Language & Book CTA) -->
+        <div class="header-actions">
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="active-lang-code">RU</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown" aria-labelledby="langBtn">
+                    <li><a href="../fr/chambres.html" class="lang-dropdown-link ">FR</a></li>
+                    <li><a href="../en/chambres.html" class="lang-dropdown-link ">EN</a></li>
+                    <li><a href="../de/chambres.html" class="lang-dropdown-link ">DE</a></li>
+                    <li><a href="../it/chambres.html" class="lang-dropdown-link ">IT</a></li>
+                    <li><a href="../es/chambres.html" class="lang-dropdown-link ">ES</a></li>
+                    <li><a href="../ru/chambres.html" class="lang-dropdown-link active">RU</a></li>
+                    <li><a href="../en-au/chambres.html" class="lang-dropdown-link ">EN-AU</a></li>
+                </ul>
+            </div>
+
+            <!-- Header Booking CTA -->
+            <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary btn-book-header">
+                Забронировать
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <!-- Main Content Page Body -->
+    <main class="main-content">
+        <!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/accueil/room_with_view.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">Наши номера и павильоны</h1>
+        <p class="page-header-subtitle">Отремонтированы для вашего максимального удобства, сочетая покой, уединение и элегантность.</p>
+    </div>
+</section>
+
+<!-- Rooms Showcase Section -->
+<section class="rooms-showcase-section section-padding">
+    <div class="container">
+        <!-- Room 1: Chambre côté jardin -->
+        <div class="room-showcase-card">
+            <div class="room-showcase-img">
+                <img src="../assets/images/accueil/snacks_by_the_pool.webp" alt="Chambre Côté Jardin" loading="lazy">
+            </div>
+            <div class="room-showcase-content">
+                <span class="room-tag">Площадь: От 16 до 25 м²</span>
+                <h2 class="room-title">Номер с выходом в сад</h2>
+                <p class="room-desc">Эти приятные номера позволяют в полной мере насладиться садом благодаря собственной террасе.</p>
+                <p class="room-details">Доступны в двухместном, трехместном и семейном вариантах. К услугам гостей уютная терраса с видом на зеленый сад.</p>
+                
+                <div class="room-specs-grid">
+                    <div class="spec-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>От 1 до 4 человек</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Кровать Queen Size или две односпальные кровати</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>От 16 до 25 м²</span>
+                    </div>
+                </div>
+                
+                <div class="room-amenities">
+                    <h4 class="amenities-title">Включенные удобства</h4>
+                    <ul class="amenities-list">
+                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                        <li><i class="fa-solid fa-wind"></i> Фен</li>
+                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                    </ul>
+                </div>
+                
+                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Забронировать этот номер
+                </a>
+            </div>
+        </div>
+
+        <div class="divider-large"></div>
+
+        <!-- Room 2: Chambre vue mer -->
+        <div class="room-showcase-card card-reverse">
+            <div class="room-showcase-img">
+                <img src="../assets/images/accueil/room_with_view.webp" alt="Chambre Vue Mer" loading="lazy">
+            </div>
+            <div class="room-showcase-content">
+                <span class="room-tag">Площадь: От 16 до 31 м²</span>
+                <h2 class="room-title">Номер с видом на море</h2>
+                <p class="room-desc">Просторные и гостеприимные номера с незабываемым панорамным видом на залив Вильфранш-сюр-Мер и Кап-Ферра.</p>
+                <p class="room-details">Доступны в двух-, трех- и четырехместной конфигурациях. Просыпайтесь под шум волн Средиземного моря.</p>
+                
+                <div class="room-specs-grid">
+                    <div class="spec-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>От 1 до 4 человек</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Кровать King Size или Queen Size</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>От 16 до 31 м²</span>
+                    </div>
+                </div>
+                
+                <div class="room-amenities">
+                    <h4 class="amenities-title">Включенные удобства</h4>
+                    <ul class="amenities-list">
+                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                        <li><i class="fa-solid fa-wind"></i> Фен</li>
+                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                    </ul>
+                </div>
+                
+                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Забронировать этот номер
+                </a>
+            </div>
+        </div>
+
+        <div class="divider-large"></div>
+
+        <!-- Room 3: Pavillons -->
+        <div class="room-showcase-card">
+            <div class="room-showcase-img">
+                <img src="../assets/images/accueil/jacuzzi_and_pool.webp" alt="Pavillons Privatifs" loading="lazy">
+            </div>
+            <div class="room-showcase-content">
+                <span class="room-tag">Площадь: 20 или 26 м²</span>
+                <h2 class="room-title">Наши отдельные павильоны</h2>
+                <p class="room-desc">Расположенные отдельно от главного здания, наши два частных павильона дарят уникальное ощущение свободы и комфорта.</p>
+                <p class="room-details">Павильон «Fiancée» очарует влюбленные пары, а павильон «Pirate» идеально подойдет для семей благодаря отличному расположению.</p>
+                
+                <div class="room-specs-grid">
+                    <div class="spec-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>2 или 4 человека</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Кровать Queen Size или King Size</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>20 или 26 м²</span>
+                    </div>
+                </div>
+                
+                <div class="room-amenities">
+                    <h4 class="amenities-title">Включенные удобства</h4>
+                    <ul class="amenities-list">
+                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                        <li><i class="fa-solid fa-wind"></i> Фен</li>
+                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                    </ul>
+                </div>
+                
+                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
+                    Забронировать этот номер
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Footer -->
+<section class="rooms-cta-footer section-padding bg-dark text-white text-center">
+    <div class="container">
+        <h3>У вас есть вопросы об оснащении номеров?</h3>
+        <p class="mb-4 text-light-muted"></p>
+        <a href="../ru/contact.html" class="btn btn-secondary">
+            Свяжитесь с нами
+        </a>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Sticky Booking Bar -->
+    <div class="booking-bar-wrapper" id="bookingBar">
+    <div class="booking-bar-container">
+        <form class="booking-form" id="bookingForm" action="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" method="GET" target="_blank" rel="noopener">
+            <!-- Check In -->
+            <div class="booking-field">
+                <label for="barCheckIn"><i class="fa-regular fa-calendar-days"></i> Заезд</label>
+                <input type="date" id="barCheckIn" name="check_in" required>
+            </div>
+            
+            <!-- Check Out -->
+            <div class="booking-field">
+                <label for="barCheckOut"><i class="fa-regular fa-calendar-days"></i> Выезд</label>
+                <input type="date" id="barCheckOut" name="check_out" required>
+            </div>
+            
+            <!-- Guests -->
+            <div class="booking-field">
+                <label for="barGuests"><i class="fa-solid fa-users"></i> Гости</label>
+                <select id="barGuests" name="adults">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <!-- Submit CTA -->
+            <button type="submit" class="btn btn-secondary btn-booking-submit">
+                Проверить наличие
+            </button>
+        </form>
+    </div>
+</div>
+
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-section footer-brand">
+            <img src="../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="footer-logo">
+            <p class="footer-desc">La Fiancée du Pirate — уютный бутик-отель на 15 номеров, расположенный на холмах Вильфранш-сюр-Мер, между Ниццей и Монако.</p>
+            <!-- TripAdvisor rating badge -->
+            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="footer-ta-badge">
+                <i class="fa-brands fa-tripadvisor"></i>
+                <div class="ta-badge-content">
+                    <span class="ta-badge-title">TripAdvisor</span>
+                    <span class="ta-badge-desc">Оценка «Отлично» на TripAdvisor</span>
+                    <div class="ta-stars">
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="footer-section footer-links">
+            <h4 class="footer-section-title">Разделы</h4>
+            <ul class="footer-list">
+                <li><a href="../ru/index.html">Главная</a></li>
+                <li><a href="../ru/chambres.html">Номера</a></li>
+                <li><a href="../ru/services.html">Услуги и развлечения</a></li>
+                <li><a href="../ru/galerie.html">Галерея</a></li>
+                <li><a href="../ru/contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+            <h4 class="footer-section-title">Контакты</h4>
+            <ul class="footer-contact-list">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">8 Boulevard de La Corne d'Or,<br>Moyenne Corniche,<br>06230 Villefranche-sur-Mer, France</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33493766740">+33 (0)4 93 76 67 40</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <a href="tel:+33745282937">+33 (0)7 45 28 29 37</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Socials Section -->
+        <div class="footer-section footer-social">
+            <h4 class="footer-section-title">Мы в соцсетях</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" aria-label="TripAdvisor" class="social-icon">
+                    <i class="fa-brands fa-tripadvisor"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>&copy; 2026 La Fiancée du Pirate. Все права защищены. Правовая информация.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JS Script Entry Point -->
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
+

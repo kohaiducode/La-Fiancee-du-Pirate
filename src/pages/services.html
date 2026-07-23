@@ -1,0 +1,142 @@
+<!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}assets/images/accueil/jacuzzi_and_pool.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">{{services.title}}</h1>
+        <p class="page-header-subtitle">{{services.subtitle}}</p>
+    </div>
+</section>
+
+<!-- Hotel Services Section -->
+<section class="services-list-section section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">Confort & Bien-être</span>
+            <h2 class="section-title">{{services.hotel_services_title}}</h2>
+            <p class="section-subtitle">{{services.hotel_services_desc}}</p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Pool & Jacuzzi -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-water-ladder service-detail-icon"></i>
+                <h3>{{services.service_pool_title}}</h3>
+                <p>{{services.service_pool_desc}}</p>
+            </div>
+            
+            <!-- Garden & Lounges -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-seedling service-detail-icon"></i>
+                <h3>{{services.service_garden_title}}</h3>
+                <p>{{services.service_garden_desc}}</p>
+            </div>
+            
+            <!-- Breakfast -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-mug-saucer service-detail-icon"></i>
+                <h3>{{services.service_breakfast_title}}</h3>
+                <p>{{services.service_breakfast_desc}}</p>
+            </div>
+            
+            <!-- Transport -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-route service-detail-icon"></i>
+                <h3>{{services.service_cab_title}}</h3>
+                <p>{{services.service_cab_desc}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Villefranche Culture & History Section -->
+<section class="culture-section section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">Art, Culture & Histoire</span>
+            <h2 class="section-title">{{services.activities_title}}</h2>
+            <p class="section-subtitle">{{services.activities_desc}}</p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="culture-grid">
+            <!-- Citadelle Saint-Elme -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-fort-awesome"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>{{services.citadelle_title}}</h3>
+                    <p>{{services.citadelle_desc}}</p>
+                </div>
+            </div>
+            
+            <!-- Chapelle Saint-Pierre (Cocteau) -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>{{services.chapelle_title}}</h3>
+                    <p>{{services.chapelle_desc}}</p>
+                </div>
+            </div>
+            
+            <!-- Rue Obscure -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-road-barrier"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>{{services.rue_title}}</h3>
+                    <p>{{services.rue_desc}}</p>
+                </div>
+            </div>
+            
+            <!-- Port Royal -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-anchor"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>{{services.port_title}}</h3>
+                    <p>{{services.port_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Surroundings Riviera Section -->
+<section class="surroundings-section section-padding">
+    <div class="container">
+        <div class="surroundings-wrapper">
+            <div class="surroundings-content">
+                <span class="section-tag">Explorer la Côte d'Azur</span>
+                <h2 class="section-title">{{services.surroundings_title}}</h2>
+                <p class="lead-text">{{services.surroundings_desc}}</p>
+                
+                <ul class="surroundings-list">
+                    <li>
+                        <span class="surroundings-badge">Nice</span>
+                        <p>{{services.surroundings_nice}}</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Monaco</span>
+                        <p>{{services.surroundings_monaco}}</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Eze & Vence</span>
+                        <p>{{services.surroundings_villages}}</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Italie</span>
+                        <p>{{services.surroundings_italy}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="surroundings-visual">
+                <img src="{{path_prefix}}assets/images/accueil/pool_and_hotel.webp" alt="Riviera Côte d'Azur" class="surroundings-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>

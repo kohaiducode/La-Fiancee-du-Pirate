@@ -1,0 +1,11 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Local system configuration & logs
+.system_generated/
+.gemini/
+
+# Temporary excel dump & scratch scripts
+scratch/
+excel_dump.json

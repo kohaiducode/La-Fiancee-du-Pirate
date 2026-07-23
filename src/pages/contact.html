@@ -1,0 +1,108 @@
+<!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">{{contact.title}}</h1>
+        <p class="page-header-subtitle">{{contact.subtitle}}</p>
+    </div>
+</section>
+
+<!-- Contact Form & Details Section -->
+<section class="contact-section section-padding">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Left Column: Form -->
+            <div class="contact-form-wrapper">
+                <h3>{{contact.form_title}}</h3>
+                <div class="divider-left"></div>
+                
+                <form class="contact-form" id="contactForm" novalidate>
+                    <!-- Success & Error Messages -->
+                    <div class="alert alert-success d-none" id="contactSuccess">
+                        <i class="fa-solid fa-circle-check"></i> {{contact.form_success}}
+                    </div>
+                    <div class="alert alert-danger d-none" id="contactError">
+                        <i class="fa-solid fa-triangle-exclamation"></i> {{contact.form_error}}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactName">{{contact.form_name}} *</label>
+                        <input type="text" id="contactName" name="name" required class="form-control" placeholder="John Doe">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">{{contact.form_email}} *</label>
+                        <input type="email" id="contactEmail" name="email" required class="form-control" placeholder="john.doe@example.com">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactPhone">{{contact.form_phone}}</label>
+                        <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+33 6 12 34 56 78">
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">{{contact.form_message}} *</label>
+                        <textarea id="contactMessage" name="message" required class="form-control" rows="6" placeholder="Bonjour..."></textarea>
+                        <span class="error-feedback"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+                        {{contact.form_submit}}
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Right Column: Details & Map -->
+            <div class="contact-info-wrapper">
+                <div class="contact-details-card">
+                    <h3>{{contact.info_title}}</h3>
+                    <div class="divider-left"></div>
+                    
+                    <ul class="contact-info-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Adresse</strong>
+                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">{{contact.info_address}}</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p><a href="tel:+33493766740">+33 (0)4 93 76 67 40</a><br><a href="tel:+33745282937">+33 (0)7 45 28 29 37</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p><a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-map-card">
+                    <h3>{{contact.map_title}}</h3>
+                    <div class="divider-left"></div>
+                    <div class="map-iframe-container">
+                        <!-- Embedded Google Maps -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.2255861962325!2d7.304561076615598!3d43.70584494902195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cde4b1a43a08fb%3A0xc07a82c61144a86f!2sLa%20Fianc%C3%A9e%20du%20Pirate!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="280" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Google Maps - La Fiancée du Pirate"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

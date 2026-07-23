@@ -1,0 +1,33 @@
+<div class="booking-bar-wrapper" id="bookingBar">
+    <div class="booking-bar-container">
+        <form class="booking-form" id="bookingForm" action="{{booking_url}}" method="GET" target="_blank" rel="noopener">
+            <!-- Check In -->
+            <div class="booking-field">
+                <label for="barCheckIn"><i class="fa-regular fa-calendar-days"></i> {{booking_bar.check_in}}</label>
+                <input type="date" id="barCheckIn" name="check_in" required>
+            </div>
+            
+            <!-- Check Out -->
+            <div class="booking-field">
+                <label for="barCheckOut"><i class="fa-regular fa-calendar-days"></i> {{booking_bar.check_out}}</label>
+                <input type="date" id="barCheckOut" name="check_out" required>
+            </div>
+            
+            <!-- Guests -->
+            <div class="booking-field">
+                <label for="barGuests"><i class="fa-solid fa-users"></i> {{booking_bar.guests}}</label>
+                <select id="barGuests" name="adults">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <!-- Submit CTA -->
+            <button type="submit" class="btn btn-secondary btn-booking-submit">
+                {{booking_bar.search}}
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+<!-- Hero Section -->
+<section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/hotel_view.webp');">
+    <div class="hero-content">
+        <h1 class="hero-title">{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
+        <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-secondary btn-hero-cta">
+            {{hero.cta}}
+        </a>
+    </div>
+</section>
+
+<!-- Welcome / Introduction Section -->
+<section class="intro-section section-padding">
+    <div class="container text-center">
+        <span class="section-tag">Boutique Hôtel</span>
+        <h2 class="section-title">{{accueil.intro_title}}</h2>
+        <div class="divider"></div>
+        <p class="lead-text">{{accueil.intro_text}}</p>
+        <p class="body-text">{{accueil.intro_subtext}}</p>
+    </div>
+</section>
+
+<!-- Highlight Features Grid (Image-First) -->
+<section class="features-section section-padding bg-light">
+    <div class="container">
+        <div class="features-grid">
+            <!-- Feature 1: Vue -->
+            <div class="feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="{{path_prefix}}assets/images/accueil/room_with_view.webp" alt="Vue Panoramique" class="feature-img" loading="lazy">
+                </div>
+                <div class="feature-info">
+                    <h3 class="feature-card-title">{{accueil.card_view_title}}</h3>
+                    <p class="feature-card-text">{{accueil.card_view_text}}</p>
+                </div>
+            </div>
+            
+            <!-- Feature 2: Pool & Garden -->
+            <div class="feature-card card-reverse">
+                <div class="feature-img-wrapper">
+                    <img src="{{path_prefix}}assets/images/accueil/pool_and_hotel.webp" alt="Piscine & Jardin" class="feature-img" loading="lazy">
+                </div>
+                <div class="feature-info">
+                    <h3 class="feature-card-title">{{accueil.card_pool_title}}</h3>
+                    <p class="feature-card-text">{{accueil.card_pool_text}}</p>
+                </div>
+            </div>
+            
+            <!-- Feature 3: Breakfast -->
+            <div class="feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="{{path_prefix}}assets/images/accueil/breakfast.webp" alt="Petit-déjeuner" class="feature-img" loading="lazy">
+                </div>
+                <div class="feature-info">
+                    <h3 class="feature-card-title">{{accueil.card_breakfast_title}}</h3>
+                    <p class="feature-card-text">{{accueil.card_breakfast_text}}</p>
+                </div>
+            </div>
+            
+            <!-- Feature 4: Location -->
+            <div class="feature-card card-reverse">
+                <div class="feature-img-wrapper">
+                    <img src="{{path_prefix}}assets/images/accueil/by_the_pool.webp" alt="Emplacement" class="feature-img" loading="lazy">
+                </div>
+                <div class="feature-info">
+                    <h3 class="feature-card-title">{{accueil.card_location_title}}</h3>
+                    <p class="feature-card-text">{{accueil.card_location_text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rooms Teaser Section -->
+<section class="rooms-teaser-section section-padding" style="background-image: linear-gradient(rgba(26,43,73,0.85), rgba(26,43,73,0.85)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
+    <div class="container text-center text-white">
+        <h2 class="section-title text-white">{{accueil.explore_rooms_title}}</h2>
+        <p class="lead-text text-light-muted">{{accueil.explore_rooms_text}}</p>
+        <div class="teaser-actions">
+            <a href="{{path_prefix}}{{lang}}/chambres.html" class="btn btn-outline-white">
+                {{nav.rooms}} <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- TripAdvisor Testimonial Slider Section -->
+<section class="reviews-section section-padding">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-tag">Avis Clients</span>
+            <h2 class="section-title">{{reviews.title}}</h2>
+            <p class="section-subtitle">{{reviews.subtitle}}</p>
+            <div class="divider"></div>
+        </div>
+        
+        <!-- Reviews Slider Container -->
+        <div class="reviews-slider-container">
+            <div class="reviews-track" id="reviewsTrack">
+                <!-- Dynamically populated or pre-rendered from JSON -->
+                {{reviews_slides_placeholder}}
+            </div>
+            
+            <!-- Slider Navigation -->
+            <div class="slider-nav">
+                <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous Review"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-arrow next" id="sliderNext" aria-label="Next Review"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fa-brands fa-tripadvisor"></i> {{reviews.read_more}}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Partner Myblackcab Section -->
+<section class="partner-section section-padding bg-light">
+    <div class="container">
+        <div class="partner-card">
+            <div class="partner-logo-wrapper">
+                <div class="partner-icon"><i class="fa-solid fa-taxi"></i></div>
+                <h3>Myblackcab</h3>
+            </div>
+            <div class="partner-body">
+                <h4 class="partner-title">{{accueil.myblackcab_title}}</h4>
+                <p class="partner-text">{{accueil.myblackcab_text}}</p>
+                <div class="partner-contacts">
+                    <a href="https://mbc-limousines.com/en/" target="_blank" rel="noopener" class="partner-link">
+                        <i class="fa-solid fa-earth-americas"></i> mbc-limousines.com
+                    </a>
+                    <a href="tel:+33669116499" class="partner-phone">
+                        <i class="fa-solid fa-phone"></i> +33 (0)6 69 11 64 99
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

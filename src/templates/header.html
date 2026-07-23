@@ -1,0 +1,52 @@
+<header class="main-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <a href="{{path_prefix}}{{lang}}/index.html" class="logo-link" aria-label="La Fiancée du Pirate">
+            <img src="{{path_prefix}}assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="logo-img">
+        </a>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="{{path_prefix}}{{lang}}/index.html" class="nav-link {{active_home}}">{{nav.home}}</a></li>
+                <li class="nav-item"><a href="{{path_prefix}}{{lang}}/chambres.html" class="nav-link {{active_rooms}}">{{nav.rooms}}</a></li>
+                <li class="nav-item"><a href="{{path_prefix}}{{lang}}/services.html" class="nav-link {{active_services}}">{{nav.services}}</a></li>
+                <li class="nav-item"><a href="{{path_prefix}}{{lang}}/galerie.html" class="nav-link {{active_gallery}}">{{nav.gallery}}</a></li>
+                <li class="nav-item"><a href="{{path_prefix}}{{lang}}/contact.html" class="nav-link {{active_contact}}">{{nav.contact}}</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Menu Actions (Language & Book CTA) -->
+        <div class="header-actions">
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="active-lang-code">{{lang_upper}}</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown" aria-labelledby="langBtn">
+                    <li><a href="{{path_prefix}}fr/{{page_filename}}" class="lang-dropdown-link {{active_lang_fr}}">FR</a></li>
+                    <li><a href="{{path_prefix}}en/{{page_filename}}" class="lang-dropdown-link {{active_lang_en}}">EN</a></li>
+                    <li><a href="{{path_prefix}}de/{{page_filename}}" class="lang-dropdown-link {{active_lang_de}}">DE</a></li>
+                    <li><a href="{{path_prefix}}it/{{page_filename}}" class="lang-dropdown-link {{active_lang_it}}">IT</a></li>
+                    <li><a href="{{path_prefix}}es/{{page_filename}}" class="lang-dropdown-link {{active_lang_es}}">ES</a></li>
+                    <li><a href="{{path_prefix}}ru/{{page_filename}}" class="lang-dropdown-link {{active_lang_ru}}">RU</a></li>
+                    <li><a href="{{path_prefix}}en-au/{{page_filename}}" class="lang-dropdown-link {{active_lang_en_au}}">EN-AU</a></li>
+                </ul>
+            </div>
+
+            <!-- Header Booking CTA -->
+            <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary btn-book-header">
+                {{nav.book}}
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>

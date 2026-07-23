@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>La Fiancée du Pirate</title>
+    <script>
+        // Detection of user browser language
+        var userLang = navigator.language || navigator.userLanguage;
+        userLang = userLang.toLowerCase();
+        
+        var targetLang = 'fr'; // Default language
+        
+        if (userLang.startsWith('en-au')) {
+            targetLang = 'en-au';
+        } else if (userLang.startsWith('en')) {
+            targetLang = 'en';
+        } else if (userLang.startsWith('de')) {
+            targetLang = 'de';
+        } else if (userLang.startsWith('it')) {
+            targetLang = 'it';
+        } else if (userLang.startsWith('es')) {
+            targetLang = 'es';
+        } else if (userLang.startsWith('ru')) {
+            targetLang = 'ru';
+        } else if (userLang.startsWith('fr')) {
+            targetLang = 'fr';
+        }
+        
+        window.location.replace('./' + targetLang + '/index.html');
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="./fr/index.html">La Fiancée du Pirate</a>...</p>
+</body>
+</html>
