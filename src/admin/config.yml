@@ -20,7 +20,7 @@ collections:
     files:
       - name: seo
         label: "1. Référencement (SEO)"
-        file: "src/translations/seo/index.{{locale}}.json"
+        file: "src/translations/seo/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -41,7 +41,7 @@ collections:
 
       - name: navigation
         label: "2. En-tête & Pied de page"
-        file: "src/translations/navigation/index.{{locale}}.json"
+        file: "src/translations/navigation/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -82,7 +82,7 @@ collections:
 
       - name: pages
         label: "3. Contenu des Pages"
-        file: "src/translations/pages/index.{{locale}}.json"
+        file: "src/translations/pages/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -159,7 +159,7 @@ collections:
 
       - name: reviews
         label: "4. Témoignages (TripAdvisor)"
-        file: "src/translations/reviews/index.{{locale}}.json"
+        file: "src/translations/reviews/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
@@ -183,7 +183,7 @@ collections:
 
       - name: gallery
         label: "5. Galerie Photos"
-        file: "src/translations/gallery/index.{{locale}}.json"
+        file: "src/translations/gallery/index.json"
         i18n: true
         fields:
           - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
