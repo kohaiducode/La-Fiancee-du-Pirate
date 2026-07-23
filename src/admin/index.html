@@ -6,14 +6,14 @@
     <title>Administration - La Fiancée du Pirate</title>
     <!-- Root-relative link to configuration file for GitHub Pages -->
     <link href="/La-Fiancee-du-Pirate/admin/config.yml" type="application/yaml" rel="cms-config-url" />
-    <!-- Load Sveltia CMS from CDN -->
-    <script 
-      src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" 
-      onload="SVELTIA.start()"
-      onerror="document.body.innerHTML='<h3>Erreur de chargement du CMS. Veuillez vérifier votre connexion internet.</h3>'"
-    ></script>
   </head>
   <body>
-    <noscript>Veuillez activer JavaScript pour utiliser l'administration.</noscript>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+    <style>
+      /* Make Decap CMS slightly better looking */
+      body { font-family: system-ui, -apple-system, sans-serif; }
+      [data-slate-editor] { font-family: inherit; }
+    </style>
   </body>
 </html>
