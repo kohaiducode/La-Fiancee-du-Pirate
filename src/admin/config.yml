@@ -27,7 +27,7 @@ collections:
         file: "src/translations/seo/accueil.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
             label: "Métadonnées"
             widget: object
@@ -41,7 +41,7 @@ collections:
         file: "src/translations/seo/chambres.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
             label: "Métadonnées"
             widget: object
@@ -55,7 +55,7 @@ collections:
         file: "src/translations/seo/services.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
             label: "Métadonnées"
             widget: object
@@ -69,7 +69,7 @@ collections:
         file: "src/translations/seo/galerie.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
             label: "Métadonnées"
             widget: object
@@ -83,7 +83,7 @@ collections:
         file: "src/translations/seo/contact.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: seo
             label: "Métadonnées"
             widget: object
@@ -105,7 +105,7 @@ collections:
         file: "src/translations/navigation/index.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: nav
             label: "Menu de Navigation"
             widget: object
@@ -158,7 +158,7 @@ collections:
         file: "src/translations/pages/accueil.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: accueil
             label: "Contenu"
             widget: object
@@ -187,7 +187,7 @@ collections:
         file: "src/translations/pages/chambres.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: rooms
             label: "Contenu"
             widget: object
@@ -229,7 +229,7 @@ collections:
         file: "src/translations/pages/services.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: services
             label: "Contenu"
             widget: object
@@ -253,7 +253,7 @@ collections:
         file: "src/translations/pages/galerie.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: gallery
             label: "Textes de la Galerie"
             widget: object
@@ -272,7 +272,7 @@ collections:
         file: "src/translations/pages/contact.json"
         i18n: true
         fields:
-          - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: contact
             label: "Contenu"
             widget: object
@@ -329,7 +329,7 @@ collections:
     create: true
     delete: true
     fields:
-      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
       - { label: "Nom du Client", name: author, widget: string, i18n: duplicate }
       - { label: "Date du séjour", name: date, widget: string, i18n: duplicate }
       - { label: "Note (sur 5)", name: rating, widget: number, i18n: duplicate }
