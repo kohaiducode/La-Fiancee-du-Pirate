@@ -29,29 +29,34 @@
 
           if (!leftBtn.dataset.hacked) {
             leftBtn.dataset.hacked = 'true';
-            leftBtn.style.pointerEvents = 'none';
-            leftBtn.style.opacity = '0.8';
             
+            // Masquer complètement le sélecteur gauche
+            leftBtn.style.display = 'none'; 
+            
+            // Créer le label statique à la place
             const leftLabel = document.createElement('div');
             leftLabel.textContent = 'FRANÇAIS (TEXTE SOURCE)';
             leftLabel.style.fontSize = '12px';
             leftLabel.style.fontWeight = 'bold';
             leftLabel.style.color = '#4b5563';
-            leftLabel.style.marginBottom = '6px';
             leftLabel.style.textTransform = 'uppercase';
+            leftLabel.style.padding = '0 8px';
             leftBtn.parentNode.insertBefore(leftLabel, leftBtn);
           }
 
           if (!rightBtn.dataset.hacked) {
             rightBtn.dataset.hacked = 'true';
             
+            // Créer le label "au-dessus" du sélecteur droit sans casser le layout
             const rightLabel = document.createElement('div');
-            rightLabel.textContent = 'TEXTE CIBLE (CHOISIR LA LANGUE)';
-            rightLabel.style.fontSize = '12px';
+            rightLabel.textContent = 'TEXTE CIBLE (CHOISIR LA LANGUE) ⬇';
+            rightLabel.style.fontSize = '10px';
             rightLabel.style.fontWeight = 'bold';
             rightLabel.style.color = '#2563eb';
-            rightLabel.style.marginBottom = '6px';
-            rightLabel.style.textTransform = 'uppercase';
+            rightLabel.style.position = 'absolute';
+            rightLabel.style.transform = 'translateY(-18px)';
+            rightLabel.style.whiteSpace = 'nowrap';
+            rightLabel.style.pointerEvents = 'none'; // Empêcher les clics fantômes
             rightBtn.parentNode.insertBefore(rightLabel, rightBtn);
           }
         }
