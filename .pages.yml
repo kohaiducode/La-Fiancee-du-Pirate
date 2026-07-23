@@ -5,10 +5,10 @@ media:
   output: /Photos
 
 content:
-  - name: translations
-    label: Traductions & Textes
+  - name: seo
+    label: "1. Référencement (SEO)"
     type: collection
-    path: src/translations
+    path: src/translations/seo
     extension: json
     view:
       primary: title
@@ -17,7 +17,7 @@ content:
         label: Nom de la Langue
         type: string
       - name: seo
-        label: Référencement (SEO Google)
+        label: Métadonnées SEO (Google)
         type: object
         fields:
           - name: home_title
@@ -50,7 +50,18 @@ content:
           - name: contact_desc
             label: Description - Page Contact
             type: text
-            
+
+  - name: navigation
+    label: "2. En-tête & Pied de page"
+    type: collection
+    path: src/translations/navigation
+    extension: json
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Nom de la Langue
+        type: string
       - name: nav
         label: Menu de Navigation
         type: object
@@ -70,7 +81,6 @@ content:
           - name: contact
             label: Contact
             type: string
-            
       - name: hero
         label: Bannière d'Accueil (Hero Banner)
         type: object
@@ -84,7 +94,6 @@ content:
           - name: cta
             label: Texte du Bouton d'Action
             type: string
-            
       - name: booking_bar
         label: Barre de Réservation
         type: object
@@ -101,9 +110,39 @@ content:
           - name: search
             label: Label Bouton Rechercher
             type: string
-            
+      - name: footer
+        label: Pied de page (Footer)
+        type: object
+        fields:
+          - name: subtitle
+            label: Description Sous-Logo
+            type: string
+          - name: links_title
+            label: Titre Liens Rapides
+            type: string
+          - name: contact_title
+            label: Titre Section Contact
+            type: string
+          - name: social_title
+            label: Titre Suivez-nous
+            type: string
+          - name: rights
+            label: Label Droits Réservés
+            type: string
+
+  - name: pages
+    label: "3. Contenu des Pages"
+    type: collection
+    path: src/translations/pages
+    extension: json
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Nom de la Langue
+        type: string
       - name: accueil
-        label: Contenu de la Page d'Accueil
+        label: Page d'Accueil
         type: object
         fields:
           - name: intro_title
@@ -140,8 +179,132 @@ content:
             label: Texte - Emplacement Idéal
             type: text
 
+      - name: rooms
+        label: Page Chambres & Tarifs
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: cta
+            label: Bouton CTA
+            type: string
+          - name: garden_title
+            label: Chambre Standard Jardin - Titre
+            type: string
+          - name: garden_desc
+            label: Chambre Standard Jardin - Description
+            type: text
+          - name: mer_title
+            label: Chambre Supérieure Mer - Titre
+            type: string
+          - name: mer_desc
+            label: Chambre Supérieure Mer - Description
+            type: text
+          - name: pavillons_title
+            label: Pavillon Suite - Titre
+            type: string
+          - name: pavillons_desc
+            label: Pavillon Suite - Description
+            type: text
+
+      - name: services
+        label: Page Services & Activités
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: hotel_services_title
+            label: Titre Services de l'Hôtel
+            type: string
+          - name: hotel_services_desc
+            label: Description Services de l'Hôtel
+            type: text
+          - name: service_pool_title
+            label: Service - Piscine chauffée
+            type: string
+          - name: service_pool_desc
+            label: Description - Piscine chauffée
+            type: text
+          - name: service_garden_title
+            label: Service - Jardin
+            type: string
+          - name: service_garden_desc
+            label: Description - Jardin
+            type: text
+          - name: service_breakfast_title
+            label: Service - Petit-déjeuner
+            type: string
+          - name: service_breakfast_desc
+            label: Description - Petit-déjeuner
+            type: text
+
+      - name: gallery
+        label: Page Galerie (Filtres)
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: filter_all
+            label: Filtre - Tout
+            type: string
+          - name: filter_view
+            label: Filtre - Vue
+            type: string
+          - name: filter_pool
+            label: Filtre - Piscine
+            type: string
+          - name: filter_rooms
+            label: Filtre - Chambres
+            type: string
+          - name: filter_breakfast
+            label: Filtre - Petit-déjeuner
+            type: string
+
+      - name: contact
+        label: Page Contact
+        type: object
+        fields:
+          - name: title
+            label: Titre Principal
+            type: string
+          - name: subtitle
+            label: Sous-titre
+            type: string
+          - name: info_title
+            label: Titre Section Coordonnées
+            type: string
+          - name: form_title
+            label: Titre Formulaire
+            type: string
+          - name: form_submit
+            label: Bouton Envoyer
+            type: string
+
+  - name: reviews
+    label: "4. Témoignages (TripAdvisor)"
+    type: collection
+    path: src/translations/reviews
+    extension: json
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Nom de la Langue
+        type: string
       - name: reviews
-        label: Section des Témoignages (TripAdvisor)
+        label: Section TripAdvisor
         type: object
         fields:
           - name: title
@@ -151,45 +314,25 @@ content:
             label: Sous-titre
             type: string
           - name: read_more
-            label: Label Bouton Lire plus
+            label: Bouton Lire plus
             type: string
           - name: items
-            label: Liste des Avis Clients
+            label: Liste des Témoignages
             type: object
             list: true
             fields:
               - name: author
-                label: Nom de l'Auteur
+                label: Nom du Client
                 type: string
               - name: date
-                label: Date du séjour
+                label: Date
                 type: string
               - name: rating
                 label: Note (sur 5)
                 type: number
               - name: title
-                label: Titre du message
+                label: Titre de l'avis
                 type: string
               - name: text
-                label: Message complet
+                label: Message
                 type: text
-
-      - name: footer
-        label: Pied de page (Footer)
-        type: object
-        fields:
-          - name: subtitle
-            label: Description Sous-Logo
-            type: string
-          - name: links_title
-            label: Titre Liens Rapides
-            type: string
-          - name: contact_title
-            label: Titre Section Contact
-            type: string
-          - name: social_title
-            label: Titre Suivez-nous
-            type: string
-          - name: rights
-            label: Label Droits Réservés
-            type: string
