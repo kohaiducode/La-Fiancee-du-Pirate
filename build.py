@@ -154,10 +154,15 @@ def compile_site():
                 meta_desc = lang_data["seo"]["contact_desc"]
                 
             # Render layout parts with page details
+            is_index = (page_name_no_ext == "index")
+            path_prefix = "../" if is_index else "../../"
+            page_path = "" if is_index else f"{page_name_no_ext}/"
+            
             context = {
                 "lang": lang,
                 "lang_upper": lang_upper,
-                "path_prefix": "../", # Depth of 1 for lang folders
+                "path_prefix": path_prefix,
+                "page_path": page_path,
                 "booking_url": booking_url,
                 "page_filename": page,
                 "meta_title": meta_title,
@@ -212,7 +217,13 @@ def compile_site():
             final_html = render_template(final_html, full_vars)
             
             # Save compiled file
-            dest_file_path = os.path.join(lang_dist_dir, page)
+            if is_index:
+                dest_file_path = os.path.join(lang_dist_dir, "index.html")
+            else:
+                page_dir = os.path.join(lang_dist_dir, page_name_no_ext)
+                os.makedirs(page_dir, exist_ok=True)
+                dest_file_path = os.path.join(page_dir, "index.html")
+                
             with open(dest_file_path, 'w', encoding='utf-8') as f:
                 f.write(final_html)
                 

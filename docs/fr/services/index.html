@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Activités Côte d'Azur | La Fiancée du Pirate</title>
+    <meta name="description" content="Découvrez les prestations de notre hôtel (piscine, jacuzzi, jardin) et les activités culturelles à Villefranche-sur-Mer (Citadelle, Chapelle Cocteau, etc.).">
+    
+    <!-- SEO & Accessibility -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a2b49">
+    
+    <!-- Open Graph (Facebook/Instagram sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services & Activités Côte d'Azur | La Fiancée du Pirate">
+    <meta property="og:description" content="Découvrez les prestations de notre hôtel (piscine, jacuzzi, jardin) et les activités culturelles à Villefranche-sur-Mer (Citadelle, Chapelle Cocteau, etc.).">
+    <meta property="og:image" content="../../assets/images/accueil/hotel_view.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-{{page_name}}">
+    <!-- Header -->
+    <header class="main-header">
+    <div class="header-container">
+        <!-- Logo -->
+        <a href="../../fr/" class="logo-link" aria-label="La Fiancée du Pirate">
+            <img src="../../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="logo-img">
+        </a>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../../fr/" class="nav-link ">Accueil</a></li>
+                <li class="nav-item"><a href="../../fr/chambres/" class="nav-link ">Chambres</a></li>
+                <li class="nav-item"><a href="../../fr/services/" class="nav-link active">Services & Activités</a></li>
+                <li class="nav-item"><a href="../../fr/galerie/" class="nav-link ">Galerie</a></li>
+                <li class="nav-item"><a href="../../fr/contact/" class="nav-link ">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Menu Actions (Language & Book CTA) -->
+        <div class="header-actions">
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="active-lang-code">FR</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown" aria-labelledby="langBtn">
+                    <li><a href="../../fr/services/" class="lang-dropdown-link active">FR</a></li>
+                    <li><a href="../../en/services/" class="lang-dropdown-link ">EN</a></li>
+                    <li><a href="../../de/services/" class="lang-dropdown-link ">DE</a></li>
+                    <li><a href="../../it/services/" class="lang-dropdown-link ">IT</a></li>
+                    <li><a href="../../es/services/" class="lang-dropdown-link ">ES</a></li>
+                    <li><a href="../../ru/services/" class="lang-dropdown-link ">RU</a></li>
+                    <li><a href="../../en-au/services/" class="lang-dropdown-link ">EN-AU</a></li>
+                </ul>
+            </div>
+
+            <!-- Header Booking CTA -->
+            <a href="https://la-fiancee-du-pirate.amenitiz.io/fr/booking/room" target="_blank" rel="noopener" class="btn btn-primary btn-book-header">
+                Réserver
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <!-- Main Content Page Body -->
+    <main class="main-content">
+        <!-- Inner Hero / Page Header -->
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/jacuzzi_and_pool.webp');">
+    <div class="page-header-content">
+        <h1 class="page-header-title">Services & Activités</h1>
+        <p class="page-header-subtitle">Tout ce dont vous avez besoin pour un séjour d'exception sur la Côte d'Azur.</p>
+    </div>
+</section>
+
+<!-- Hotel Services Section -->
+<section class="services-list-section section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">Confort & Bien-être</span>
+            <h2 class="section-title">Les Services de l'Hôtel</h2>
+            <p class="section-subtitle">Profitez de nos installations haut de gamme conçues pour votre détente et votre confort.</p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Pool & Jacuzzi -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-water-ladder service-detail-icon"></i>
+                <h3>Piscine & Jacuzzi</h3>
+                <p>Une piscine extérieure chauffée selon la saison et un jacuzzi sur demande pour vos moments de bien-être.</p>
+            </div>
+            
+            <!-- Garden & Lounges -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-seedling service-detail-icon"></i>
+                <h3>Jardin & Salons</h3>
+                <p>Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.</p>
+            </div>
+            
+            <!-- Breakfast -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-mug-saucer service-detail-icon"></i>
+                <h3>Petit-déjeuner Buffet</h3>
+                <p>Servi sur la terrasse face à la mer, composé de produits frais pour bien démarrer votre journée.</p>
+            </div>
+            
+            <!-- Transport -->
+            <div class="service-detail-card">
+                <i class="fa-solid fa-route service-detail-icon"></i>
+                <h3>Transport & Excursions</h3>
+                <p>Transfert aéroport en 20 min, bus pour Nice et Monaco à proximité, et notre partenaire de taxi privé Myblackcab.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Villefranche Culture & History Section -->
+<section class="culture-section section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="section-tag">Art, Culture & Histoire</span>
+            <h2 class="section-title">Découvrir Villefranche-sur-Mer</h2>
+            <p class="section-subtitle">Un village d'art et d'histoire au charme intemporel.</p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="culture-grid">
+            <!-- Citadelle Saint-Elme -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-fort-awesome"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>La Citadelle Saint-Elme</h3>
+                    <p>Imposante forteresse du XVIe siècle construite pour protéger la rade. Elle abrite aujourd'hui la Mairie et 4 musées (dont le Musée Volti et le Musée Goetz-Boumeester). Entrée libre.</p>
+                </div>
+            </div>
+            
+            <!-- Chapelle Saint-Pierre (Cocteau) -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>La Chapelle Saint-Pierre</h3>
+                    <p>Entièrement restaurée et décorée en 1956 par le célèbre artiste Jean Cocteau, c'est un chef-d'œuvre incontournable dédié au patron des pêcheurs.</p>
+                </div>
+            </div>
+            
+            <!-- Rue Obscure -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-road-barrier"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>La Rue Obscure</h3>
+                    <p>Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.</p>
+                </div>
+            </div>
+            
+            <!-- Port Royal -->
+            <div class="culture-card">
+                <div class="culture-icon-wrapper">
+                    <i class="fa-solid fa-anchor"></i>
+                </div>
+                <div class="culture-info">
+                    <h3>Le Port Royal de la Darse</h3>
+                    <p>Bassin historique du XVIe siècle avec ses remparts, son phare historique, sa corderie et son port de plaisance actif.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Surroundings Riviera Section -->
+<section class="surroundings-section section-padding">
+    <div class="container">
+        <div class="surroundings-wrapper">
+            <div class="surroundings-content">
+                <span class="section-tag">Explorer la Côte d'Azur</span>
+                <h2 class="section-title">Aux alentours sur la Riviera</h2>
+                <p class="lead-text">Notre hôtel est le point de départ idéal pour explorer la Côte d'Azur :</p>
+                
+                <ul class="surroundings-list">
+                    <li>
+                        <span class="surroundings-badge">Nice</span>
+                        <p>Nice (10 min) : le vieux Nice, le marché du cours Saleya, la Promenade des Anglais (accès rapide en bus).</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Monaco</span>
+                        <p>Monaco (20 min) : le Rocher, le Casino de Monte-Carlo, le Musée Océanographique.</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Eze & Vence</span>
+                        <p>Les villages perchés d'Eze et de Saint-Paul-de-Vence pour une escapade pittoresque.</p>
+                    </li>
+                    <li>
+                        <span class="surroundings-badge">Italie</span>
+                        <p>L'Italie à seulement 7 stations de train (départs réguliers de la gare de Villefranche).</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="surroundings-visual">
+                <img src="../../assets/images/accueil/pool_and_hotel.webp" alt="Riviera Côte d'Azur" class="surroundings-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Sticky Booking Bar -->
+    <div class="booking-bar-wrapper" id="bookingBar">
+    <div class="booking-bar-container">
+        <form class="booking-form" id="bookingForm" action="https://la-fiancee-du-pirate.amenitiz.io/fr/booking/room" method="GET" target="_blank" rel="noopener">
+            <!-- Check In -->
+            <div class="booking-field">
+                <label for="barCheckIn"><i class="fa-regular fa-calendar-days"></i> Arrivée</label>
+                <input type="date" id="barCheckIn" name="check_in" required>
+            </div>
+            
+            <!-- Check Out -->
+            <div class="booking-field">
+                <label for="barCheckOut"><i class="fa-regular fa-calendar-days"></i> Départ</label>
+                <input type="date" id="barCheckOut" name="check_out" required>
+            </div>
+            
+            <!-- Guests -->
+            <div class="booking-field">
+                <label for="barGuests"><i class="fa-solid fa-users"></i> Voyageurs</label>
+                <select id="barGuests" name="adults">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <!-- Submit CTA -->
+            <button type="submit" class="btn btn-secondary btn-booking-submit">
+                Disponibilité
+            </button>
+        </form>
+    </div>
+</div>
+
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-section footer-brand">
+            <img src="../../assets/images/logo/logo_pirate.webp" alt="La Fiancée du Pirate Logo" class="footer-logo">
+            <p class="footer-desc">La Fiancée du Pirate, boutique-hôtel intimiste de 15 chambres niché sur les hauteurs de Villefranche-sur-Mer, entre Nice et Monaco.</p>
+            <!-- TripAdvisor rating badge -->
+            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="footer-ta-badge">
+                <i class="fa-brands fa-tripadvisor"></i>
+                <div class="ta-badge-content">
+                    <span class="ta-badge-title">TripAdvisor</span>
+                    <span class="ta-badge-desc">Classé Excellent sur TripAdvisor</span>
+                    <div class="ta-stars">
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                        <span class="ta-circle"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Navigation Section -->
+        <div class="footer-section footer-links">
+            <h4 class="footer-section-title">Navigation</h4>
+            <ul class="footer-list">
+                <li><a href="../../fr/">Accueil</a></li>
+                <li><a href="../../fr/chambres/">Chambres</a></li>
+                <li><a href="../../fr/services/">Services & Activités</a></li>
+                <li><a href="../../fr/galerie/">Galerie</a></li>
+                <li><a href="../../fr/contact/">Contact</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="footer-section footer-contact">
+            <h4 class="footer-section-title">Contact</h4>
+            <ul class="footer-contact-list">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">8 Boulevard de La Corne d'Or,<br>Moyenne Corniche,<br>06230 Villefranche-sur-Mer, France</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33493766740">+33 (0)4 93 76 67 40</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <a href="tel:+33745282937">+33 (0)7 45 28 29 37</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Socials Section -->
+        <div class="footer-section footer-social">
+            <h4 class="footer-section-title">Suivez-nous</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" aria-label="TripAdvisor" class="social-icon">
+                    <i class="fa-brands fa-tripadvisor"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>&copy; 2026 La Fiancée du Pirate. Tous droits réservés. Mentions Légales.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JS Script Entry Point -->
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
+
