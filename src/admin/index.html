@@ -17,49 +17,64 @@
     <!-- UI Customization Script for Sveltia -->
     <script>
       setInterval(() => {
-        const allElements = document.querySelectorAll('button, select');
-        const localeBtns = Array.from(allElements).filter(el => {
-          const txt = el.textContent.trim().toLowerCase();
-          return ['français', 'fr', 'english', 'en', 'deutsch', 'de', 'italiano', 'it', 'español', 'es', 'русский', 'ru'].includes(txt);
-        });
-
-        if (localeBtns.length === 2) {
-          const leftBtn = localeBtns[0];
-          const rightBtn = localeBtns[1];
-
-          if (!leftBtn.dataset.hacked) {
-            leftBtn.dataset.hacked = 'true';
+          // Cherche de manière plus large tous les boutons, liens ou conteneurs interactifs
+          const allElements = document.querySelectorAll('button, select, [role="button"], [role="listbox"], [role="combobox"], [class*="button"], a');
+          
+          let localeBtns = Array.from(allElements).filter(el => {
+            const txt = el.textContent.trim().toLowerCase();
+            // Utiliser une regex pour accepter "Français", "Français ▼", "Français (open)", etc.
+            const match = txt.match(/^(français|english|deutsch|italiano|español|русский)/);
             
-            // Masquer complètement le sélecteur gauche
-            leftBtn.style.display = 'none'; 
+            // On s'assure que c'est un "feuille" ou un bouton contenant principalement ce texte
+            // pour ne pas sélectionner tout le body ou des grands conteneurs.
+            return match && txt.length < 25; 
+          });
+
+          // Dédupliquer les éléments imbriqués (ex: un span dans un button)
+          localeBtns = localeBtns.filter(el => !localeBtns.some(parent => parent !== el && parent.contains(el)));
+
+          // On s'attend à trouver 2 sélecteurs de langue (un pour chaque colonne)
+          if (localeBtns.length >= 2) {
+            // Trier par position horizontale (gauche à droite) pour être sûr que le premier est la colonne de gauche
+            localeBtns.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
             
-            // Créer le label statique à la place
-            const leftLabel = document.createElement('div');
-            leftLabel.textContent = 'FRANÇAIS (TEXTE SOURCE)';
-            leftLabel.style.fontSize = '12px';
-            leftLabel.style.fontWeight = 'bold';
-            leftLabel.style.color = '#4b5563';
-            leftLabel.style.textTransform = 'uppercase';
-            leftLabel.style.padding = '0 8px';
-            leftBtn.parentNode.insertBefore(leftLabel, leftBtn);
+            const leftBtn = localeBtns[0];
+            const rightBtn = localeBtns[1];
+
+            if (!leftBtn.dataset.hacked) {
+              leftBtn.dataset.hacked = 'true';
+              leftBtn.style.display = 'none'; // Masquer complètement
+              
+              const leftLabel = document.createElement('div');
+              leftLabel.textContent = 'FRANÇAIS (TEXTE SOURCE)';
+              leftLabel.style.fontSize = '11px';
+              leftLabel.style.fontWeight = 'bold';
+              leftLabel.style.color = '#4b5563';
+              leftLabel.style.textTransform = 'uppercase';
+              leftLabel.style.padding = '0 8px';
+              leftBtn.parentNode.insertBefore(leftLabel, leftBtn);
+            }
+
+            if (!rightBtn.dataset.hacked) {
+              rightBtn.dataset.hacked = 'true';
+              
+              const rightLabel = document.createElement('div');
+              rightLabel.textContent = 'TEXTE CIBLE ⬇';
+              rightLabel.style.fontSize = '11px';
+              rightLabel.style.fontWeight = 'bold';
+              rightLabel.style.color = '#2563eb';
+              rightLabel.style.position = 'absolute';
+              rightLabel.style.transform = 'translateY(-20px)';
+              rightLabel.style.whiteSpace = 'nowrap';
+              rightLabel.style.pointerEvents = 'none';
+              
+              // Si le parent n'est pas relatif, ça peut décaler, on s'assure qu'il l'est
+              if (window.getComputedStyle(rightBtn.parentNode).position === 'static') {
+                rightBtn.parentNode.style.position = 'relative';
+              }
+              rightBtn.parentNode.insertBefore(rightLabel, rightBtn);
+            }
           }
-
-          if (!rightBtn.dataset.hacked) {
-            rightBtn.dataset.hacked = 'true';
-            
-            // Créer le label "au-dessus" du sélecteur droit sans casser le layout
-            const rightLabel = document.createElement('div');
-            rightLabel.textContent = 'TEXTE CIBLE (CHOISIR LA LANGUE) ⬇';
-            rightLabel.style.fontSize = '10px';
-            rightLabel.style.fontWeight = 'bold';
-            rightLabel.style.color = '#2563eb';
-            rightLabel.style.position = 'absolute';
-            rightLabel.style.transform = 'translateY(-18px)';
-            rightLabel.style.whiteSpace = 'nowrap';
-            rightLabel.style.pointerEvents = 'none'; // Empêcher les clics fantômes
-            rightBtn.parentNode.insertBefore(rightLabel, rightBtn);
-          }
-        }
       }, 1000);
     </script>
   </body>
