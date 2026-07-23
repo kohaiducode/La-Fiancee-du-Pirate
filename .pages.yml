@@ -10,7 +10,12 @@ content:
     type: collection
     path: src/translations
     extension: json
+    view:
+      primary: title
     fields:
+      - name: title
+        label: Nom de la Langue
+        type: string
       - name: seo
         label: Référencement (SEO Google)
         type: object
