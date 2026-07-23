@@ -1,0 +1,30 @@
+{
+  "title": "Italiano (IT)",
+  "nav": {
+    "home": "Home",
+    "rooms": "Camere",
+    "services": "Servizi & Attività",
+    "gallery": "Galleria",
+    "contact": "Contatti",
+    "book": "Prenota"
+  },
+  "hero": {
+    "title": "Un'oasi di pace sospesa sulla Costa Azzurra",
+    "subtitle": "Incantevole boutique hotel con vista panoramica sulla baia di Villefranche-sur-Mer",
+    "cta": "Prenota una camera"
+  },
+  "booking_bar": {
+    "check_in": "Arrivo",
+    "check_out": "Partenza",
+    "guests": "Ospiti",
+    "search": "Verifica disponibilità"
+  },
+  "footer": {
+    "desc": "La Fiancée du Pirate, boutique hotel intimo di 15 camere sulle alture di Villefranche-sur-Mer, tra Nizza e Monaco.",
+    "links_title": "Navigazione",
+    "contact_title": "Contatti",
+    "social_title": "Seguici su",
+    "rights": "Tutti i diritti riservati. Note Legali.",
+    "tripadvisor_badge": "Valutato Eccellente su TripAdvisor"
+  }
+}

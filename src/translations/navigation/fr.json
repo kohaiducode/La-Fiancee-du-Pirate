@@ -1,0 +1,27 @@
+{
+  "title": "Français (FR)",
+  "nav": {
+    "home": "Accueil",
+    "rooms": "Chambres",
+    "services": "Services & Activités",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Une parenthèse suspendue sur la Côte d'Azur",
+    "subtitle": "Boutique-Hôtel de charme avec vue panoramique sur la rade de Villefranche-sur-Mer",
+    "cta": "Réserver une chambre"
+  },
+  "booking_bar": {
+    "check_in": "Arrivée",
+    "check_out": "Départ",
+    "guests": "Voyageurs",
+    "search": "Réserver"
+  },
+  "footer": {
+    "links_title": "Navigation",
+    "contact_title": "Contact",
+    "social_title": "Suivez-nous",
+    "rights": "Tous droits réservés. Mentions Légales."
+  }
+}

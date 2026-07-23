@@ -1,0 +1,20 @@
+{
+  "title": "Français (FR)",
+  "accueil": {
+    "intro_title": "Bienvenue à La Fiancée du Pirate",
+    "intro_text": "Niché sur la moyenne corniche entre Nice et Monaco, notre boutique-hôtel intimiste et unique de 15 chambres vous offre un cadre exceptionnel et une vue panoramique imprenable sur la mer Méditerranée.",
+    "intro_subtext": "Toute l'équipe se tient à votre entière disposition pour vous faire vivre un séjour inoubliable, comme à la maison, ou presque, mais à l'hôtel !",
+    "card_view_title": "Vue Panoramique",
+    "card_view_text": "Admirez la vue spectaculaire sur la rade de Villefranche et Saint-Jean-Cap-Ferrat depuis notre terrasse autour d'un verre.",
+    "card_pool_title": "Piscine & Jardin",
+    "card_pool_text": "Profitez de notre piscine calme et ensoleillée, détendez-vous dans notre jacuzzi ou dans les salons intimes de notre grand jardin.",
+    "card_breakfast_title": "Petit-déjeuner Face Mer",
+    "card_breakfast_text": "Un délicieux buffet servi tous les jours de 8h30 à 10h30 sur notre terrasse panoramique face à la mer.",
+    "card_location_title": "Emplacement Idéal",
+    "card_location_text": "Situé de manière privilégiée sur la moyenne corniche, avec accès direct par escalier à la vieille ville et aux plages."
+  },
+  "rooms": {},
+  "services": {},
+  "gallery": {},
+  "contact": {}
+}
