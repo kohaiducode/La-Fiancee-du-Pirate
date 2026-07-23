@@ -3,6 +3,9 @@ backend:
   repo: kohaiducode/La-Fiancee-du-Pirate
   branch: main
 
+editor:
+  preview: false
+
 # Configuration de la gestion des médias
 media_folder: Photos
 public_folder: /Photos
@@ -111,9 +114,9 @@ collections:
     extension: json
     format: json
     files:
-      - name: layout
-        label: "Configuration En-tête & Pied de page"
-        file: "src/translations/navigation/index.json"
+      - name: header
+        label: "En-tête (Header)"
+        file: "src/translations/navigation/header.json"
         i18n: true
         format: json
         extension: json
@@ -147,8 +150,17 @@ collections:
               - { label: "Départ", name: check_out, widget: string, i18n: true }
               - { label: "Voyageurs", name: guests, widget: string, i18n: true }
               - { label: "Bouton de recherche", name: search, widget: string, i18n: true }
+
+      - name: footer
+        label: "Pied de page (Footer)"
+        file: "src/translations/navigation/footer.json"
+        i18n: true
+        format: json
+        extension: json
+        fields:
+          - { label: "Nom de la Langue", name: title, widget: string, required: false, i18n: duplicate }
           - name: footer
-            label: "Pied de page (Footer)"
+            label: "Pied de page"
             widget: object
             i18n: true
             fields:
