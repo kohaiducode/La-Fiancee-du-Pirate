@@ -1,0 +1,30 @@
+{
+  "title": "",
+  "nav": {
+    "book": "Book Now",
+    "contact": "Contact",
+    "rooms": "Rooms",
+    "home": "Home",
+    "services": "Services & Activities",
+    "gallery": "Gallery"
+  },
+  "hero": {
+    "cta": "Book a room",
+    "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
+    "title": "A serene escape overlooking the French Riviera"
+  },
+  "booking_bar": {
+    "guests": "Guests",
+    "search": "Check Availability",
+    "check_in": "Arrival",
+    "check_out": "Departure"
+  },
+  "footer": {
+    "contact_title": "Contact",
+    "tripadvisor_badge": "Rated Excellent on TripAdvisor",
+    "rights": "All rights reserved. Legal Notice.",
+    "desc": "La Fiancée du Pirate, an intimate 15-room boutique hotel nestled on the heights of Villefranche-sur-Mer, between Nice and Monaco.",
+    "links_title": "Navigation",
+    "social_title": "Follow Us"
+  }
+}
