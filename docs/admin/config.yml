@@ -1,0 +1,221 @@
+backend:
+  name: github
+  repo: kohaiducode/La-Fiancee-du-Pirate
+  branch: main
+
+# Configuration de la gestion des médias
+media_folder: Photos
+public_folder: /Photos
+
+# Configuration Multilingue Native
+i18n:
+  structure: multiple_folders
+  locales: [fr, en, en-au, de, it, es, ru]
+  default_locale: fr
+
+collections:
+  - name: seo
+    label: "1. Référencement (SEO)"
+    folder: "src/translations/seo"
+    extension: json
+    format: json
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - name: seo
+        label: "Métadonnées de référencement"
+        widget: object
+        fields:
+          - { label: "Titre - Accueil", name: home_title, widget: string, i18n: true }
+          - { label: "Description - Accueil", name: home_desc, widget: text, i18n: true }
+          - { label: "Titre - Chambres", name: rooms_title, widget: string, i18n: true }
+          - { label: "Description - Chambres", name: rooms_desc, widget: text, i18n: true }
+          - { label: "Titre - Services", name: services_title, widget: string, i18n: true }
+          - { label: "Description - Services", name: services_desc, widget: text, i18n: true }
+          - { label: "Titre - Galerie", name: gallery_title, widget: string, i18n: true }
+          - { label: "Description - Galerie", name: gallery_desc, widget: text, i18n: true }
+          - { label: "Titre - Contact", name: contact_title, widget: string, i18n: true }
+          - { label: "Description - Contact", name: contact_desc, widget: text, i18n: true }
+
+  - name: navigation
+    label: "2. En-tête & Pied de page"
+    folder: "src/translations/navigation"
+    extension: json
+    format: json
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - name: nav
+        label: "Menu de Navigation"
+        widget: object
+        fields:
+          - { label: "Accueil", name: home, widget: string, i18n: true }
+          - { label: "Chambres", name: rooms, widget: string, i18n: true }
+          - { label: "Services & Activités", name: services, widget: string, i18n: true }
+          - { label: "Galerie", name: gallery, widget: string, i18n: true }
+          - { label: "Contact", name: contact, widget: string, i18n: true }
+          - { label: "Bouton Réserver (Header)", name: book, widget: string, i18n: true }
+      - name: hero
+        label: "Bannière d'Accueil (Hero Slider)"
+        widget: object
+        fields:
+          - { label: "Titre Principal", name: title, widget: string, i18n: true }
+          - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+          - { label: "Texte du bouton d'action", name: cta, widget: string, i18n: true }
+      - name: booking_bar
+        label: "Barre de Réservation"
+        widget: object
+        fields:
+          - { label: "Arrivée", name: check_in, widget: string, i18n: true }
+          - { label: "Départ", name: check_out, widget: string, i18n: true }
+          - { label: "Voyageurs", name: guests, widget: string, i18n: true }
+          - { label: "Bouton de recherche", name: search, widget: string, i18n: true }
+      - name: footer
+        label: "Pied de page (Footer)"
+        widget: object
+        fields:
+          - { label: "Description Sous-Logo", name: desc, widget: text, i18n: true }
+          - { label: "Titre Navigation", name: links_title, widget: string, i18n: true }
+          - { label: "Titre Contact", name: contact_title, widget: string, i18n: true }
+          - { label: "Titre Suivez-nous", name: social_title, widget: string, i18n: true }
+          - { label: "Droits Réservés", name: rights, widget: string, i18n: true }
+
+  - name: pages
+    label: "3. Contenu des Pages"
+    folder: "src/translations/pages"
+    extension: json
+    format: json
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - name: accueil
+        label: "Page d'Accueil"
+        widget: object
+        fields:
+          - { label: "Titre d'Introduction", name: intro_title, widget: string, i18n: true }
+          - { label: "Texte d'Introduction (P1)", name: intro_text, widget: text, i18n: true }
+          - { label: "Texte d'Introduction (P2)", name: intro_subtext, widget: text, i18n: true }
+          - { label: "Carte 1 (Vue) - Photo", name: card_view_image, widget: image, i18n: duplicate }
+          - { label: "Carte 1 (Vue) - Titre", name: card_view_title, widget: string, i18n: true }
+          - { label: "Carte 1 (Vue) - Texte", name: card_view_text, widget: text, i18n: true }
+          - { label: "Carte 2 (Piscine) - Photo", name: card_pool_image, widget: image, i18n: duplicate }
+          - { label: "Carte 2 (Piscine) - Titre", name: card_pool_title, widget: string, i18n: true }
+          - { label: "Carte 2 (Piscine) - Texte", name: card_pool_text, widget: text, i18n: true }
+          - { label: "Carte 3 (Déjeuner) - Photo", name: card_breakfast_image, widget: image, i18n: duplicate }
+          - { label: "Carte 3 (Déjeuner) - Titre", name: card_breakfast_title, widget: string, i18n: true }
+          - { label: "Carte 3 (Déjeuner) - Texte", name: card_breakfast_text, widget: text, i18n: true }
+          - { label: "Carte 4 (Emplacement) - Photo", name: card_location_image, widget: image, i18n: duplicate }
+          - { label: "Carte 4 (Emplacement) - Titre", name: card_location_title, widget: string, i18n: true }
+          - { label: "Carte 4 (Emplacement) - Texte", name: card_location_text, widget: text, i18n: true }
+          - { label: "Teaser Chambres - Titre", name: explore_rooms_title, widget: string, i18n: true }
+          - { label: "Teaser Chambres - Texte", name: explore_rooms_text, widget: text, i18n: true }
+      - name: rooms
+        label: "Page Chambres"
+        widget: object
+        fields:
+          - { label: "Titre Principal", name: title, widget: string, i18n: true }
+          - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+          - { label: "Texte Bouton CTA", name: cta, widget: string, i18n: true }
+          - { label: "Chambre Jardin - Photo", name: garden_image, widget: image, i18n: duplicate }
+          - { label: "Chambre Jardin - Titre", name: garden_title, widget: string, i18n: true }
+          - { label: "Chambre Jardin - Description", name: garden_desc, widget: text, i18n: true }
+          - { label: "Chambre Jardin - Détails", name: garden_details, widget: text, i18n: true }
+          - { label: "Chambre Vue Mer - Photo", name: mer_image, widget: image, i18n: duplicate }
+          - { label: "Chambre Vue Mer - Titre", name: mer_title, widget: string, i18n: true }
+          - { label: "Chambre Vue Mer - Description", name: mer_desc, widget: text, i18n: true }
+          - { label: "Chambre Vue Mer - Détails", name: mer_details, widget: text, i18n: true }
+          - { label: "Pavillons Suite - Photo", name: pavillons_image, widget: image, i18n: duplicate }
+          - { label: "Pavillons Suite - Titre", name: pavillons_title, widget: string, i18n: true }
+          - { label: "Pavillons Suite - Description", name: pavillons_desc, widget: text, i18n: true }
+          - { label: "Pavillons Suite - Détails", name: pavillons_details, widget: text, i18n: true }
+          - { label: "Titre Équipements", name: amenities_title, widget: string, i18n: true }
+          - name: specs
+            label: "Labels Spécifications"
+            widget: object
+            fields:
+              - { label: "Superficie", name: size, widget: string, i18n: true }
+              - { label: "Capacité", name: capacity, widget: string, i18n: true }
+              - { label: "Literie", name: bed, widget: string, i18n: true }
+              - { label: "Wifi", name: wifi, widget: string, i18n: true }
+              - { label: "Plateau de courtoisie", name: courtesy, widget: string, i18n: true }
+              - { label: "Sèche-cheveux", name: hairdryer, widget: string, i18n: true }
+              - { label: "Produits d'accueil", name: products, widget: string, i18n: true }
+          - { label: "Teaser Bas - Question", name: footer_question, widget: string, i18n: true }
+          - { label: "Teaser Bas - Bouton", name: footer_cta, widget: string, i18n: true }
+      - name: services
+        label: "Page Services"
+        widget: object
+        fields:
+          - { label: "Titre Principal", name: title, widget: string, i18n: true }
+          - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+          - { label: "Services - Titre", name: hotel_services_title, widget: string, i18n: true }
+          - { label: "Services - Desc", name: hotel_services_desc, widget: text, i18n: true }
+          - { label: "Service 1 - Titre", name: service_pool_title, widget: string, i18n: true }
+          - { label: "Service 1 - Desc", name: service_pool_desc, widget: text, i18n: true }
+          - { label: "Service 2 - Titre", name: service_garden_title, widget: string, i18n: true }
+          - { label: "Service 2 - Desc", name: service_garden_desc, widget: text, i18n: true }
+          - { label: "Service 3 - Titre", name: service_breakfast_title, widget: string, i18n: true }
+          - { label: "Service 3 - Desc", name: service_breakfast_desc, widget: text, i18n: true }
+          - { label: "Activités - Titre", name: activities_title, widget: string, i18n: true }
+          - { label: "Activités - Desc", name: activities_desc, widget: text, i18n: true }
+
+  - name: reviews
+    label: "4. Témoignages (TripAdvisor)"
+    folder: "src/translations/reviews"
+    extension: json
+    format: json
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - name: reviews
+        label: "Section TripAdvisor"
+        widget: object
+        fields:
+          - { label: "Titre Principal", name: title, widget: string, i18n: true }
+          - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+          - { label: "Label Bouton Lire Plus", name: read_more, widget: string, i18n: true }
+          - name: items
+            label: "Liste des avis"
+            widget: list
+            i18n: true
+            fields:
+              - { label: "Nom du Client", name: author, widget: string, i18n: duplicate }
+              - { label: "Date du séjour", name: date, widget: string, i18n: duplicate }
+              - { label: "Note (sur 5)", name: rating, widget: number, i18n: duplicate }
+              - { label: "Titre de l'avis", name: title, widget: string, i18n: true }
+              - { label: "Message de l'avis", name: text, widget: text, i18n: true }
+
+  - name: gallery
+    label: "5. Galerie Photos"
+    folder: "src/translations/gallery"
+    extension: json
+    format: json
+    i18n: true
+    create: false
+    delete: false
+    fields:
+      - { label: "Nom de la Langue", name: title, widget: string, i18n: duplicate }
+      - name: items
+        label: "Liste des Photos"
+        widget: list
+        i18n: true
+        fields:
+          - { label: "Photo (Image)", name: image, widget: image, i18n: duplicate }
+          - label: "Catégorie"
+            name: category
+            widget: select
+            i18n: duplicate
+            options:
+              - { label: "Vue", value: "view" }
+              - { label: "Piscine", value: "pool" }
+              - { label: "Chambres", value: "rooms" }
+              - { label: "Petit-déjeuner", value: "breakfast" }
+          - { label: "Balise Alt SEO (Description)", name: alt, widget: string, i18n: true }
