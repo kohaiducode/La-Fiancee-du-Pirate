@@ -19,6 +19,8 @@ collections:
     i18n:
       structure: multiple_files
       locales: [fr, en, en-au, de, it, es, ru]
+    extension: json
+    format: json
     files:
       - name: accueil
         label: "Page d'Accueil"
@@ -29,6 +31,7 @@ collections:
           - name: seo
             label: "Métadonnées"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Google - Accueil", name: home_title, widget: string, i18n: true }
               - { label: "Description Google - Accueil", name: home_desc, widget: text, i18n: true }
@@ -42,6 +45,7 @@ collections:
           - name: seo
             label: "Métadonnées"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Google - Chambres", name: rooms_title, widget: string, i18n: true }
               - { label: "Description Google - Chambres", name: rooms_desc, widget: text, i18n: true }
@@ -55,6 +59,7 @@ collections:
           - name: seo
             label: "Métadonnées"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Google - Services", name: services_title, widget: string, i18n: true }
               - { label: "Description Google - Services", name: services_desc, widget: text, i18n: true }
@@ -68,6 +73,7 @@ collections:
           - name: seo
             label: "Métadonnées"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Google - Galerie", name: gallery_title, widget: string, i18n: true }
               - { label: "Description Google - Galerie", name: gallery_desc, widget: text, i18n: true }
@@ -81,6 +87,7 @@ collections:
           - name: seo
             label: "Métadonnées"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Google - Contact", name: contact_title, widget: string, i18n: true }
               - { label: "Description Google - Contact", name: contact_desc, widget: text, i18n: true }
@@ -90,6 +97,8 @@ collections:
     i18n:
       structure: multiple_files
       locales: [fr, en, en-au, de, it, es, ru]
+    extension: json
+    format: json
     files:
       - name: layout
         label: "Configuration En-tête & Pied de page"
@@ -100,6 +109,7 @@ collections:
           - name: nav
             label: "Menu de Navigation"
             widget: object
+            i18n: true
             fields:
               - { label: "Accueil", name: home, widget: string, i18n: true }
               - { label: "Chambres", name: rooms, widget: string, i18n: true }
@@ -110,6 +120,7 @@ collections:
           - name: hero
             label: "Bannière d'Accueil (Hero Slider)"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
@@ -117,6 +128,7 @@ collections:
           - name: booking_bar
             label: "Barre de Réservation"
             widget: object
+            i18n: true
             fields:
               - { label: "Arrivée", name: check_in, widget: string, i18n: true }
               - { label: "Départ", name: check_out, widget: string, i18n: true }
@@ -125,6 +137,7 @@ collections:
           - name: footer
             label: "Pied de page (Footer)"
             widget: object
+            i18n: true
             fields:
               - { label: "Description Sous-Logo", name: desc, widget: text, i18n: true }
               - { label: "Titre Navigation", name: links_title, widget: string, i18n: true }
@@ -137,6 +150,8 @@ collections:
     i18n:
       structure: multiple_files
       locales: [fr, en, en-au, de, it, es, ru]
+    extension: json
+    format: json
     files:
       - name: accueil
         label: "Page d'Accueil"
@@ -147,6 +162,7 @@ collections:
           - name: accueil
             label: "Contenu"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre d'Introduction", name: intro_title, widget: string, i18n: true }
               - { label: "Texte d'Introduction (P1)", name: intro_text, widget: text, i18n: true }
@@ -175,6 +191,7 @@ collections:
           - name: rooms
             label: "Contenu"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
@@ -195,6 +212,7 @@ collections:
               - name: specs
                 label: "Labels Spécifications"
                 widget: object
+                i18n: true
                 fields:
                   - { label: "Superficie", name: size, widget: string, i18n: true }
                   - { label: "Capacité", name: capacity, widget: string, i18n: true }
@@ -215,6 +233,7 @@ collections:
           - name: services
             label: "Contenu"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
@@ -238,6 +257,7 @@ collections:
           - name: gallery
             label: "Textes de la Galerie"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre de la Galerie", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
@@ -256,6 +276,7 @@ collections:
           - name: contact
             label: "Contenu"
             widget: object
+            i18n: true
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
@@ -315,6 +336,7 @@ collections:
       - name: review
         label: "Avis"
         widget: object
+        i18n: true
         fields:
           - { label: "Titre de l'avis", name: title, widget: string, i18n: true }
           - { label: "Message de l'avis", name: text, widget: text, i18n: true }
