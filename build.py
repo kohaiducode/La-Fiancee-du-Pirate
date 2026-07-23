@@ -31,7 +31,7 @@ def compile_site():
     
     # Paths
     src_dir = "src"
-    dist_dir = "dist"
+    dist_dir = "docs"
     templates_dir = os.path.join(src_dir, "templates")
     pages_dir = os.path.join(src_dir, "pages")
     translations_dir = os.path.join(src_dir, "translations")

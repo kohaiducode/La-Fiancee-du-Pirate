@@ -4,7 +4,7 @@ import os
 import sys
 
 PORT = 8080
-DIRECTORY = "dist"
+DIRECTORY = "docs"
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
