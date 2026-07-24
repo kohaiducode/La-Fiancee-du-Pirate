@@ -21,7 +21,7 @@
 <!-- Welcome / Introduction Section -->
 <section class="intro-section section-padding">
     <div class="container text-center">
-        <span class="section-tag">Boutique Hôtel</span>
+        <span class="section-tag">{{accueil.tag_boutique_hotel}}</span>
         <h2 class="section-title">{{accueil.intro_title}}</h2>
         <div class="divider"></div>
         <p class="lead-text">{{accueil.intro_text}}</p>
@@ -102,14 +102,14 @@
 <section class="reviews-section section-padding">
     <div class="container">
         <div class="text-center">
-            <span class="section-tag">Avis Clients</span>
+            <span class="section-tag">{{accueil.reviews_tag}}</span>
             <h2 class="section-title">{{reviews.title}}</h2>
             <p class="section-subtitle">{{reviews.subtitle}}</p>
             <div class="divider"></div>
         </div>
 
         <!-- Reviews Slider Container -->
-        <div class="reviews-slider-container">
+        <div class="reviews-slider-container" data-read-more="{{accueil.btn_read_more}}">
             <div class="reviews-track" id="reviewsTrack">
                 <!-- Dynamically populated or pre-rendered from JSON -->
                 {{reviews_slides_placeholder}}

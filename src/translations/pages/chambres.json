@@ -34,7 +34,8 @@
         "wifi": "Wifi Gratuit",
         "courtesy": "Plateau de courtoisie",
         "hairdryer": "Sèche-cheveux",
-        "products": "Produits d'accueil"
+        "products": "Produits d'accueil",
+        "bathrobes": "Peignoirs"
       },
       "footer_question": "Vous avez des questions sur nos équipements ?",
       "footer_cta": "Contactez-nous",
@@ -52,7 +53,8 @@
         "bed": "Lit King Size ou Queen Size",
         "capacity": "1 à 4 personnes",
         "size": "16 à 31 m²"
-      }
+      },
+      "btn_details": "Détails"
     }
   },
   "en": {
@@ -66,22 +68,22 @@
       "garden_desc": "These pleasant rooms allow you to fully enjoy the garden with their private terraces.",
       "garden_details": "Available in Double, Triple, and Family options, they feature a cozy private terrace opening onto our green sanctuary.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "1 to 2 people",
+      "garden_bed": "1 Double Bed (or King size based on availability)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Sea View Room",
       "mer_desc": "Spacious and welcoming, these rooms offer breathtaking panoramic views of the bay of Villefranche-sur-Mer and Cap Ferrat.",
       "mer_details": "Available in Double, Triple, or Quadruple configurations. Wake up facing the deep blue Mediterranean.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "1 to 2 people",
+      "mer_bed": "King size bed or Twin beds",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "Our Private Pavilions",
       "pavillons_desc": "Separated from the main building, our two private pavilions offer a unique space of freedom and well-being.",
       "pavillons_details": "The Pavillon de la Fiancée is perfect for couples seeking romance. The Pavillon du Pirate is ideal for families thanks to its prime location.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
+      "pavillons_capacity": "2 to 4 people",
+      "pavillons_bed": "King size bed + Sofa bed",
       "amenities_title": "Included Amenities",
       "specs": {
         "size": "Surface Area",
@@ -90,7 +92,8 @@
         "wifi": "Free Wi-Fi",
         "courtesy": "Courtesy Tray",
         "hairdryer": "Hairdryer",
-        "products": "Complimentary Toiletries"
+        "products": "Complimentary Toiletries",
+        "bathrobes": "Bathrobes"
       },
       "footer_question": "Any questions about our room amenities?",
       "footer_cta": "Contact us",
@@ -108,7 +111,8 @@
         "bed": "King Size or Queen Size bed",
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
-      }
+      },
+      "btn_details": "Details"
     }
   },
   "en-au": {
@@ -122,22 +126,22 @@
       "garden_desc": "These pleasant rooms allow you to fully enjoy the garden with their private terraces.",
       "garden_details": "Available in Double, Triple, and Family options, they feature a cozy private terrace opening onto our green sanctuary.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "1 to 2 people",
+      "garden_bed": "1 Double Bed (or King size based on availability)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Sea View Room",
       "mer_desc": "Spacious and welcoming, these rooms offer breathtaking panoramic views of the bay of Villefranche-sur-Mer and Cap Ferrat.",
       "mer_details": "Available in Double, Triple, or Quadruple configurations. Wake up facing the deep blue Mediterranean.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "1 to 2 people",
+      "mer_bed": "King size bed or Twin beds",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "Our Private Pavilions",
       "pavillons_desc": "Separated from the main building, our two private pavilions offer a unique space of freedom and well-being.",
       "pavillons_details": "The Pavillon de la Fiancée is perfect for couples seeking romance. The Pavillon du Pirate is ideal for families thanks to its prime location.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
+      "pavillons_capacity": "2 to 4 people",
+      "pavillons_bed": "King size bed + Sofa bed",
       "amenities_title": "Included Amenities",
       "specs": {
         "size": "Surface Area",
@@ -146,7 +150,8 @@
         "wifi": "Free Wi-Fi",
         "courtesy": "Courtesy Tray",
         "hairdryer": "Hairdryer",
-        "products": "Complimentary Toiletries"
+        "products": "Complimentary Toiletries",
+        "bathrobes": "Bathrobes"
       },
       "footer_question": "Any questions about our room amenities?",
       "footer_cta": "Contact us",
@@ -164,7 +169,8 @@
         "bed": "King Size or Queen Size bed",
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
-      }
+      },
+      "btn_details": "Details"
     }
   },
   "de": {
@@ -178,23 +184,23 @@
       "garden_desc": "Diese gemütlichen Zimmer verfügen über eine eigene Terrasse, auf der Sie den Garten in vollen Zügen genießen können.",
       "garden_details": "Verfügbar als Doppel-, Dreibett- und Familienzimmer, bieten sie eine private Terrasse mit Blick in die Natur.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "1 bis 2 Personen",
+      "garden_bed": "1 Doppelbett (oder Kingsize nach Verfügbarkeit)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Zimmer mit Meerblick",
       "mer_desc": "Geräumig und einladend bieten diese Zimmer einen unvergesslichen Panoramablick auf die Bucht von Villefranche-sur-Mer und das Cap Ferrat.",
       "mer_details": "Verfügbar als Doppel-, Dreibett- oder Vierbettzimmer. Wachen Sie direkt vor dem blauen Mittelmeer auf.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "1 bis 2 Personen",
+      "mer_bed": "Kingsize-Bett oder Einzelbetten",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "Unsere privaten Pavillons",
       "pavillons_desc": "Getrennt vom Hauptgebäude bieten unsere beiden privaten Pavillons einzigartigen Freiraum und Wohlbefinden.",
       "pavillons_details": "Der Pavillon de la Fiancée ist ideal für Paare, die Romantik suchen. Der Pavillon du Pirate ist dank seiner Lage ideal für Familien.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
-      "amenities_title": "Inklusive Leistungen",
+      "pavillons_capacity": "2 bis 4 Personen",
+      "pavillons_bed": "Kingsize-Bett + Schlafsofa",
+      "amenities_title": "Inbegriffene Ausstattung",
       "specs": {
         "size": "Größe",
         "capacity": "Kapazität",
@@ -202,7 +208,8 @@
         "wifi": "Kostenloses WLAN",
         "courtesy": "Kaffee- und Teezubereiter",
         "hairdryer": "Haartrockner",
-        "products": "Pflegeprodukte"
+        "products": "Pflegeprodukte",
+        "bathrobes": "Bademäntel"
       },
       "footer_question": "Haben Sie Fragen zur Ausstattung unserer Zimmer?",
       "footer_cta": "Kontaktieren Sie uns",
@@ -220,7 +227,8 @@
         "bed": "Kingsize- oder Queensize-Bett",
         "capacity": "1 to 4 Personen",
         "size": "16 bis 31 m²"
-      }
+      },
+      "btn_details": "Details"
     }
   },
   "it": {
@@ -234,22 +242,22 @@
       "garden_desc": "Queste piacevoli camere vi consentono di godere appieno del giardino grazie alle loro terrazze private.",
       "garden_details": "Disponibili in versione Doppia, Tripla e Familiare, dispongono di una terrazza privata che si affaccia sulla nostra oasi di verde.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "Da 1 a 2 persone",
+      "garden_bed": "1 Letto Matrimoniale (o King size in base disponibilità)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Camera Vista Mare",
       "mer_desc": "Spaziose e accoglienti, queste camere offrono una vista panoramica spettacolare sulla baia di Villefranche-sur-Mer e su Cap Ferrat.",
       "mer_details": "Disponibili in versione Doppia, Tripla o Quadrupla. Svegliatevi di fronte all'azzurro del Mediterraneo.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "Da 1 a 2 persone",
+      "mer_bed": "Letto King size o letti singoli",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "I Nostri Padiglioni Privati",
       "pavillons_desc": "Separati dal corpo principale, i nostri due padiglioni privati offrono uno spazio unico di libertà e benessere.",
       "pavillons_details": "Il Pavillon de la Fiancée incanterà le coppie in cerca di romanticismo. Il Pavillon du Pirate conquisterà le famiglie grazie alla sua posizione ideale.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
+      "pavillons_capacity": "Da 2 a 4 persone",
+      "pavillons_bed": "Letto King size + Divano letto",
       "amenities_title": "Servizi inclusi",
       "specs": {
         "size": "Superficie",
@@ -258,7 +266,8 @@
         "wifi": "Wi-Fi Gratuito",
         "courtesy": "Set di cortesia (tè/caffè)",
         "hairdryer": "Asciugacapelli",
-        "products": "Prodotti da bagno omaggio"
+        "products": "Prodotti da bagno omaggio",
+        "bathrobes": "Accappatoi"
       },
       "footer_question": "Avete domande sui servizi delle nostre camere?",
       "footer_cta": "Contattateci",
@@ -276,7 +285,8 @@
         "bed": "Letto King Size o Queen Size",
         "capacity": "Da 1 a 4 persone",
         "size": "Da 16 a 31 m²"
-      }
+      },
+      "btn_details": "Dettagli"
     }
   },
   "es": {
@@ -290,22 +300,22 @@
       "garden_desc": "Estas agradables habitaciones le permiten disfrutar plenamente del jardín gracias a sus terrazas privadas.",
       "garden_details": "Disponibles en versiones Doble, Triple y Familiar, cuentan con una terraza privada que da a nuestro oasis verde.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "1 a 2 personas",
+      "garden_bed": "1 Cama Doble (o King size según disponibilidad)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Habitación Vista al Mar",
       "mer_desc": "Espaciosas y acogedoras, estas habitaciones ofrecen unas vistas panorámicas espectaculares de la bahía de Villefranche-sur-Mer y Cap Ferrat.",
       "mer_details": "Disponibles en versiones Doble, Triple o Cuádruple. Despiértese frente al azul del Mediterráneo.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "1 a 2 personas",
+      "mer_bed": "Cama King size o dos camas individuales",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "Nuestros Pabellones Privados",
       "pavillons_desc": "Separados del edificio principal, nuestros dos pabellones privados ofrecen un espacio único de libertad y bienestar.",
       "pavillons_details": "El Pavillon de la Fiancée encantará a las parejas que buscan romance. El Pavillon du Pirate conquistará a las familias gracias a su ubicación privilegiada.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
+      "pavillons_capacity": "2 a 4 personas",
+      "pavillons_bed": "Cama King size + Sofá cama",
       "amenities_title": "Servicios incluidos",
       "specs": {
         "size": "Superficie",
@@ -314,7 +324,8 @@
         "wifi": "Wifi Gratis",
         "courtesy": "Bandeja de cortesía (café/té)",
         "hairdryer": "Secador de pelo",
-        "products": "Productos de acogida gratis"
+        "products": "Productos de acogida gratis",
+        "bathrobes": "Albornoces"
       },
       "footer_question": "¿Tiene alguna pregunta sobre los servicios de nuestras habitaciones?",
       "footer_cta": "Contacte con nosotros",
@@ -332,7 +343,8 @@
         "bed": "Cama King Size o Queen Size",
         "capacity": "De 1 a 4 personas",
         "size": "De 16 a 31 m²"
-      }
+      },
+      "btn_details": "Detalles"
     }
   },
   "ru": {
@@ -346,22 +358,22 @@
       "garden_desc": "Эти приятные номера позволяют в полной мере насладиться садом благодаря собственной террасе.",
       "garden_details": "Доступны в двухместном, трехместном и семейном вариантах. К услугам гостей уютная терраса с видом на зеленый сад.",
       "garden_size": "16 à 25 m²",
-      "garden_capacity": "1 à 2 personnes",
-      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "garden_capacity": "От 1 до 2 человек",
+      "garden_bed": "1 двуспальная кровать (или кровать King size при наличии)",
       "mer_image": "/Photos/Accueil/Room with view.jpg",
       "mer_title": "Номер с видом на море",
       "mer_desc": "Просторные и гостеприимные номера с незабываемым панорамным видом на залив Вильфранш-сюр-Мер и Кап-Ферра.",
       "mer_details": "Доступны в двух-, трех- и четырехместной конфигурациях. Просыпайтесь под шум волн Средиземного моря.",
       "mer_size": "20 à 28 m²",
-      "mer_capacity": "1 à 2 personnes",
-      "mer_bed": "Lit King size ou Lits jumeaux",
+      "mer_capacity": "От 1 до 2 человек",
+      "mer_bed": "Кровать King size или две односпальные кровати",
       "pavillons_image": "/Photos/95100384_2994383503961237_7791893139706347520_n.jpg",
       "pavillons_title": "Наши отдельные павильоны",
       "pavillons_desc": "Расположенные отдельно от главного здания, наши два частных павильона дарят уникальное ощущение свободы и комфорта.",
       "pavillons_details": "Павильон «Fiancée» очарует влюбленные пары, а павильон «Pirate» идеально подойдет для семей благодаря отличному расположению.",
       "pavillons_size": "30 à 45 m²",
-      "pavillons_capacity": "2 à 4 personnes",
-      "pavillons_bed": "Lit King size + Canapé-lit",
+      "pavillons_capacity": "От 2 до 4 человек",
+      "pavillons_bed": "Кровать King size + диван-кровать",
       "amenities_title": "Включенные удобства",
       "specs": {
         "size": "Площадь",
@@ -370,7 +382,8 @@
         "wifi": "Бесплатный Wi-Fi",
         "courtesy": "Чайный набор",
         "hairdryer": "Фен",
-        "products": "Косметические средства"
+        "products": "Косметические средства",
+        "bathrobes": "Халаты"
       },
       "footer_question": "У вас есть вопросы об оснащении номеров?",
       "footer_cta": "Свяжитесь с нами",
@@ -388,7 +401,8 @@
         "bed": "Кровать King Size или Queen Size",
         "capacity": "От 1 до 4 человек",
         "size": "От 16 до 31 м²"
-      }
+      },
+      "btn_details": "Подробнее"
     }
   }
 }

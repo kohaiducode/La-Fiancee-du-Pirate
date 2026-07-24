@@ -14,7 +14,11 @@
       "form_error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard.",
       "info_title": "Nos coordonnées",
       "info_address": "Adresse",
-      "map_title": "Plan d'accès"
+      "map_title": "Plan d'accès",
+      "form_message_placeholder": "Bonjour...",
+      "info_address_label": "Adresse",
+      "info_phone_label": "Téléphone",
+      "info_email_label": "E-mail"
     },
     "title": "Nom de la Langue"
   },
@@ -33,7 +37,11 @@
       "form_error": "An error occurred while sending your message. Please try again later.",
       "info_title": "Contact details",
       "info_address": "Address",
-      "map_title": "Access map"
+      "map_title": "Access map",
+      "form_message_placeholder": "Hello...",
+      "info_address_label": "Address",
+      "info_phone_label": "Phone",
+      "info_email_label": "Email"
     },
     "title": "Language Name"
   },
@@ -52,7 +60,11 @@
       "form_error": "An error occurred while sending your message. Please try again later.",
       "info_title": "Contact details",
       "info_address": "Address",
-      "map_title": "Access map"
+      "map_title": "Access map",
+      "form_message_placeholder": "Hello...",
+      "info_address_label": "Address",
+      "info_phone_label": "Phone",
+      "info_email_label": "Email"
     },
     "title": "Language Name"
   },
@@ -71,7 +83,11 @@
       "form_error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
       "info_title": "Kontaktdaten",
       "info_address": "Adresse",
-      "map_title": "Lageplan"
+      "map_title": "Lageplan",
+      "form_message_placeholder": "Hallo...",
+      "info_address_label": "Adresse",
+      "info_phone_label": "Telefon",
+      "info_email_label": "E-Mail"
     },
     "title": "Sprache Name"
   },
@@ -90,7 +106,11 @@
       "form_error": "Si è verificato un errore durante l'invio del messaggio. Riprova più tardi.",
       "info_title": "I nostri contatti",
       "info_address": "Indirizzo",
-      "map_title": "Mappa di accesso"
+      "map_title": "Mappa di accesso",
+      "form_message_placeholder": "Buongiorno...",
+      "info_address_label": "Indirizzo",
+      "info_phone_label": "Telefono",
+      "info_email_label": "E-mail"
     },
     "title": "Nome della Lingua"
   },
@@ -109,7 +129,11 @@
       "form_error": "Se ha producido un error al enviar su mensaje. Por favor, inténtelo de nuevo más tarde.",
       "info_title": "Datos de contacto",
       "info_address": "Dirección",
-      "map_title": "Mapa de acceso"
+      "map_title": "Mapa de acceso",
+      "form_message_placeholder": "Hola...",
+      "info_address_label": "Dirección",
+      "info_phone_label": "Teléfono",
+      "info_email_label": "Correo electrónico"
     },
     "title": "Nombre del Idioma"
   },
@@ -128,7 +152,11 @@
       "form_error": "При отправке сообщения произошла ошибка. Пожалуйста, повторите попытку позже.",
       "info_title": "Наши контакты",
       "info_address": "Адрес",
-      "map_title": "Схема проезда"
+      "map_title": "Схема проезда",
+      "form_message_placeholder": "Здравствуйте...",
+      "info_address_label": "Адрес",
+      "info_phone_label": "Телефон",
+      "info_email_label": "Электронная почта"
     },
     "title": "Название Языка"
   }

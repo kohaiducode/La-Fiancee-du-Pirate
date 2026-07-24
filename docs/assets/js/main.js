@@ -197,19 +197,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3b. Reviews Read More (Mobile Optimization)
     // ==========================================================================
     const reviewTexts = document.querySelectorAll('.review-text');
-    const MAX_LENGTH = 120;
-    
+    const maxChars = 200; // adjust as needed
+        
+    // Get the translated "Read More" text from the container, fallback to "Lire plus"
+    const sliderContainer = document.querySelector('.reviews-slider-container');
+    const readMoreText = sliderContainer && sliderContainer.dataset.readMore ? sliderContainer.dataset.readMore : "Lire plus";
+
     reviewTexts.forEach(p => {
-        const fullText = p.innerHTML;
-        // Truncate only if it's long enough and we are on small screens (but we can do it universally for long reviews)
-        if (fullText.length > MAX_LENGTH + 20) {
-            const truncated = fullText.substring(0, MAX_LENGTH) + '...';
-            p.innerHTML = `${truncated} <a href="#" class="read-more-link" style="color:var(--color-secondary); font-weight:bold;">Lire plus</a>`;
+        const originalText = p.innerHTML.trim();
+        if (originalText.length > maxChars) {
+            const truncated = originalText.substring(0, maxChars) + '...';
+            p.setAttribute('data-full-text', originalText);
+            p.setAttribute('data-truncated-text', truncated);
+            p.innerHTML = `${truncated} <a href="#" class="read-more-link" style="color:var(--color-secondary); font-weight:bold;">${readMoreText}</a>`;
             
             const link = p.querySelector('.read-more-link');
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                p.innerHTML = fullText;
+                p.innerHTML = originalText;
             });
         }
     });
