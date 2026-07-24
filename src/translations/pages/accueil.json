@@ -18,44 +18,44 @@
       "card_location_text": "Situé de manière privilégiée sur la moyenne corniche, avec accès direct par escalier à la vieille ville et aux plages.",
       "explore_rooms_title": "Nos Chambres & Pavillons",
       "explore_rooms_text": "Entièrement rénovées, climatisées et équipées de lits queen ou king-size pour un confort optimal.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "Ce qu'en disent nos clients",
       "reviews_subtitle": "Découvrez pourquoi nos hôtes aiment séjourner à La Fiancée du Pirate",
       "reviews_read_more": "Voir sur TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
-      "images": [
-        {
-          "image": "/Photos/hotel_view.webp"
-        },
-        {
-          "image": "/Photos/pool_and_hotel.webp"
-        },
-        {
-          "image": "/Photos/by_the_pool.webp"
-        },
-        {
-          "image": "/Photos/jacuzzi_and_pool.webp"
-        },
-        {
-          "image": "/Photos/snacks_by_the_pool.webp"
-        },
-        {
-          "image": "/Photos/room_with_view.webp"
-        },
-        {
-          "image": "/Photos/dinner_room.webp"
-        },
-        {
-          "image": "/Photos/breakfast.webp"
-        }
-      ],
       "title": "Une parenthèse suspendue sur la Côte d'Azur",
       "subtitle": "Boutique-Hôtel de charme avec vue panoramique sur la rade de Villefranche-sur-Mer",
-      "cta": "Réserver une chambre"
+      "cta": "Réserver une chambre",
+      "images": [
+        {
+          "image": "/Photos/Accueil/Hotel view.jpg"
+        },
+        {
+          "image": "/Photos/Accueil/Pool and hotel.jpg"
+        },
+        {
+          "image": "/Photos/Accueil/By the pool.jpg"
+        },
+        {
+          "image": "/Photos/Accueil/Jacuzzi and pool.jpg"
+        },
+        {
+          "image": "/Photos/Galerie/snacks_by_the_pool.jpg"
+        },
+        {
+          "image": "/Photos/Galerie/room_with_view.jpg"
+        },
+        {
+          "image": "/Photos/Galerie/dinner_room.jpg"
+        },
+        {
+          "image": "/Photos/Accueil/breakfast.jpg"
+        }
+      ]
     }
   },
   "en": {
@@ -77,15 +77,18 @@
       "card_location_text": "Privileged location on the moyenne corniche, with direct staircase access to the historic old town and beaches.",
       "explore_rooms_title": "Our Rooms & Pavilions",
       "explore_rooms_text": "Fully renovated, air-conditioned, and equipped with queen or king-size beds for ultimate comfort.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "What Our Guests Say",
       "reviews_subtitle": "Discover why guests love staying at La Fiancée du Pirate",
       "reviews_read_more": "Read more on TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "A serene escape overlooking the French Riviera",
+      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
+      "cta": "Book a room",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -111,10 +114,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "A serene escape overlooking the French Riviera",
-      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
-      "cta": "Book a room"
+      ]
     }
   },
   "en-au": {
@@ -136,15 +136,18 @@
       "card_location_text": "Privileged location on the moyenne corniche, with direct staircase access to the historic old town and beaches.",
       "explore_rooms_title": "Our Rooms & Pavilions",
       "explore_rooms_text": "Fully renovated, air-conditioned, and equipped with queen or king-size beds for ultimate comfort.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "What Our Guests Say",
       "reviews_subtitle": "Discover why guests love staying at La Fiancée du Pirate",
       "reviews_read_more": "Read more on TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "A serene escape overlooking the French Riviera",
+      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
+      "cta": "Book a room",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -170,10 +173,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "A serene escape overlooking the French Riviera",
-      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
-      "cta": "Book a room"
+      ]
     }
   },
   "de": {
@@ -195,15 +195,18 @@
       "card_location_text": "Privilegierte Lage an der Moyenne Corniche, mit direktem Treppenzugang zur historischen Altstadt und den Stränden.",
       "explore_rooms_title": "Zimmer & Pavillons",
       "explore_rooms_text": "Vollständig renoviert, klimatisiert und mit Queen- oder Kingsize-Betten für optimalen Komfort ausgestattet.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "Was unsere Gäste sagen",
       "reviews_subtitle": "Entdecken Sie, warum unsere Gäste so gerne im La Fiancée du Pirate übernachten",
       "reviews_read_more": "Mehr auf TripAdvisor lesen",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "Eine Oase der Ruhe über der Côte d'Azur",
+      "subtitle": "Charmantes Boutique-Hotel mit Panoramablick auf die Bucht von Villefranche-sur-Mer",
+      "cta": "Zimmer buchen",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -229,10 +232,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "Eine Oase der Ruhe über der Côte d'Azur",
-      "subtitle": "Charmantes Boutique-Hotel mit Panoramablick auf die Bucht von Villefranche-sur-Mer",
-      "cta": "Zimmer buchen"
+      ]
     }
   },
   "it": {
@@ -254,15 +254,18 @@
       "card_location_text": "Posizione privilegiata sulla moyenne corniche, con accesso diretto tramite scale al centro storico e alle spiagge.",
       "explore_rooms_title": "Camere & Padiglioni",
       "explore_rooms_text": "Interamente rinnovate, climatizzate e dotate di letti queen o king-size per il massimo comfort.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "Cosa dicono i nostri ospiti",
       "reviews_subtitle": "Scopri perché i nostri ospiti amano soggiornare a La Fiancée du Pirate",
       "reviews_read_more": "Leggi altro su TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "Un'oasi di pace sospesa sulla Costa Azzurra",
+      "subtitle": "Incantevole boutique hotel con vista panoramica sulla baia di Villefranche-sur-Mer",
+      "cta": "Prenota una camera",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -288,10 +291,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "Un'oasi di pace sospesa sulla Costa Azzurra",
-      "subtitle": "Incantevole boutique hotel con vista panoramica sulla baia di Villefranche-sur-Mer",
-      "cta": "Prenota una camera"
+      ]
     }
   },
   "es": {
@@ -313,15 +313,18 @@
       "card_location_text": "Ubicación privilegiada en la moyenne corniche, con acceso directo por escaleras al centro histórico y a las playas.",
       "explore_rooms_title": "Habitaciones & Pabellones",
       "explore_rooms_text": "Totalmente renovadas, climatizadas y equipadas con camas queen o king-size para su máximo confort.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "Lo que dicen nuestros huéspedes",
       "reviews_subtitle": "Descubra por qué a los huéspedes les encanta alojarse en La Fiancée du Pirate",
       "reviews_read_more": "Leer más en TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "Un oasis de calma con vistas a la Costa Azul",
+      "subtitle": "Encantador hotel boutique con vistas panorámicas a la bahía de Villefranche-sur-Mer",
+      "cta": "Reservar una habitación",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -347,10 +350,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "Un oasis de calma con vistas a la Costa Azul",
-      "subtitle": "Encantador hotel boutique con vistas panorámicas a la bahía de Villefranche-sur-Mer",
-      "cta": "Reservar una habitación"
+      ]
     }
   },
   "ru": {
@@ -372,15 +372,18 @@
       "card_location_text": "Удобное расположение на Среднем Корнише с прямым спуском по лестнице к историческому старому городу и пляжам.",
       "explore_rooms_title": "Наши номера и павильоны",
       "explore_rooms_text": "Полностью отремонтированные номера с кондиционером, оснащенные кроватями queen-size или king-size для вашего комфорта.",
-      "myblackcab_title": "Service Limousine & Transferts",
-      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "reviews_title": "Отзывы наших гостей",
       "reviews_subtitle": "Узнайте, что о нас пишут путешественники на TripAdvisor",
       "reviews_read_more": "Читать все отзывы на TripAdvisor",
+      "myblackcab_title": "Service Limousine & Transferts",
+      "myblackcab_text": "Notre partenaire de confiance pour vos transferts aéroport, gare et excursions sur la Côte d'Azur. Véhicules haut de gamme et chauffeurs professionnels.",
       "myblackcab_url": "https://mbc-limousines.com/en/",
       "myblackcab_phone": "+33 (0)6 69 11 64 99"
     },
     "hero": {
+      "title": "Уютный отдых над Лазурным Берегом",
+      "subtitle": "Очаровательный бутик-отель с панорамным видом на залив Вильфранш-сюр-Мер",
+      "cta": "Забронировать номер",
       "images": [
         {
           "image": "/Photos/hotel_view.webp"
@@ -406,10 +409,7 @@
         {
           "image": "/Photos/breakfast.webp"
         }
-      ],
-      "title": "Уютный отдых над Лазурным Берегом",
-      "subtitle": "Очаровательный бутик-отель с панорамным видом на залив Вильфранш-сюр-Мер",
-      "cta": "Забронировать номер"
+      ]
     }
   }
 }
