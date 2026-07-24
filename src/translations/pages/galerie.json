@@ -4,83 +4,181 @@
     "gallery": {
       "title": "Galerie Photos",
       "subtitle": "Découvrez notre hôtel en images",
-      "filter_all": "Tout",
-      "filter_view": "Vue",
-      "filter_pool": "Piscine",
-      "filter_rooms": "Chambres",
-      "filter_breakfast": "Petit-déjeuner"
-    }
+      "filter_all": "Tout"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "Vue"
+      },
+      {
+        "id": "pool",
+        "label": "Piscine"
+      },
+      {
+        "id": "rooms",
+        "label": "Chambres"
+      },
+      {
+        "id": "breakfast",
+        "label": "Petit-déjeuner"
+      }
+    ]
   },
   "en": {
     "title": "Language Name",
     "gallery": {
       "title": "Photo Gallery",
       "subtitle": "Discover our hotel in pictures",
-      "filter_all": "All",
-      "filter_view": "View",
-      "filter_pool": "Pool",
-      "filter_rooms": "Rooms",
-      "filter_breakfast": "Breakfast"
-    }
+      "filter_all": "All"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "View"
+      },
+      {
+        "id": "pool",
+        "label": "Pool"
+      },
+      {
+        "id": "rooms",
+        "label": "Rooms"
+      },
+      {
+        "id": "breakfast",
+        "label": "Breakfast"
+      }
+    ]
   },
   "en-au": {
     "title": "Language Name",
     "gallery": {
       "title": "Photo Gallery",
       "subtitle": "Discover our hotel in pictures",
-      "filter_all": "All",
-      "filter_view": "View",
-      "filter_pool": "Pool",
-      "filter_rooms": "Rooms",
-      "filter_breakfast": "Breakfast"
-    }
+      "filter_all": "All"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "View"
+      },
+      {
+        "id": "pool",
+        "label": "Pool"
+      },
+      {
+        "id": "rooms",
+        "label": "Rooms"
+      },
+      {
+        "id": "breakfast",
+        "label": "Breakfast"
+      }
+    ]
   },
   "de": {
     "title": "Sprache Name",
     "gallery": {
       "title": "Fotogalerie",
       "subtitle": "Entdecken Sie unser Hotel in Bildern",
-      "filter_all": "Alle",
-      "filter_view": "Aussicht",
-      "filter_pool": "Pool",
-      "filter_rooms": "Zimmer",
-      "filter_breakfast": "Frühstück"
-    }
+      "filter_all": "Alle"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "Aussicht"
+      },
+      {
+        "id": "pool",
+        "label": "Pool"
+      },
+      {
+        "id": "rooms",
+        "label": "Zimmer"
+      },
+      {
+        "id": "breakfast",
+        "label": "Frühstück"
+      }
+    ]
   },
   "it": {
     "title": "Nome della Lingua",
     "gallery": {
       "title": "Galleria Foto",
       "subtitle": "Scoprite il nostro hotel in immagini",
-      "filter_all": "Tutti",
-      "filter_view": "Vista",
-      "filter_pool": "Piscina",
-      "filter_rooms": "Camere",
-      "filter_breakfast": "Colazione"
-    }
+      "filter_all": "Tutti"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "Vista"
+      },
+      {
+        "id": "pool",
+        "label": "Piscina"
+      },
+      {
+        "id": "rooms",
+        "label": "Camere"
+      },
+      {
+        "id": "breakfast",
+        "label": "Colazione"
+      }
+    ]
   },
   "es": {
     "title": "Nombre del Idioma",
     "gallery": {
       "title": "Galería de Fotos",
       "subtitle": "Descubra nuestro hotel en imágenes",
-      "filter_all": "Todos",
-      "filter_view": "Vista",
-      "filter_pool": "Piscina",
-      "filter_rooms": "Habitaciones",
-      "filter_breakfast": "Desayuno"
-    }
+      "filter_all": "Todos"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "Vista"
+      },
+      {
+        "id": "pool",
+        "label": "Piscina"
+      },
+      {
+        "id": "rooms",
+        "label": "Habitaciones"
+      },
+      {
+        "id": "breakfast",
+        "label": "Desayuno"
+      }
+    ]
   },
   "ru": {
     "title": "Название Языка",
     "gallery": {
       "title": "Фотогалерея",
       "subtitle": "Откройте для себя наш отель в фотографиях",
-      "filter_all": "Все",
-      "filter_view": "Вид",
-      "filter_pool": "Бассейн",
-      "filter_rooms": "Номера",
-      "filter_breakfast": "Завтрак"
-    }
+      "filter_all": "Все"
+    },
+    "categories": [
+      {
+        "id": "view",
+        "label": "Вид"
+      },
+      {
+        "id": "pool",
+        "label": "Бассейн"
+      },
+      {
+        "id": "rooms",
+        "label": "Номера"
+      },
+      {
+        "id": "breakfast",
+        "label": "Завтрак"
+      }
+    ]
   }
 }

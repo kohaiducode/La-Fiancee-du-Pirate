@@ -362,11 +362,14 @@ collections:
             fields:
               - { label: "Titre de la Galerie", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
-              - { label: "Filtre: Tout", name: filter_all, widget: string, i18n: true }
-              - { label: "Filtre: Vue", name: filter_view, widget: string, i18n: true }
-              - { label: "Filtre: Piscine", name: filter_pool, widget: string, i18n: true }
-              - { label: "Filtre: Chambres", name: filter_rooms, widget: string, i18n: true }
-              - { label: "Filtre: Petit-déjeuner", name: filter_breakfast, widget: string, i18n: true }
+              - { label: "Filtre (Tous)", name: filter_all, widget: string, i18n: true }
+          - name: categories
+            label: "Catégories de filtres"
+            widget: list
+            i18n: duplicate
+            fields:
+              - { label: "Identifiant (minusc, sans espace. ex: piscine)", name: id, widget: string, i18n: duplicate }
+              - { label: "Nom affiché", name: label, widget: string, i18n: true }
 
       - name: contact
         label: "Contact"
@@ -406,14 +409,9 @@ collections:
             widget: list
             fields:
               - { label: "Photo (Image)", name: image, widget: image }
-              - label: "Catégorie"
+              - label: "Identifiant de la Catégorie (doit correspondre à un identifiant défini dans 'Galerie (Textes)')"
                 name: category
-                widget: select
-                options:
-                  - { label: "Vue", value: "view" }
-                  - { label: "Piscine", value: "pool" }
-                  - { label: "Chambres", value: "rooms" }
-                  - { label: "Petit-déjeuner", value: "breakfast" }
+                widget: string
               - { label: "Balise Alt SEO (Français)", name: alt_fr, widget: string }
               - { label: "Balise Alt SEO (English)", name: alt_en, widget: string }
               - { label: "Balise Alt SEO (English AU)", name: alt_en_au, widget: string }

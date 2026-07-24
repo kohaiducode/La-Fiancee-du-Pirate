@@ -156,15 +156,19 @@ def compile_site():
         
         # Load SEO pages
         seo_data = {"seo": {}}
-        for name in ["accueil", "chambres", "services", "galerie", "contact", "global"]:
+        global_path = os.path.join(translations_dir, "seo", "global.json")
+        json_ld = {}
+        if os.path.exists(global_path):
+            global_data = load_json(global_path)
+            json_ld = global_data.get(lang, {}).get("json_ld", {})
+        lang_data["json_ld"] = json_ld
+        
+        for name in ["accueil", "chambres", "services", "galerie", "contact"]:
             path = os.path.join(translations_dir, "seo", f"{name}.json")
             if os.path.exists(path):
                 loaded = load_json(path)
                 lang_specific_data = loaded.get(lang, {})
-                if name == "global":
-                    lang_data["json_ld"] = lang_specific_data.get("json_ld", {})
-                else:
-                    seo_data["seo"].update(lang_specific_data.get("seo", {}))
+                seo_data["seo"].update(lang_specific_data.get("seo", {}))
         lang_data.update(seo_data)
         
         # Load navigation (header and footer)
@@ -254,6 +258,18 @@ def compile_site():
                 </div>
             </div>
             """
+            
+        # Build Gallery Filters HTML
+        gallery_filters_html = ""
+        filter_all_label = lang_data.get("gallery", {}).get("filter_all", "Tout")
+        gallery_filters_html += f'<button class="filter-btn active" data-filter="all">{filter_all_label}</button>\n'
+        
+        dynamic_categories = lang_data.get("categories", [])
+        for cat in dynamic_categories:
+            cat_id = cat.get("id", "")
+            cat_label = cat.get("label", "")
+            if cat_id and cat_label:
+                gallery_filters_html += f'                <button class="filter-btn" data-filter="{cat_id}">{cat_label}</button>\n'
         
         # Build Photo Gallery Grid HTML for this language
         gallery_html = ""
@@ -419,6 +435,7 @@ def compile_site():
                 page_content = page_content.replace("{{reviews_slides_placeholder}}", reviews_html)
                 page_content = page_content.replace("{{hero_slider_placeholder}}", hero_slider_html)
             elif page_name_no_ext == "galerie":
+                page_content = page_content.replace("{{gallery_filters_placeholder}}", gallery_filters_html)
                 page_content = page_content.replace("{{gallery_grid_html}}", gallery_html)
                 
             rendered_page_content = render_template(page_content, full_vars)

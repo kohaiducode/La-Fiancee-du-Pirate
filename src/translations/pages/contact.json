@@ -3,7 +3,7 @@
     "contact": {
       "title": "Contact",
       "subtitle": "Nous sommes à votre écoute",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Envoyez-nous un message",
       "form_name": "Nom complet",
       "form_email": "Adresse e-mail",
@@ -22,7 +22,7 @@
     "contact": {
       "title": "Contact",
       "subtitle": "We are at your service",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Send us a message",
       "form_name": "Full name",
       "form_email": "Email address",
@@ -41,7 +41,7 @@
     "contact": {
       "title": "Contact",
       "subtitle": "We are at your service",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Send us a message",
       "form_name": "Full name",
       "form_email": "Email address",
@@ -60,7 +60,7 @@
     "contact": {
       "title": "Kontakt",
       "subtitle": "Wir sind für Sie da",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Senden Sie uns eine Nachricht",
       "form_name": "Vollständiger Name",
       "form_email": "E-Mail-Adresse",
@@ -79,7 +79,7 @@
     "contact": {
       "title": "Contatto",
       "subtitle": "Siamo a vostra disposizione",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Inviaci un messaggio",
       "form_name": "Nome e cognome",
       "form_email": "Indirizzo email",
@@ -98,7 +98,7 @@
     "contact": {
       "title": "Contacto",
       "subtitle": "Estamos a su disposición",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Envíenos un mensaje",
       "form_name": "Nombre completo",
       "form_email": "Correo electrónico",
@@ -117,7 +117,7 @@
     "contact": {
       "title": "Контакты",
       "subtitle": "Мы всегда на связи",
-      "hero_image": "/Photos/Galerie/breakfast.jpg",
+      "hero_image": "/Photos/Accueil/Dinner room.jpg",
       "form_title": "Отправьте нам сообщение",
       "form_name": "Полное имя",
       "form_email": "Адрес электронной почты",
