@@ -384,9 +384,9 @@ def compile_site():
             hotel_stars = hotel_data.get("starRating", "3")
             
             same_as_list = hotel_data.get("sameAs", [])
-            same_as_json = json.dumps([item.get("url", "") for item in same_as_list if item.get("url")]) if same_as_list else "[]"
+            same_as_urls = [s.get("url") for s in same_as_list if isinstance(s, dict) and "url" in s]
             
-            json_ld = f"""<script type="application/ld+json">
+            json_ld_script = f"""<script type="application/ld+json">
             {{
               "@context": "https://schema.org",
               "@type": "Hotel",
@@ -402,18 +402,17 @@ def compile_site():
                 "postalCode": "{hotel_zip}",
                 "addressCountry": "{hotel_country}"
               }},
-              "image": "https://www.fianceedupirate.com/assets/images/accueil/hotel_view.webp",
               "starRating": {{
                 "@type": "Rating",
                 "ratingValue": "{hotel_stars}"
               }},
-              "sameAs": {same_as_json}
+              "sameAs": {json.dumps(same_as_urls)}
             }}
             </script>"""
             
             
             context["hreflang_tags"] = hreflang_tags
-            context["json_ld"] = json_ld
+            context["json_ld_script"] = json_ld_script
             context["current_year"] = str(datetime.now().year)
             
             # Combine language translation dictionary
