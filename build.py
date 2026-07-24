@@ -357,7 +357,7 @@ def compile_site():
               "image": "https://www.fianceedupirate.com/assets/images/accueil/hotel_view.webp",
               "starRating": {{
                 "@type": "Rating",
-                "ratingValue": "4"
+                "ratingValue": "3"
               }},
               "sameAs": [
                 "https://www.facebook.com/hotellafianceedupirate/",
