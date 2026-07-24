@@ -86,6 +86,10 @@
                 <a href="tel:+33493766740" class="mobile-contact-link"><i class="fa-solid fa-phone"></i> +33 4 93 76 67 40</a>
                 <a href="mailto:info@fianceedupirate.com" class="mobile-contact-link"><i class="fa-solid fa-envelope"></i> info@fianceedupirate.com</a>
                 <a href="https://wa.me/33672003384" target="_blank" rel="noopener" class="mobile-contact-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <div class="mobile-social-links" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+                    <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" style="color: var(--color-primary); font-size: 1.5rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" style="color: var(--color-primary); font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -128,7 +132,8 @@
     <!-- Main Content Page Body -->
     <main class="main-content">
         <!-- Inner Hero / Page Header -->
-<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/room_with_view.webp');">
+<section class="page-header"
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/room_with_view.webp');">
     <div class="page-header-content">
         <h1 class="page-header-title">Наши номера и павильоны</h1>
         <p class="page-header-subtitle">Отремонтированы для вашего максимального удобства, сочетая покой, уединение и элегантность.</p>
@@ -148,31 +153,40 @@
                 <h2 class="room-title">Номер с выходом в сад</h2>
                 <p class="room-desc">Эти приятные номера позволяют в полной мере насладиться садом благодаря собственной террасе.</p>
                 <p class="room-details">Доступны в двухместном, трехместном и семейном вариантах. К услугам гостей уютная терраса с видом на зеленый сад.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>1 à 2 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>1 Lit Double (ou King size selon dispo)</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Номер с выходом в сад</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>1 à 2 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>1 Lit Double (ou King size selon dispo)</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Включенные удобства</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                                <li><i class="fa-solid fa-wind"></i> Фен</li>
+                                <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Включенные удобства</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
-                        <li><i class="fa-solid fa-wind"></i> Фен</li>
-                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Бронировать
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Бронировать
-                </a>
             </div>
         </div>
 
@@ -188,31 +202,40 @@
                 <h2 class="room-title">Номер с видом на море</h2>
                 <p class="room-desc">Просторные и гостеприимные номера с незабываемым панорамным видом на залив Вильфранш-сюр-Мер и Кап-Ферра.</p>
                 <p class="room-details">Доступны в двух-, трех- и четырехместной конфигурациях. Просыпайтесь под шум волн Средиземного моря.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>1 à 2 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>Lit King size ou Lits jumeaux</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Номер с видом на море</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>1 à 2 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>Lit King size ou Lits jumeaux</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Включенные удобства</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                                <li><i class="fa-solid fa-wind"></i> Фен</li>
+                                <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Включенные удобства</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
-                        <li><i class="fa-solid fa-wind"></i> Фен</li>
-                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Бронировать
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Бронировать
-                </a>
             </div>
         </div>
 
@@ -228,31 +251,41 @@
                 <h2 class="room-title">Наши отдельные павильоны</h2>
                 <p class="room-desc">Расположенные отдельно от главного здания, наши два частных павильона дарят уникальное ощущение свободы и комфорта.</p>
                 <p class="room-details">Павильон «Fiancée» очарует влюбленные пары, а павильон «Pirate» идеально подойдет для семей благодаря отличному расположению.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>2 à 4 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>Lit King size + Canapé-lit</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Наши отдельные павильоны</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>2 à 4 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>Lit King size + Canapé-lit</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Включенные удобства</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
+                                <li><i class="fa-solid fa-wind"></i> Фен</li>
+                                <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
+                                <li><i class="fa-solid fa-bath"></i> {{rooms.specs.bathrobes}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Включенные удобства</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Бесплатный Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Чайный набор</li>
-                        <li><i class="fa-solid fa-wind"></i> Фен</li>
-                        <li><i class="fa-solid fa-soap"></i> Косметические средства</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Бронировать
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/ru/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Бронировать
-                </a>
             </div>
         </div>
     </div>
@@ -263,12 +296,11 @@
     <div class="container">
         <h3>У вас есть вопросы об оснащении номеров?</h3>
         <p class="mb-4 text-light-muted"></p>
-        <a href="../../ru/contact.html" class="btn btn-secondary">
+        <a href="../../ru/contact/" class="btn btn-secondary">
             Свяжитесь с нами
         </a>
     </div>
 </section>
-
     </main>
     
     <!-- Sticky Booking Bar -->

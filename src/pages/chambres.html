@@ -1,5 +1,6 @@
 <!-- Inner Hero / Page Header -->
-<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}{{rooms.hero_image}}');">
+<section class="page-header"
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}{{rooms.hero_image}}');">
     <div class="page-header-content">
         <h1 class="page-header-title">{{rooms.title}}</h1>
         <p class="page-header-subtitle">{{rooms.subtitle}}</p>
@@ -19,31 +20,40 @@
                 <h2 class="room-title">{{rooms.garden_title}}</h2>
                 <p class="room-desc">{{rooms.garden_desc}}</p>
                 <p class="room-details">{{rooms.garden_details}}</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>{{rooms.garden_capacity}}</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>{{rooms.garden_bed}}</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">{{rooms.garden_title}}</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>{{rooms.garden_capacity}}</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>{{rooms.garden_bed}}</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
+                                <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
+                                <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
-                        <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
-                        <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary">
+                        {{rooms.cta}}
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    {{rooms.cta}}
-                </a>
             </div>
         </div>
 
@@ -59,31 +69,40 @@
                 <h2 class="room-title">{{rooms.mer_title}}</h2>
                 <p class="room-desc">{{rooms.mer_desc}}</p>
                 <p class="room-details">{{rooms.mer_details}}</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>{{rooms.mer_capacity}}</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>{{rooms.mer_bed}}</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">{{rooms.mer_title}}</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>{{rooms.mer_capacity}}</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>{{rooms.mer_bed}}</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
+                                <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
+                                <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
-                        <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
-                        <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary">
+                        {{rooms.cta}}
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    {{rooms.cta}}
-                </a>
             </div>
         </div>
 
@@ -99,31 +118,41 @@
                 <h2 class="room-title">{{rooms.pavillons_title}}</h2>
                 <p class="room-desc">{{rooms.pavillons_desc}}</p>
                 <p class="room-details">{{rooms.pavillons_details}}</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>{{rooms.pavillons_capacity}}</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>{{rooms.pavillons_bed}}</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">{{rooms.pavillons_title}}</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>{{rooms.pavillons_capacity}}</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>{{rooms.pavillons_bed}}</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
+                                <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
+                                <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
+                                <li><i class="fa-solid fa-bath"></i> {{rooms.specs.bathrobes}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">{{rooms.amenities_title}}</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> {{rooms.specs.wifi}}</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> {{rooms.specs.courtesy}}</li>
-                        <li><i class="fa-solid fa-wind"></i> {{rooms.specs.hairdryer}}</li>
-                        <li><i class="fa-solid fa-soap"></i> {{rooms.specs.products}}</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary">
+                        {{rooms.cta}}
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    {{rooms.cta}}
-                </a>
             </div>
         </div>
     </div>
@@ -134,7 +163,7 @@
     <div class="container">
         <h3>{{rooms.footer_question}}</h3>
         <p class="mb-4 text-light-muted"></p>
-        <a href="{{path_prefix}}{{lang}}/contact.html" class="btn btn-secondary">
+        <a href="{{path_prefix}}{{lang}}/contact/" class="btn btn-secondary">
             {{rooms.footer_cta}}
         </a>
     </div>

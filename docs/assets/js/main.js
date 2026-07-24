@@ -194,6 +194,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================================================
+    // 3b. Reviews Read More (Mobile Optimization)
+    // ==========================================================================
+    const reviewTexts = document.querySelectorAll('.review-text');
+    const MAX_LENGTH = 120;
+    
+    reviewTexts.forEach(p => {
+        const fullText = p.innerHTML;
+        // Truncate only if it's long enough and we are on small screens (but we can do it universally for long reviews)
+        if (fullText.length > MAX_LENGTH + 20) {
+            const truncated = fullText.substring(0, MAX_LENGTH) + '...';
+            p.innerHTML = `${truncated} <a href="#" class="read-more-link" style="color:var(--color-secondary); font-weight:bold;">Lire plus</a>`;
+            
+            const link = p.querySelector('.read-more-link');
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                p.innerHTML = fullText;
+            });
+        }
+    });
+
+    // ==========================================================================
+    // 3c. Room Details Modal (Mobile Optimization)
+    // ==========================================================================
+    const detailBtns = document.querySelectorAll('.btn-show-details');
+    detailBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.room-showcase-content');
+            if (card) {
+                const modal = card.querySelector('.room-details-modal');
+                if (modal) {
+                    modal.classList.add('show');
+                }
+            }
+        });
+    });
+
+    const closeBtns = document.querySelectorAll('.modal-close');
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const modal = e.target.closest('.room-details-modal');
+            if (modal) {
+                modal.classList.remove('show');
+            }
+        });
+    });
+
+    // Close modal on click outside
+    const modals = document.querySelectorAll('.room-details-modal');
+    modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+    });
+
+
     // 4. Booking Bar Date Initialization & Form Handling
     // ==========================================================================
     const bookingForm = document.getElementById('bookingForm');

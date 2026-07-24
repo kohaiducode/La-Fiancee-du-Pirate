@@ -86,6 +86,10 @@
                 <a href="tel:+33493766740" class="mobile-contact-link"><i class="fa-solid fa-phone"></i> +33 4 93 76 67 40</a>
                 <a href="mailto:info@fianceedupirate.com" class="mobile-contact-link"><i class="fa-solid fa-envelope"></i> info@fianceedupirate.com</a>
                 <a href="https://wa.me/33672003384" target="_blank" rel="noopener" class="mobile-contact-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <div class="mobile-social-links" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+                    <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" style="color: var(--color-primary); font-size: 1.5rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" style="color: var(--color-primary); font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -128,7 +132,8 @@
     <!-- Main Content Page Body -->
     <main class="main-content">
         <!-- Inner Hero / Page Header -->
-<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/room_with_view.webp');">
+<section class="page-header"
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/accueil/room_with_view.webp');">
     <div class="page-header-content">
         <h1 class="page-header-title">Our Rooms & Pavilions</h1>
         <p class="page-header-subtitle">Renovated for your utmost comfort, combining tranquility, privacy, and elegance.</p>
@@ -148,31 +153,40 @@
                 <h2 class="room-title">Garden Side Room</h2>
                 <p class="room-desc">These pleasant rooms allow you to fully enjoy the garden with their private terraces.</p>
                 <p class="room-details">Available in Double, Triple, and Family options, they feature a cozy private terrace opening onto our green sanctuary.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>1 à 2 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>1 Lit Double (ou King size selon dispo)</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Garden Side Room</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>1 à 2 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>1 Lit Double (ou King size selon dispo)</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Included Amenities</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
+                                <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
+                                <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Included Amenities</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
-                        <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
-                        <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Book
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Book
-                </a>
             </div>
         </div>
 
@@ -188,31 +202,40 @@
                 <h2 class="room-title">Sea View Room</h2>
                 <p class="room-desc">Spacious and welcoming, these rooms offer breathtaking panoramic views of the bay of Villefranche-sur-Mer and Cap Ferrat.</p>
                 <p class="room-details">Available in Double, Triple, or Quadruple configurations. Wake up facing the deep blue Mediterranean.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>1 à 2 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>Lit King size ou Lits jumeaux</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Sea View Room</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>1 à 2 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>Lit King size ou Lits jumeaux</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Included Amenities</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
+                                <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
+                                <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Included Amenities</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
-                        <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
-                        <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Book
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Book
-                </a>
             </div>
         </div>
 
@@ -228,31 +251,41 @@
                 <h2 class="room-title">Our Private Pavilions</h2>
                 <p class="room-desc">Separated from the main building, our two private pavilions offer a unique space of freedom and well-being.</p>
                 <p class="room-details">The Pavillon de la Fiancée is perfect for couples seeking romance. The Pavillon du Pirate is ideal for families thanks to its prime location.</p>
-                
-                <div class="room-specs-grid">
-                    <div class="spec-item">
-                        <i class="fa-solid fa-users"></i>
-                        <span>2 à 4 personnes</span>
-                    </div>
-                    <div class="spec-item">
-                        <i class="fa-solid fa-bed"></i>
-                        <span>Lit King size + Canapé-lit</span>
+
+                <div class="room-details-modal">
+                    <div class="modal-content-inner">
+                        <button class="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+                        <h3 class="modal-room-title">Our Private Pavilions</h3>
+                        <div class="room-specs-grid">
+                            <div class="spec-item">
+                                <i class="fa-solid fa-users"></i>
+                                <span>2 à 4 personnes</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fa-solid fa-bed"></i>
+                                <span>Lit King size + Canapé-lit</span>
+                            </div>
+                        </div>
+
+                        <div class="room-amenities">
+                            <h4 class="amenities-title">Included Amenities</h4>
+                            <ul class="amenities-list">
+                                <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
+                                <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
+                                <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
+                                <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
+                                <li><i class="fa-solid fa-bath"></i> {{rooms.specs.bathrobes}}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="room-amenities">
-                    <h4 class="amenities-title">Included Amenities</h4>
-                    <ul class="amenities-list">
-                        <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li>
-                        <li><i class="fa-solid fa-mug-hot"></i> Courtesy Tray</li>
-                        <li><i class="fa-solid fa-wind"></i> Hairdryer</li>
-                        <li><i class="fa-solid fa-soap"></i> Complimentary Toiletries</li>
-                    </ul>
+
+                <div class="room-actions mt-4">
+                    <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary">
+                        Book
+                    </a>
+                    <button class="btn btn-outline btn-show-details">Détails</button>
                 </div>
-                
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/en/booking/room" target="_blank" rel="noopener" class="btn btn-primary mt-4">
-                    Book
-                </a>
             </div>
         </div>
     </div>
@@ -263,12 +296,11 @@
     <div class="container">
         <h3>Any questions about our room amenities?</h3>
         <p class="mb-4 text-light-muted"></p>
-        <a href="../../en/contact.html" class="btn btn-secondary">
+        <a href="../../en/contact/" class="btn btn-secondary">
             Contact us
         </a>
     </div>
 </section>
-
     </main>
     
     <!-- Sticky Booking Bar -->
