@@ -60,6 +60,8 @@ def get_optimized_image_path(raw_path):
 def compile_site():
     print("Compiling La Fiancee du Pirate website...")
     
+    BASE_URL = "https://kohaiducode.github.io/La-Fiancee-du-Pirate"
+    
     # Paths
     src_dir = "src"
     dist_dir = "docs"
@@ -162,6 +164,7 @@ def compile_site():
             global_data = load_json(global_path)
             json_ld = global_data.get(lang, {}).get("json_ld", {})
         lang_data["json_ld"] = json_ld
+        lang_data["base_url"] = BASE_URL
         
         for name in ["accueil", "chambres", "services", "galerie", "contact"]:
             path = os.path.join(translations_dir, "seo", f"{name}.json")
