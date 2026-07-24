@@ -726,8 +726,8 @@ ul {
 
 .feature-img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 400px !important;
+    object-fit: cover !important;
     transition: all 0.6s ease;
 }
 
@@ -759,7 +759,7 @@ ul {
         gap: 2rem;
     }
     .feature-img {
-        height: auto;
+        height: 280px !important;
     }
 }
 
@@ -842,8 +842,8 @@ ul {
 
 .room-showcase-img img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 450px !important;
+    object-fit: cover !important;
 }
 
 .room-showcase-content {
@@ -933,11 +933,8 @@ ul {
         flex-direction: column;
         gap: 2rem;
     }
-    .room-showcase-img {
-        height: auto;
-    }
     .room-showcase-img img {
-        height: auto;
+        height: 300px !important;
     }
     .room-title {
         font-size: 1.8rem;
@@ -1059,8 +1056,8 @@ ul {
 
 .surroundings-img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 450px !important;
+    object-fit: cover !important;
 }
 
 .surroundings-list {
@@ -1102,7 +1099,7 @@ ul {
         gap: 2rem;
     }
     .surroundings-img {
-        height: auto;
+        height: 300px !important;
     }
 }
 
