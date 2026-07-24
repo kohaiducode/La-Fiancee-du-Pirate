@@ -486,15 +486,14 @@ ul {
     
     .mobile-contact-info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding-left: 0;
-        text-align: center;
-        gap: 0.5rem;
         margin-top: 1.5rem;
         border-top: 1px solid rgba(255,255,255,0.1);
         padding-top: 1.5rem;
-        width: 80%;
+        width: 85%;
     }
     
     .mobile-contact-link {
