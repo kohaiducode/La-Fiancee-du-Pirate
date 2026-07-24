@@ -86,7 +86,7 @@ ul {
 
 @media (max-width: 768px) {
     .section-padding {
-        padding: 3.5rem 0;
+        padding: 2rem 0;
     }
 }
 
@@ -133,7 +133,7 @@ ul {
 
 @media (max-width: 768px) {
     .divider-large {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 }
 
@@ -154,7 +154,7 @@ ul {
 
 @media (max-width: 768px) {
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -281,6 +281,10 @@ ul {
 .nav-menu {
     display: flex;
     align-items: center;
+}
+
+.mobile-contact-info {
+    display: none;
 }
 
 .nav-list {
@@ -447,6 +451,25 @@ ul {
         gap: 2.25rem;
     }
     
+    .mobile-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 2rem;
+        width: 80%;
+    }
+    
+    .mobile-contact-link {
+        color: var(--color-white);
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        text-decoration: none;
+    }
+    
     .nav-link {
         font-size: 1.1rem;
     }
@@ -556,6 +579,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        height: 75vh;
+        min-height: 450px;
+    }
     .hero-title {
         font-size: 2.25rem;
     }
@@ -753,14 +780,22 @@ ul {
 
 @media (max-width: 992px) {
     .features-grid {
-        gap: 4rem;
+        gap: 1.5rem;
     }
     .feature-card, .feature-card.card-reverse {
         flex-direction: column;
-        gap: 2rem;
+        gap: 0.75rem;
     }
     .feature-img {
-        /* aspect-ratio already applied globally */
+        aspect-ratio: 2 / 1 !important;
+    }
+    .feature-card-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .feature-card-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }
 
@@ -813,6 +848,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .page-header {
+        height: 35vh;
+        min-height: 250px;
+    }
     .page-header-title {
         font-size: 2.25rem;
     }
@@ -933,13 +972,21 @@ ul {
 @media (max-width: 992px) {
     .room-showcase-card, .room-showcase-card.card-reverse {
         flex-direction: column;
-        gap: 2rem;
+        gap: 0.75rem;
     }
     .room-showcase-img img {
-        /* aspect-ratio already applied */
+        aspect-ratio: 2 / 1 !important;
     }
     .room-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .room-desc {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .room-amenities .amenities-title {
+        font-size: 0.8rem;
     }
 }
 
@@ -1099,10 +1146,10 @@ ul {
 @media (max-width: 992px) {
     .surroundings-wrapper {
         flex-direction: column;
-        gap: 2rem;
+        gap: 0.75rem;
     }
     .surroundings-img {
-        /* aspect-ratio already applied */
+        aspect-ratio: 2 / 1 !important;
     }
 }
 
