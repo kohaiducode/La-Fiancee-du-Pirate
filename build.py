@@ -155,12 +155,15 @@ def compile_site():
         
         # Load SEO pages
         seo_data = {"seo": {}}
-        for name in ["accueil", "chambres", "services", "galerie", "contact"]:
+        for name in ["accueil", "chambres", "services", "galerie", "contact", "global"]:
             path = os.path.join(translations_dir, "seo", f"{name}.json")
             if os.path.exists(path):
                 loaded = load_json(path)
                 lang_specific_data = loaded.get(lang, {})
-                seo_data["seo"].update(lang_specific_data.get("seo", {}))
+                if name == "global":
+                    lang_data["json_ld"] = lang_specific_data.get("json_ld", {})
+                else:
+                    seo_data["seo"].update(lang_specific_data.get("seo", {}))
         lang_data.update(seo_data)
         
         # Load navigation (header and footer)
@@ -338,35 +341,41 @@ def compile_site():
             hreflang_tags += f'<link rel="alternate" hreflang="x-default" href="https://www.fianceedupirate.com/fr/{page_path}">'
             
             # Generate JSON-LD
+            hotel_data = lang_data.get("json_ld", {})
+            hotel_name = hotel_data.get("name", "La Fiancée du Pirate")
+            hotel_phone = hotel_data.get("telephone", "+33493766740")
+            hotel_email = hotel_data.get("email", "info@fianceedupirate.com")
+            hotel_street = hotel_data.get("streetAddress", "8 Boulevard de La Corne d'Or, Moyenne Corniche")
+            hotel_city = hotel_data.get("addressLocality", "Villefranche-sur-Mer")
+            hotel_zip = hotel_data.get("postalCode", "06230")
+            hotel_country = hotel_data.get("addressCountry", "FR")
+            hotel_stars = hotel_data.get("starRating", "3")
+            
+            same_as_list = hotel_data.get("sameAs", [])
+            same_as_json = json.dumps([item.get("url", "") for item in same_as_list if item.get("url")]) if same_as_list else "[]"
+            
             json_ld = f"""<script type="application/ld+json">
             {{
               "@context": "https://schema.org",
               "@type": "Hotel",
-              "name": "La Fiancée du Pirate",
+              "name": "{hotel_name}",
               "description": "{meta_desc}",
               "url": "https://www.fianceedupirate.com/{lang}/{page_path}",
-              "telephone": "+33493766740",
-              "email": "info@fianceedupirate.com",
+              "telephone": "{hotel_phone}",
+              "email": "{hotel_email}",
               "address": {{
                 "@type": "PostalAddress",
-                "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
-                "addressLocality": "Villefranche-sur-Mer",
-                "postalCode": "06230",
-                "addressCountry": "FR"
+                "streetAddress": "{hotel_street}",
+                "addressLocality": "{hotel_city}",
+                "postalCode": "{hotel_zip}",
+                "addressCountry": "{hotel_country}"
               }},
               "image": "https://www.fianceedupirate.com/assets/images/accueil/hotel_view.webp",
               "starRating": {{
                 "@type": "Rating",
-                "ratingValue": "3"
+                "ratingValue": "{hotel_stars}"
               }},
-              "sameAs": [
-                "https://www.facebook.com/hotellafianceedupirate/",
-                "https://www.instagram.com/la_fiancee_du_pirate/",
-                "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html",
-                "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html",
-                "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html",
-                "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"
-              ]
+              "sameAs": {same_as_json}
             }}
             </script>"""
             

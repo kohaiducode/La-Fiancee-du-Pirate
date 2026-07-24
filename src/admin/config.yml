@@ -42,6 +42,34 @@ collections:
               - { label: "Titre Google - Accueil", name: home_title, widget: string, i18n: true }
               - { label: "Description Google - Accueil", name: home_desc, widget: text, i18n: true }
 
+      - name: global
+        label: "Configuration Globale (JSON-LD)"
+        file: "src/translations/seo/global.json"
+        i18n: true
+        format: json
+        extension: json
+        fields:
+
+          - name: json_ld
+            label: "Données Structurées (Hotel)"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Nom de l'établissement", name: name, widget: string, i18n: true }
+              - { label: "Téléphone", name: telephone, widget: string, i18n: true }
+              - { label: "Email", name: email, widget: string, i18n: true }
+              - { label: "Rue", name: streetAddress, widget: string, i18n: true }
+              - { label: "Ville", name: addressLocality, widget: string, i18n: true }
+              - { label: "Code Postal", name: postalCode, widget: string, i18n: true }
+              - { label: "Pays", name: addressCountry, widget: string, i18n: true }
+              - { label: "Étoiles", name: starRating, widget: string, i18n: true }
+              - name: sameAs
+                label: "Liens (Réseaux sociaux & OTA)"
+                widget: list
+                i18n: true
+                fields:
+                  - { label: "URL du lien", name: url, widget: string, i18n: true }
+
       - name: chambres
         label: "Chambres"
         file: "src/translations/seo/chambres.json"

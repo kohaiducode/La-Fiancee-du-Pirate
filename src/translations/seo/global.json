@@ -1,0 +1,142 @@
+{
+  "fr": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "en": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "en-au": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "de": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "it": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "es": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  },
+  "ru": {
+    "json_ld": {
+      "name": "La Fiancée du Pirate",
+      "telephone": "+33493766740",
+      "email": "info@fianceedupirate.com",
+      "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+      "addressLocality": "Villefranche-sur-Mer",
+      "postalCode": "06230",
+      "addressCountry": "FR",
+      "starRating": "3",
+      "sameAs": [
+        {"url": "https://www.facebook.com/hotellafianceedupirate/"},
+        {"url": "https://www.instagram.com/la_fiancee_du_pirate/"},
+        {"url": "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"},
+        {"url": "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html"},
+        {"url": "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html"},
+        {"url": "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"}
+      ]
+    }
+  }
+}
