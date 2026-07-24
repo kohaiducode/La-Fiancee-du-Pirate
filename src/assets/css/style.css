@@ -525,49 +525,15 @@ ul {
         display: none; /* Hide language selector in header on tablet/mobile */
     }
     
-    /* Inline language selector for mobile menu */
-    .mobile-only-actions .lang-selector {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
-    
-    .mobile-only-actions .lang-btn {
-        display: none;
-    }
-    
+    /* Make the dropdown open upwards on mobile to avoid scroll overflow */
     .mobile-only-actions .lang-dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        background: transparent;
-        box-shadow: none;
-        border: none;
-        width: 100%;
-        padding: 0;
+        top: auto;
+        bottom: calc(100% + 10px);
+        transform: translateY(10px);
     }
     
-    .mobile-only-actions .lang-dropdown li {
-        list-style: none;
-    }
-    
-    .mobile-only-actions .lang-dropdown-link {
-        color: var(--color-white);
-        padding: 0.4rem 0.6rem;
-        font-size: 0.85rem;
-        border: 1px solid rgba(255,255,255,0.2);
-        border-radius: 4px;
-        background-color: transparent;
-    }
-    
-    .mobile-only-actions .lang-dropdown-link.active {
-        background-color: var(--color-secondary);
-        border-color: var(--color-secondary);
-        color: var(--color-white);
+    .mobile-only-actions .lang-dropdown.show {
+        transform: translateY(0);
     }
 }
 
