@@ -1,6 +1,5 @@
 {
   "fr": {
-    "title": "Nom de la Langue",
     "gallery": {
       "title": "Galerie Photos",
       "subtitle": "Découvrez notre hôtel en images",
@@ -20,13 +19,13 @@
         "label": "Chambres"
       },
       {
-        "id": "breakfast",
-        "label": "Petit-déjeuner"
+        "id": "Restaurant",
+        "label": "Restaurant"
       }
-    ]
+    ],
+    "title": "Nom de la Langue"
   },
   "en": {
-    "title": "Language Name",
     "gallery": {
       "title": "Photo Gallery",
       "subtitle": "Discover our hotel in pictures",
@@ -46,13 +45,13 @@
         "label": "Rooms"
       },
       {
-        "id": "breakfast",
-        "label": "Breakfast"
+        "id": "Restaurant",
+        "label": "Restaurant"
       }
-    ]
+    ],
+    "title": "Language Name"
   },
   "en-au": {
-    "title": "Language Name",
     "gallery": {
       "title": "Photo Gallery",
       "subtitle": "Discover our hotel in pictures",
@@ -72,13 +71,13 @@
         "label": "Rooms"
       },
       {
-        "id": "breakfast",
-        "label": "Breakfast"
+        "id": "Restaurant",
+        "label": "Restaurant"
       }
-    ]
+    ],
+    "title": "Language Name"
   },
   "de": {
-    "title": "Sprache Name",
     "gallery": {
       "title": "Fotogalerie",
       "subtitle": "Entdecken Sie unser Hotel in Bildern",
@@ -98,13 +97,13 @@
         "label": "Zimmer"
       },
       {
-        "id": "breakfast",
-        "label": "Frühstück"
+        "id": "Restaurant",
+        "label": "Restaurant"
       }
-    ]
+    ],
+    "title": "Sprache Name"
   },
   "it": {
-    "title": "Nome della Lingua",
     "gallery": {
       "title": "Galleria Foto",
       "subtitle": "Scoprite il nostro hotel in immagini",
@@ -124,13 +123,13 @@
         "label": "Camere"
       },
       {
-        "id": "breakfast",
-        "label": "Colazione"
+        "id": "Restaurant",
+        "label": "Ristorante"
       }
-    ]
+    ],
+    "title": "Nome della Lingua"
   },
   "es": {
-    "title": "Nombre del Idioma",
     "gallery": {
       "title": "Galería de Fotos",
       "subtitle": "Descubra nuestro hotel en imágenes",
@@ -150,13 +149,13 @@
         "label": "Habitaciones"
       },
       {
-        "id": "breakfast",
-        "label": "Desayuno"
+        "id": "Restaurant",
+        "label": "Restaurante"
       }
-    ]
+    ],
+    "title": "Nombre del Idioma"
   },
   "ru": {
-    "title": "Название Языка",
     "gallery": {
       "title": "Фотогалерея",
       "subtitle": "Откройте для себя наш отель в фотографиях",
@@ -176,9 +175,10 @@
         "label": "Номера"
       },
       {
-        "id": "breakfast",
-        "label": "Завтрак"
+        "id": "Restaurant",
+        "label": "Pесторан при отеле"
       }
-    ]
+    ],
+    "title": "Название Языка"
   }
 }
