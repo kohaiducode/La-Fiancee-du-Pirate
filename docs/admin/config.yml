@@ -412,13 +412,13 @@ collections:
               - label: "Identifiant de la Catégorie (doit correspondre à un identifiant défini dans 'Galerie (Textes)')"
                 name: category
                 widget: string
-              - { label: "Balise Alt SEO (Français)", name: alt_fr, widget: string }
-              - { label: "Balise Alt SEO (English)", name: alt_en, widget: string }
-              - { label: "Balise Alt SEO (English AU)", name: alt_en_au, widget: string }
-              - { label: "Balise Alt SEO (Deutsch)", name: alt_de, widget: string }
-              - { label: "Balise Alt SEO (Italiano)", name: alt_it, widget: string }
-              - { label: "Balise Alt SEO (Español)", name: alt_es, widget: string }
-              - { label: "Balise Alt SEO (Русский)", name: alt_ru, widget: string }
+              - { label: "Balise Alt SEO (Français)", name: alt_fr, widget: string, required: false }
+              - { label: "Balise Alt SEO (English)", name: alt_en, widget: string, required: false }
+              - { label: "Balise Alt SEO (English AU)", name: alt_en_au, widget: string, required: false }
+              - { label: "Balise Alt SEO (Deutsch)", name: alt_de, widget: string, required: false }
+              - { label: "Balise Alt SEO (Italiano)", name: alt_it, widget: string, required: false }
+              - { label: "Balise Alt SEO (Español)", name: alt_es, widget: string, required: false }
+              - { label: "Balise Alt SEO (Русский)", name: alt_ru, widget: string, required: false }
 
   - name: reviews
     label: "4. Témoignages (TripAdvisor)"
