@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.fianceedupirate.com/fr/</loc>
-  </url>
-  <url>
-    <loc>https://www.fianceedupirate.com/fr/services/</loc>
+    <loc>https://www.fianceedupirate.com/fr/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/fr/contact/</loc>
@@ -13,13 +10,13 @@
     <loc>https://www.fianceedupirate.com/fr/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/fr/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/fr/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en/</loc>
+    <loc>https://www.fianceedupirate.com/fr/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en/services/</loc>
+    <loc>https://www.fianceedupirate.com/en/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/en/contact/</loc>
@@ -28,13 +25,13 @@
     <loc>https://www.fianceedupirate.com/en/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/en/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en-au/</loc>
+    <loc>https://www.fianceedupirate.com/en/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en-au/services/</loc>
+    <loc>https://www.fianceedupirate.com/en-au/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/en-au/contact/</loc>
@@ -43,13 +40,13 @@
     <loc>https://www.fianceedupirate.com/en-au/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/en-au/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/en-au/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/de/</loc>
+    <loc>https://www.fianceedupirate.com/en-au/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/de/services/</loc>
+    <loc>https://www.fianceedupirate.com/de/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/de/contact/</loc>
@@ -58,13 +55,13 @@
     <loc>https://www.fianceedupirate.com/de/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/de/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/de/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/it/</loc>
+    <loc>https://www.fianceedupirate.com/de/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/it/services/</loc>
+    <loc>https://www.fianceedupirate.com/it/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/it/contact/</loc>
@@ -73,13 +70,13 @@
     <loc>https://www.fianceedupirate.com/it/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/it/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/it/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/es/</loc>
+    <loc>https://www.fianceedupirate.com/it/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/es/services/</loc>
+    <loc>https://www.fianceedupirate.com/es/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/es/contact/</loc>
@@ -88,13 +85,13 @@
     <loc>https://www.fianceedupirate.com/es/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/es/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/es/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/ru/</loc>
+    <loc>https://www.fianceedupirate.com/es/services/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/ru/services/</loc>
+    <loc>https://www.fianceedupirate.com/ru/chambres/</loc>
   </url>
   <url>
     <loc>https://www.fianceedupirate.com/ru/contact/</loc>
@@ -103,6 +100,9 @@
     <loc>https://www.fianceedupirate.com/ru/galerie/</loc>
   </url>
   <url>
-    <loc>https://www.fianceedupirate.com/ru/chambres/</loc>
+    <loc>https://www.fianceedupirate.com/ru/</loc>
+  </url>
+  <url>
+    <loc>https://www.fianceedupirate.com/ru/services/</loc>
   </url>
 </urlset>
