@@ -1,5 +1,5 @@
 <!-- Inner Hero / Page Header -->
-<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
+<section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{path_prefix}}{{contact.hero_image}}');">
     <div class="page-header-content">
         <h1 class="page-header-title">{{contact.title}}</h1>
         <p class="page-header-subtitle">{{contact.subtitle}}</p>
@@ -65,21 +65,21 @@
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <strong>Adresse</strong>
-                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">{{contact.info_address}}</a></p>
+                                <p style="white-space: pre-line;"><a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="text-decoration: underline;">{{json_ld.address.streetAddress}}, {{json_ld.address.addressLocality}}</a></p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-phone"></i>
                             <div>
                                 <strong>Téléphone</strong>
-                                <p><a href="tel:+33493766740">+33 (0)4 93 76 67 40</a><br><a href="tel:+33745282937">+33 (0)7 45 28 29 37</a></p>
+                                <p><a href="tel:{{json_ld.telephone}}">{{json_ld.telephone}}</a></p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
                             <div>
                                 <strong>E-mail</strong>
-                                <p><a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a></p>
+                                <p><a href="mailto:{{json_ld.email}}">{{json_ld.email}}</a></p>
                             </div>
                         </li>
                     </ul>

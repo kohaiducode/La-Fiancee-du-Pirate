@@ -161,14 +161,6 @@ collections:
               - { label: "Galerie", name: gallery, widget: string, i18n: true }
               - { label: "Contact", name: contact, widget: string, i18n: true }
               - { label: "Bouton Réserver (Header)", name: book, widget: string, i18n: true }
-          - name: hero
-            label: "Bannière d'Accueil (Hero Slider)"
-            widget: object
-            i18n: true
-            fields:
-              - { label: "Titre Principal", name: title, widget: string, i18n: true }
-              - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
-              - { label: "Texte du bouton d'action", name: cta, widget: string, i18n: true }
           - name: booking_bar
             label: "Barre de Réservation"
             widget: object
@@ -239,6 +231,24 @@ collections:
               - { label: "Titre Section Avis", name: reviews_title, widget: string, i18n: true }
               - { label: "Sous-titre Section Avis", name: reviews_subtitle, widget: string, i18n: true }
               - { label: "Texte bouton TripAdvisor", name: reviews_read_more, widget: string, i18n: true }
+              - { label: "Titre Myblackcab", name: myblackcab_title, widget: string, i18n: true }
+              - { label: "Texte Myblackcab", name: myblackcab_text, widget: text, i18n: true }
+              - { label: "Lien Site Myblackcab", name: myblackcab_url, widget: string, i18n: true }
+              - { label: "Téléphone Myblackcab", name: myblackcab_phone, widget: string, i18n: true }
+          - name: hero
+            label: "Bannière d'Accueil (Hero Slider)"
+            widget: object
+            i18n: true
+            fields:
+              - { label: "Titre Principal", name: title, widget: string, i18n: true }
+              - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+              - { label: "Texte du bouton d'action", name: cta, widget: string, i18n: true }
+              - name: images
+                label: "Images du Slider"
+                widget: list
+                i18n: duplicate
+                fields:
+                  - { label: "Image", name: image, widget: image }
       - name: chambres
         label: "Chambres"
         file: "src/translations/pages/chambres.json"
@@ -255,18 +265,28 @@ collections:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
               - { label: "Texte Bouton CTA", name: cta, widget: string, i18n: true }
+              - { label: "Image Bannière (Haut)", name: hero_image, widget: image, i18n: duplicate }
               - { label: "Chambre Jardin - Photo", name: garden_image, widget: image, i18n: duplicate }
               - { label: "Chambre Jardin - Titre", name: garden_title, widget: string, i18n: true }
               - { label: "Chambre Jardin - Description", name: garden_desc, widget: text, i18n: true }
               - { label: "Chambre Jardin - Détails", name: garden_details, widget: text, i18n: true }
+              - { label: "Chambre Jardin - Valeur Superficie", name: garden_size, widget: string, i18n: true }
+              - { label: "Chambre Jardin - Valeur Capacité", name: garden_capacity, widget: string, i18n: true }
+              - { label: "Chambre Jardin - Valeur Literie", name: garden_bed, widget: string, i18n: true }
               - { label: "Chambre Vue Mer - Photo", name: mer_image, widget: image, i18n: duplicate }
               - { label: "Chambre Vue Mer - Titre", name: mer_title, widget: string, i18n: true }
               - { label: "Chambre Vue Mer - Description", name: mer_desc, widget: text, i18n: true }
               - { label: "Chambre Vue Mer - Détails", name: mer_details, widget: text, i18n: true }
+              - { label: "Chambre Vue Mer - Valeur Superficie", name: mer_size, widget: string, i18n: true }
+              - { label: "Chambre Vue Mer - Valeur Capacité", name: mer_capacity, widget: string, i18n: true }
+              - { label: "Chambre Vue Mer - Valeur Literie", name: mer_bed, widget: string, i18n: true }
               - { label: "Pavillons Suite - Photo", name: pavillons_image, widget: image, i18n: duplicate }
               - { label: "Pavillons Suite - Titre", name: pavillons_title, widget: string, i18n: true }
               - { label: "Pavillons Suite - Description", name: pavillons_desc, widget: text, i18n: true }
               - { label: "Pavillons Suite - Détails", name: pavillons_details, widget: text, i18n: true }
+              - { label: "Pavillons Suite - Valeur Superficie", name: pavillons_size, widget: string, i18n: true }
+              - { label: "Pavillons Suite - Valeur Capacité", name: pavillons_capacity, widget: string, i18n: true }
+              - { label: "Pavillons Suite - Valeur Literie", name: pavillons_bed, widget: string, i18n: true }
               - { label: "Titre Équipements", name: amenities_title, widget: string, i18n: true }
               - name: specs
                 label: "Labels Spécifications"
@@ -298,6 +318,7 @@ collections:
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+              - { label: "Image Bannière (Haut)", name: hero_image, widget: image, i18n: duplicate }
               - { label: "Services - Titre", name: hotel_services_title, widget: string, i18n: true }
               - { label: "Services - Desc", name: hotel_services_desc, widget: text, i18n: true }
               - { label: "Service 1 - Titre", name: service_pool_title, widget: string, i18n: true }
@@ -308,6 +329,23 @@ collections:
               - { label: "Service 3 - Desc", name: service_breakfast_desc, widget: text, i18n: true }
               - { label: "Activités - Titre", name: activities_title, widget: string, i18n: true }
               - { label: "Activités - Desc", name: activities_desc, widget: text, i18n: true }
+              - { label: "Transport - Titre", name: service_cab_title, widget: string, i18n: true }
+              - { label: "Transport - Desc", name: service_cab_desc, widget: text, i18n: true }
+              - { label: "Citadelle - Titre", name: citadelle_title, widget: string, i18n: true }
+              - { label: "Citadelle - Desc", name: citadelle_desc, widget: text, i18n: true }
+              - { label: "Chapelle - Titre", name: chapelle_title, widget: string, i18n: true }
+              - { label: "Chapelle - Desc", name: chapelle_desc, widget: text, i18n: true }
+              - { label: "Rue - Titre", name: rue_title, widget: string, i18n: true }
+              - { label: "Rue - Desc", name: rue_desc, widget: text, i18n: true }
+              - { label: "Port - Titre", name: port_title, widget: string, i18n: true }
+              - { label: "Port - Desc", name: port_desc, widget: text, i18n: true }
+              - { label: "Alentours - Image", name: surroundings_image, widget: image, i18n: duplicate }
+              - { label: "Alentours - Titre", name: surroundings_title, widget: string, i18n: true }
+              - { label: "Alentours - Desc", name: surroundings_desc, widget: text, i18n: true }
+              - { label: "Alentours - Nice", name: surroundings_nice, widget: text, i18n: true }
+              - { label: "Alentours - Monaco", name: surroundings_monaco, widget: text, i18n: true }
+              - { label: "Alentours - Villages", name: surroundings_villages, widget: text, i18n: true }
+              - { label: "Alentours - Italie", name: surroundings_italy, widget: text, i18n: true }
 
       - name: galerie_textes
         label: "Galerie (Textes)"
@@ -345,6 +383,7 @@ collections:
             fields:
               - { label: "Titre Principal", name: title, widget: string, i18n: true }
               - { label: "Sous-titre", name: subtitle, widget: string, i18n: true }
+              - { label: "Image Bannière (Haut)", name: hero_image, widget: image, i18n: duplicate }
               - { label: "Titre Formulaire", name: form_title, widget: string, i18n: true }
               - { label: "Label: Nom", name: form_name, widget: string, i18n: true }
               - { label: "Label: Email", name: form_email, widget: string, i18n: true }

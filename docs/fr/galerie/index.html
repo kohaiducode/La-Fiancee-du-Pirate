@@ -287,19 +287,15 @@
             <ul class="footer-contact-list">
                 <li>
                     <i class="fa-solid fa-location-dot"></i>
-                    <a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">8 Boulevard de La Corne d'Or,<br>Moyenne Corniche,<br>06230 Villefranche-sur-Mer, France</a>
+                    <a href="https://www.google.com/maps/place/H%C3%B4tel+La+Fianc%C3%A9e+du+Pirate/@43.7068791,7.3021056,15z/data=!4m21!1m11!3m10!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!2sH%C3%B4tel+La+Fianc%C3%A9e+du+Pirate!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!10e5!16s%2Fg%2F1tdhwmjr!3m8!1s0x12cddad3ebf6700f:0x29d12da16b491ce9!5m2!4m1!1i2!8m2!3d43.706814!4d7.3021958!16s%2Fg%2F1tdhwmjr!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">{{json_ld.address.streetAddress}},<br>{{json_ld.address.addressLocality}}, {{json_ld.address.addressCountry}}</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+33493766740">+33 (0)4 93 76 67 40</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <a href="tel:+33745282937">+33 (0)7 45 28 29 37</a>
+                    <a href="tel:{{json_ld.telephone}}">{{json_ld.telephone}}</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:info@fianceedupirate.com">info@fianceedupirate.com</a>
+                    <a href="mailto:{{json_ld.email}}">{{json_ld.email}}</a>
                 </li>
             </ul>
         </div>
@@ -308,10 +304,10 @@
         <div class="footer-section footer-social">
             <h4 class="footer-section-title">Suivez-nous</h4>
             <div class="social-icons">
-                <a href="https://www.facebook.com/hotellafianceedupirate/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                <a href="{{json_ld.sameAs.0}}" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/la_fiancee_du_pirate/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                <a href="{{json_ld.sameAs.1}}" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>

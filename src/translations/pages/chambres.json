@@ -42,7 +42,17 @@
         "bed": "Lit King Size ou Queen Size",
         "capacity": "1 à 4 personnes",
         "size": "16 à 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "en": {
@@ -88,7 +98,17 @@
         "bed": "King Size or Queen Size bed",
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "en-au": {
@@ -134,7 +154,17 @@
         "bed": "King Size or Queen Size bed",
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "de": {
@@ -180,7 +210,17 @@
         "bed": "Kingsize- oder Queensize-Bett",
         "capacity": "1 to 4 Personen",
         "size": "16 bis 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "it": {
@@ -226,7 +266,17 @@
         "bed": "Letto King Size o Queen Size",
         "capacity": "Da 1 a 4 persone",
         "size": "Da 16 a 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "es": {
@@ -272,7 +322,17 @@
         "bed": "Cama King Size o Queen Size",
         "capacity": "De 1 a 4 personas",
         "size": "De 16 a 31 m²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   },
   "ru": {
@@ -318,7 +378,17 @@
         "bed": "Кровать King Size или Queen Size",
         "capacity": "От 1 до 4 человек",
         "size": "От 16 до 31 м²"
-      }
+      },
+      "hero_image": "/Photos/room_with_view.webp",
+      "garden_size": "16 à 25 m²",
+      "garden_capacity": "1 à 2 personnes",
+      "garden_bed": "1 Lit Double (ou King size selon dispo)",
+      "mer_size": "20 à 28 m²",
+      "mer_capacity": "1 à 2 personnes",
+      "mer_bed": "Lit King size ou Lits jumeaux",
+      "pavillons_size": "30 à 45 m²",
+      "pavillons_capacity": "2 à 4 personnes",
+      "pavillons_bed": "Lit King size + Canapé-lit"
     }
   }
 }

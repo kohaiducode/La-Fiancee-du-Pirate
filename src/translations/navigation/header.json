@@ -8,11 +8,6 @@
       "services": "Services & Activités",
       "gallery": "Galerie"
     },
-    "hero": {
-      "cta": "Réserver une chambre",
-      "subtitle": "Boutique-Hôtel de charme avec vue panoramique sur la rade de Villefranche-sur-Mer",
-      "title": "Une parenthèse suspendue sur la Côte d'Azur"
-    },
     "booking_bar": {
       "guests": "Voyageurs",
       "search": "Réserver",
@@ -28,11 +23,6 @@
       "home": "Home",
       "services": "Services & Activities",
       "gallery": "Gallery"
-    },
-    "hero": {
-      "cta": "Book a room",
-      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
-      "title": "A serene escape overlooking the French Riviera"
     },
     "booking_bar": {
       "guests": "Guests",
@@ -50,11 +40,6 @@
       "services": "Services & Activities",
       "gallery": "Gallery"
     },
-    "hero": {
-      "cta": "Book a room",
-      "subtitle": "Charming boutique hotel with panoramic views of the bay of Villefranche-sur-Mer",
-      "title": "A serene escape overlooking the French Riviera"
-    },
     "booking_bar": {
       "guests": "Guests",
       "search": "Check Availability",
@@ -70,11 +55,6 @@
       "home": "Startseite",
       "services": "Service & Aktivitäten",
       "gallery": "Galerie"
-    },
-    "hero": {
-      "cta": "Zimmer buchen",
-      "subtitle": "Charmantes Boutique-Hotel mit Panoramablick auf die Bucht von Villefranche-sur-Mer",
-      "title": "Eine Oase der Ruhe über der Côte d'Azur"
     },
     "booking_bar": {
       "guests": "Gäste",
@@ -92,11 +72,6 @@
       "services": "Servizi & Attività",
       "gallery": "Galleria"
     },
-    "hero": {
-      "cta": "Prenota una camera",
-      "subtitle": "Incantevole boutique hotel con vista panoramica sulla baia di Villefranche-sur-Mer",
-      "title": "Un'oasi di pace sospesa sulla Costa Azzurra"
-    },
     "booking_bar": {
       "guests": "Ospiti",
       "search": "Verifica disponibilità",
@@ -113,11 +88,6 @@
       "services": "Servicios & Actividades",
       "gallery": "Galería"
     },
-    "hero": {
-      "cta": "Reservar una habitación",
-      "subtitle": "Encantador hotel boutique con vistas panorámicas a la bahía de Villefranche-sur-Mer",
-      "title": "Un oasis de calma con vistas a la Costa Azul"
-    },
     "booking_bar": {
       "guests": "Huéspedes",
       "search": "Comprobar disponibilidad",
@@ -133,11 +103,6 @@
       "home": "Главная",
       "services": "Услуги и развлечения",
       "gallery": "Галерея"
-    },
-    "hero": {
-      "cta": "Забронировать номер",
-      "subtitle": "Очаровательный бутик-отель с панорамным видом на залив Вильфранш-сюр-Мер",
-      "title": "Уютный отдых над Лазурным Берегом"
     },
     "booking_bar": {
       "guests": "Гости",

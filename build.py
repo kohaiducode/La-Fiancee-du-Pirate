@@ -3,6 +3,7 @@ import json
 import shutil
 import re
 import unicodedata
+from datetime import datetime
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -278,6 +279,21 @@ def compile_site():
                 </div>
             </div>"""
             
+        # Build Hero Slider HTML for index
+        hero_slider_html = ""
+        hero_images = lang_data.get("hero", {}).get("images", [])
+        if not hero_images:
+            # Fallback just in case
+            hero_images = [{"image": "/Photos/hotel_view.webp"}]
+            
+        for i, item in enumerate(hero_images):
+            img_path = get_optimized_image_path(item.get("image", ""))
+            active_class = " active" if i == 0 else ""
+            hero_slider_html += f"""
+        <div class="hero-bg-slide{active_class}"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{{{path_prefix}}}}{img_path}');">
+        </div>"""
+            
         # Compile each page template
         for page in pages:
             page_name_no_ext = os.path.splitext(page)[0]
@@ -379,8 +395,10 @@ def compile_site():
             }}
             </script>"""
             
+            
             context["hreflang_tags"] = hreflang_tags
             context["json_ld"] = json_ld
+            context["current_year"] = str(datetime.now().year)
             
             # Combine language translation dictionary
             full_vars = {**lang_data, **context}
@@ -399,6 +417,7 @@ def compile_site():
             # Inject testimonial slides if homepage
             if page_name_no_ext == "index":
                 page_content = page_content.replace("{{reviews_slides_placeholder}}", reviews_html)
+                page_content = page_content.replace("{{hero_slider_placeholder}}", hero_slider_html)
             elif page_name_no_ext == "galerie":
                 page_content = page_content.replace("{{gallery_grid_html}}", gallery_html)
                 
