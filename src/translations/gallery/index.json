@@ -68,7 +68,7 @@
     },
     {
       "image": "Photos/Galerie/dinner_room.jpg",
-      "category": "breakfast",
+      "category": "Restaurant",
       "alt_fr": "",
       "alt_en": "",
       "alt_en_au": "",
@@ -79,7 +79,7 @@
     },
     {
       "image": "Photos/Galerie/breakfast.jpg",
-      "category": "breakfast",
+      "category": "Restaurant",
       "alt_fr": "",
       "alt_en": "",
       "alt_en_au": "",
