@@ -91,25 +91,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     // 2. Language Selector Dropdown
     // ==========================================================================
-    const langBtn = document.getElementById('langBtn');
-    const langDropdown = document.querySelector('.lang-dropdown');
+    const langSelectors = document.querySelectorAll('.lang-selector');
     
-    if (langBtn && langDropdown) {
-        langBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langDropdown.classList.toggle('show');
-            const expanded = langBtn.getAttribute('aria-expanded') === 'true' || false;
-            langBtn.setAttribute('aria-expanded', !expanded);
-        });
+    langSelectors.forEach(selector => {
+        const btn = selector.querySelector('.lang-btn');
+        const dropdown = selector.querySelector('.lang-dropdown');
         
-        // Close dropdown when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!langBtn.contains(e.target)) {
-                langDropdown.classList.remove('show');
-                langBtn.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
+        if (btn && dropdown) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Close other dropdowns
+                document.querySelectorAll('.lang-dropdown.show').forEach(d => {
+                    if (d !== dropdown) {
+                        d.classList.remove('show');
+                        const relatedBtn = d.previousElementSibling;
+                        if (relatedBtn) relatedBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                dropdown.classList.toggle('show');
+                const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+                btn.setAttribute('aria-expanded', !expanded);
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!btn.contains(e.target)) {
+                    dropdown.classList.remove('show');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
 
     // ==========================================================================
     // 3. TripAdvisor Review Slider (Testimonials)

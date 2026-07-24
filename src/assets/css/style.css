@@ -296,6 +296,10 @@ ul {
     display: none;
 }
 
+.mobile-only-actions {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     gap: 1.75rem;
@@ -457,15 +461,35 @@ ul {
     
     .nav-list {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 1rem;
         gap: 2.25rem;
+    }
+    
+    .mobile-only-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    
+    .btn-book-mobile {
+        width: 80%;
+        text-align: center;
+        padding: 0.75rem;
+        font-size: 1.1rem;
     }
     
     .mobile-contact-info {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
         gap: 1.5rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
         border-top: 1px solid rgba(255,255,255,0.1);
         padding-top: 2rem;
         width: 80%;
@@ -485,7 +509,11 @@ ul {
     }
     
     .btn-book-header {
-        display: none; /* Hide in header on tablet/mobile, we have sticky bottom bar */
+        display: none; /* Hide in header on tablet/mobile */
+    }
+    
+    .header-actions .lang-selector {
+        display: none; /* Hide language selector in header on tablet/mobile */
     }
 }
 
@@ -698,15 +726,9 @@ ul {
         border-radius: 0;
     }
     
+    /* Hide the complex booking bar entirely on mobile */
     .booking-bar-wrapper {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-radius: 0 !important;
-        margin: 0 !important;
-        box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
+        display: none !important;
     }
     
     .booking-bar-container {
