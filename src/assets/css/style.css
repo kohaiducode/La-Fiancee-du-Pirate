@@ -1141,33 +1141,6 @@ ul {
     }
 }
 
-@media (max-width: 576px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .service-detail-card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        padding: 1.5rem 1rem;
-        gap: 1rem;
-    }
-    .service-detail-icon {
-        margin-bottom: 0 !important;
-        font-size: 2rem !important;
-        flex: 0 0 50px;
-        text-align: center;
-    }
-    .service-detail-card h3 {
-        margin-bottom: 0.25rem !important;
-        font-size: 1.1rem !important;
-    }
-    .service-detail-card p {
-        margin-bottom: 0;
-    }
-}
 
 .service-detail-card {
     background-color: var(--color-white);
@@ -1205,6 +1178,34 @@ ul {
 
 .service-detail-info {
     flex: 1;
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .service-detail-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    .service-detail-icon {
+        margin-bottom: 0 !important;
+        font-size: 2rem !important;
+        flex: 0 0 50px;
+        text-align: center;
+    }
+    .service-detail-card h3 {
+        margin-bottom: 0.25rem !important;
+        font-size: 1.1rem !important;
+    }
+    .service-detail-card p {
+        margin-bottom: 0;
+    }
 }
 
 /* Culture grid */
