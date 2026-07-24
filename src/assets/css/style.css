@@ -461,17 +461,18 @@ ul {
     
     .nav-list {
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 1rem;
-        gap: 2.25rem;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+        gap: 2.75rem;
     }
     
     .mobile-only-actions {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 1rem;
-        gap: 1.5rem;
+        align-items: center;
+        padding-left: 0;
+        gap: 2rem;
         margin-top: 2rem;
         width: 100%;
     }
@@ -486,18 +487,20 @@ ul {
     .mobile-contact-info {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding-left: 1rem;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
         gap: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         border-top: 1px solid rgba(255,255,255,0.1);
         padding-top: 2rem;
         width: 80%;
     }
     
     .mobile-contact-link {
+        font-size: 1.1rem;
+        justify-content: center;
         color: var(--color-white);
-        font-size: 1.05rem;
         display: flex;
         align-items: center;
         gap: 0.75rem;
@@ -508,8 +511,15 @@ ul {
         font-size: 1.1rem;
     }
     
+    .header-actions {
+        gap: 0.5rem;
+    }
+
     .btn-book-header {
-        display: none; /* Hide in header on tablet/mobile */
+        display: inline-flex;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        margin-right: 0.25rem;
     }
     
     .header-actions .lang-selector {
