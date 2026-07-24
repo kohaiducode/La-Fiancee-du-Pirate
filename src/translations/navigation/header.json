@@ -1,6 +1,5 @@
 {
   "fr": {
-    "title": "",
     "nav": {
       "book": "Réserver",
       "contact": "Contact",
@@ -22,7 +21,6 @@
     }
   },
   "en": {
-    "title": "",
     "nav": {
       "book": "Book Now",
       "contact": "Contact",
@@ -44,7 +42,6 @@
     }
   },
   "en-au": {
-    "title": "",
     "nav": {
       "book": "Book Now",
       "contact": "Contact",
@@ -66,7 +63,6 @@
     }
   },
   "de": {
-    "title": "",
     "nav": {
       "book": "Buchen",
       "contact": "Kontakt",
@@ -88,7 +84,6 @@
     }
   },
   "it": {
-    "title": "",
     "nav": {
       "book": "Prenota",
       "contact": "Contatti",
@@ -110,7 +105,6 @@
     }
   },
   "es": {
-    "title": "",
     "nav": {
       "book": "Reservar",
       "contact": "Contacto",
@@ -132,7 +126,6 @@
     }
   },
   "ru": {
-    "title": "",
     "nav": {
       "book": "Забронировать",
       "contact": "Контакты",

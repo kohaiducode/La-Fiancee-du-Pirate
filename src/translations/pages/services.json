@@ -1,6 +1,5 @@
 {
   "fr": {
-    "title": "",
     "services": {
       "service_garden_desc": "Un grand jardin méditerranéen parsemé de petits salons intimes pour lire, se reposer ou boire un verre.",
       "rue_desc": "Une rue médiévale couverte de 130 mètres de long (XIVe s.) qui servait de chemin défensif, immortalisée par Cocteau sur ses toiles.",
@@ -33,7 +32,6 @@
     }
   },
   "en": {
-    "title": "",
     "services": {
       "service_garden_desc": "A large Mediterranean garden with cozy, intimate seating areas to read, rest, or enjoy a drink.",
       "rue_desc": "A 130-meter covered medieval street dating back to the 14th century, once used as a defensive pathway and painted by Jean Cocteau.",
@@ -66,7 +64,6 @@
     }
   },
   "en-au": {
-    "title": "",
     "services": {
       "service_garden_desc": "A large Mediterranean garden with cozy, intimate seating areas to read, rest, or enjoy a drink.",
       "rue_desc": "A 130-meter covered medieval street dating back to the 14th century, once used as a defensive pathway and painted by Jean Cocteau.",
@@ -99,7 +96,6 @@
     }
   },
   "de": {
-    "title": "",
     "services": {
       "service_garden_desc": "Ein großer mediterraner Garten mit gemütlichen Sitzecken zum Lesen, Entspannen oder Genießen eines Getränks.",
       "rue_desc": "Eine 130 Meter lange, überdachte mittelalterliche Straße aus dem 14. Jahrhundert, die einst als Verteidigungsweg diente und von Cocteau gemalt wurde.",
@@ -132,7 +128,6 @@
     }
   },
   "it": {
-    "title": "",
     "services": {
       "service_garden_desc": "Un grande giardino mediterraneo con salottini intimi per leggere, riposare o sorseggiare un drink.",
       "rue_desc": "Una via medievale coperta lunga 130 metri risalente al XIV secolo, che un tempo fungeva da passaggio difensivo ed è stata dipinta da Cocteau.",
@@ -165,7 +160,6 @@
     }
   },
   "es": {
-    "title": "",
     "services": {
       "service_garden_desc": "Un gran jardín mediterráneo con íntimos salones al aire libre para leer, descansar o disfrutar de una bebida.",
       "rue_desc": "Una calle medieval cubierta de 130 metros de largo que data del siglo XIV, utilizada antiguamente como paso defensivo y pintada por Cocteau.",
@@ -198,7 +192,6 @@
     }
   },
   "ru": {
-    "title": "",
     "services": {
       "service_garden_desc": "Просторный средиземноморский сад с уютными уголками для чтения, отдыха или бокала вина.",
       "rue_desc": "Крытая средневековая улица XIV века длиной 130 метров, когда-то служившая оборонительным проходом и запечатленная Кокто на картинах.",

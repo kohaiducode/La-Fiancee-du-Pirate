@@ -43,8 +43,7 @@
         "capacity": "1 à 4 personnes",
         "size": "16 à 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "en": {
     "rooms": {
@@ -90,8 +89,7 @@
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "en-au": {
     "rooms": {
@@ -137,8 +135,7 @@
         "capacity": "1 to 4 guests",
         "size": "16 to 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "de": {
     "rooms": {
@@ -184,8 +181,7 @@
         "capacity": "1 to 4 Personen",
         "size": "16 bis 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "it": {
     "rooms": {
@@ -231,8 +227,7 @@
         "capacity": "Da 1 a 4 persone",
         "size": "Da 16 a 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "es": {
     "rooms": {
@@ -278,8 +273,7 @@
         "capacity": "De 1 a 4 personas",
         "size": "De 16 a 31 m²"
       }
-    },
-    "title": ""
+    }
   },
   "ru": {
     "rooms": {
@@ -325,7 +319,6 @@
         "capacity": "От 1 до 4 человек",
         "size": "От 16 до 31 м²"
       }
-    },
-    "title": ""
+    }
   }
 }

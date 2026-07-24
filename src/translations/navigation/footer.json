@@ -1,6 +1,5 @@
 {
   "fr": {
-    "title": "",
     "footer": {
       "contact_title": "Contact",
       "tripadvisor_badge": "Classé Excellent sur TripAdvisor",
@@ -11,7 +10,6 @@
     }
   },
   "en": {
-    "title": "",
     "footer": {
       "contact_title": "Contact",
       "tripadvisor_badge": "Rated Excellent on TripAdvisor",
@@ -22,7 +20,6 @@
     }
   },
   "en-au": {
-    "title": "",
     "footer": {
       "contact_title": "Contact",
       "tripadvisor_badge": "Rated Excellent on TripAdvisor",
@@ -33,7 +30,6 @@
     }
   },
   "de": {
-    "title": "",
     "footer": {
       "contact_title": "Kontakt",
       "tripadvisor_badge": "Auf TripAdvisor als Ausgezeichnet bewertet",
@@ -44,7 +40,6 @@
     }
   },
   "it": {
-    "title": "",
     "footer": {
       "contact_title": "Contatti",
       "tripadvisor_badge": "Valutato Eccellente su TripAdvisor",
@@ -55,7 +50,6 @@
     }
   },
   "es": {
-    "title": "",
     "footer": {
       "contact_title": "Contacto",
       "tripadvisor_badge": "Valorado como Excelente en TripAdvisor",
@@ -66,7 +60,6 @@
     }
   },
   "ru": {
-    "title": "",
     "footer": {
       "contact_title": "Контакты",
       "tripadvisor_badge": "Оценка «Отлично» на TripAdvisor",

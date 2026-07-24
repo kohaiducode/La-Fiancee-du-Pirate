@@ -1,6 +1,5 @@
 {
   "fr": {
-    "title": "",
     "accueil": {
       "intro_title": "Bienvenue à La Fiancée du Pirate",
       "intro_text": "Niché sur la moyenne corniche entre Nice et Monaco, notre boutique-hôtel intimiste et unique de 15 chambres vous offre un cadre exceptionnel et une vue panoramique imprenable sur la mer Méditerranée.",
@@ -27,7 +26,6 @@
     }
   },
   "en": {
-    "title": "",
     "accueil": {
       "intro_title": "Welcome to La Fiancée du Pirate",
       "intro_text": "Nestled on the cliffside (moyenne corniche) between Nice and Monaco, our intimate and unique 15-room boutique hotel offers an exceptional setting and breath-taking panoramic views of the Mediterranean Sea.",
@@ -54,7 +52,6 @@
     }
   },
   "en-au": {
-    "title": "",
     "accueil": {
       "intro_title": "Welcome to La Fiancée du Pirate",
       "intro_text": "Nestled on the cliffside (moyenne corniche) between Nice and Monaco, our intimate and unique 15-room boutique hotel offers an exceptional setting and breath-taking panoramic views of the Mediterranean Sea.",
@@ -81,7 +78,6 @@
     }
   },
   "de": {
-    "title": "",
     "accueil": {
       "intro_title": "Willkommen im La Fiancée du Pirate",
       "intro_text": "An der Klippenstraße (Moyenne Corniche) zwischen Nizza und Monaco gelegen, bietet unser intimes und einzigartiges Boutique-Hotel mit 15 Zimmern eine außergewöhnliche Kulisse und einen atemberaubenden Panoramablick auf das Mittelmeer.",
@@ -108,7 +104,6 @@
     }
   },
   "it": {
-    "title": "",
     "accueil": {
       "intro_title": "Benvenuti a La Fiancée du Pirate",
       "intro_text": "Immerso sulla moyenne corniche tra Nizza e Monaco, il nostro boutique hotel intimo e unico di 15 camere vi offre una cornice eccezionale e una vista panoramica spettacolare sul Mar Mediterraneo.",
@@ -135,7 +130,6 @@
     }
   },
   "es": {
-    "title": "",
     "accueil": {
       "intro_title": "Bienvenidos a La Fiancée du Pirate",
       "intro_text": "Situado en la moyenne corniche entre Niza y Mónaco, nuestro hotel boutique íntimo y único de 15 habitaciones le ofrece un entorno excepcional y unas vistas panorámicas espectaculares del mar Mediterráneo.",
@@ -162,7 +156,6 @@
     }
   },
   "ru": {
-    "title": "",
     "accueil": {
       "intro_title": "Добро пожаловать в La Fiancée du Pirate",
       "intro_text": "Расположенный на живописном склоне (Средний Корниш) между Ниццей и Монако, наш уютный и уникальный бутик-отель на 15 номеров предлагает исключительный сервис и захватывающий панорамный вид на Средиземное море.",

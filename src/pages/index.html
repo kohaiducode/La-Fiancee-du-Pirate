@@ -2,24 +2,41 @@
 <section class="hero-section">
     <!-- Hero Background Slider -->
     <div class="hero-slider">
-        <div class="hero-bg-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/hotel_view.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/pool_and_hotel.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/by_the_pool.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/jacuzzi_and_pool.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/snacks_by_the_pool.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/room_with_view.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');"></div>
-        <div class="hero-bg-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/breakfast.webp');"></div>
+        <div class="hero-bg-slide active"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/hotel_view.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/pool_and_hotel.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/by_the_pool.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/jacuzzi_and_pool.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/snacks_by_the_pool.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/room_with_view.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
+        </div>
+        <div class="hero-bg-slide"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{path_prefix}}assets/images/accueil/breakfast.webp');">
+        </div>
     </div>
-    
+
     <div class="hero-content">
-        <h1 class="hero-title">{{hero.title}}</h1>
+        <h1 class="sr-only">{{meta_title}}</h1>
+        <h2 class="hero-title">{{hero.title}}</h2>
         <p class="hero-subtitle">{{hero.subtitle}}</p>
         <a href="{{booking_url}}" target="_blank" rel="noopener" class="btn btn-secondary btn-hero-cta">
             {{hero.cta}}
         </a>
     </div>
-    
+
     <!-- Hero Slider Dots -->
     <div class="hero-dots" id="heroDots"></div>
 </section>
@@ -42,40 +59,44 @@
             <!-- Feature 1: Vue -->
             <div class="feature-card">
                 <div class="feature-img-wrapper">
-                    <img src="{{path_prefix}}{{accueil.card_view_image}}" alt="Vue Panoramique" class="feature-img" loading="lazy">
+                    <img src="{{path_prefix}}{{accueil.card_view_image}}" alt="{{accueil.card_view_title}}" class="feature-img"
+                        loading="lazy">
                 </div>
                 <div class="feature-info">
                     <h3 class="feature-card-title">{{accueil.card_view_title}}</h3>
                     <p class="feature-card-text">{{accueil.card_view_text}}</p>
                 </div>
             </div>
-            
+
             <!-- Feature 2: Pool & Garden -->
             <div class="feature-card card-reverse">
                 <div class="feature-img-wrapper">
-                    <img src="{{path_prefix}}{{accueil.card_pool_image}}" alt="Piscine & Jardin" class="feature-img" loading="lazy">
+                    <img src="{{path_prefix}}{{accueil.card_pool_image}}" alt="{{accueil.card_pool_title}}" class="feature-img"
+                        loading="lazy">
                 </div>
                 <div class="feature-info">
                     <h3 class="feature-card-title">{{accueil.card_pool_title}}</h3>
                     <p class="feature-card-text">{{accueil.card_pool_text}}</p>
                 </div>
             </div>
-            
+
             <!-- Feature 3: Breakfast -->
             <div class="feature-card">
                 <div class="feature-img-wrapper">
-                    <img src="{{path_prefix}}{{accueil.card_breakfast_image}}" alt="Petit-déjeuner" class="feature-img" loading="lazy">
+                    <img src="{{path_prefix}}{{accueil.card_breakfast_image}}" alt="{{accueil.card_breakfast_title}}" class="feature-img"
+                        loading="lazy">
                 </div>
                 <div class="feature-info">
                     <h3 class="feature-card-title">{{accueil.card_breakfast_title}}</h3>
                     <p class="feature-card-text">{{accueil.card_breakfast_text}}</p>
                 </div>
             </div>
-            
+
             <!-- Feature 4: Location -->
             <div class="feature-card card-reverse">
                 <div class="feature-img-wrapper">
-                    <img src="{{path_prefix}}{{accueil.card_location_image}}" alt="Emplacement" class="feature-img" loading="lazy">
+                    <img src="{{path_prefix}}{{accueil.card_location_image}}" alt="{{accueil.card_location_title}}" class="feature-img"
+                        loading="lazy">
                 </div>
                 <div class="feature-info">
                     <h3 class="feature-card-title">{{accueil.card_location_title}}</h3>
@@ -87,12 +108,13 @@
 </section>
 
 <!-- Rooms Teaser Section -->
-<section class="rooms-teaser-section section-padding" style="background-image: linear-gradient(rgba(26,43,73,0.85), rgba(26,43,73,0.85)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
+<section class="rooms-teaser-section section-padding"
+    style="background-image: linear-gradient(rgba(26,43,73,0.85), rgba(26,43,73,0.85)), url('{{path_prefix}}assets/images/accueil/dinner_room.webp');">
     <div class="container text-center text-white">
         <h2 class="section-title text-white">{{accueil.explore_rooms_title}}</h2>
         <p class="lead-text text-light-muted">{{accueil.explore_rooms_text}}</p>
         <div class="teaser-actions">
-            <a href="{{path_prefix}}{{lang}}/chambres.html" class="btn btn-outline-white">
+            <a href="{{path_prefix}}{{lang}}/chambres/" class="btn btn-outline-white">
                 {{nav.rooms}} <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -108,24 +130,27 @@
             <p class="section-subtitle">{{reviews.subtitle}}</p>
             <div class="divider"></div>
         </div>
-        
+
         <!-- Reviews Slider Container -->
         <div class="reviews-slider-container">
             <div class="reviews-track" id="reviewsTrack">
                 <!-- Dynamically populated or pre-rendered from JSON -->
                 {{reviews_slides_placeholder}}
             </div>
-            
+
             <!-- Slider Navigation -->
             <div class="slider-nav">
-                <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous Review"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous Review"><i
+                        class="fa-solid fa-arrow-left"></i></button>
                 <div class="slider-dots" id="sliderDots"></div>
-                <button class="slider-arrow next" id="sliderNext" aria-label="Next Review"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="slider-arrow next" id="sliderNext" aria-label="Next Review"><i
+                        class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
-        
+
         <div class="text-center mt-4">
-            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html" target="_blank" rel="noopener" class="btn btn-outline">
+            <a href="https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html"
+                target="_blank" rel="noopener" class="btn btn-outline">
                 <i class="fa-brands fa-tripadvisor"></i> {{reviews.read_more}}
             </a>
         </div>

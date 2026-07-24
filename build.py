@@ -80,6 +80,18 @@ def compile_site():
         shutil.copytree(src_assets, dist_assets)
         print("Assets copied successfully.")
         
+        # Minify CSS
+        css_path = os.path.join(dist_assets, "css", "style.css")
+        if os.path.exists(css_path):
+            with open(css_path, 'r', encoding='utf-8') as f:
+                css_content = f.read()
+            css_content = re.sub(r'/\*.*?\*/', '', css_content, flags=re.DOTALL)
+            css_content = re.sub(r'\s+', ' ', css_content)
+            css_content = css_content.replace(' {', '{').replace(': ', ':').replace(';}', '}')
+            with open(css_path, 'w', encoding='utf-8') as f:
+                f.write(css_content.strip())
+            print("CSS minified successfully.")
+        
     # Copy Sveltia CMS admin folder
     src_admin = os.path.join(src_dir, "admin")
     dist_admin = os.path.join(dist_dir, "admin")
@@ -113,6 +125,9 @@ def compile_site():
     
     # Supported languages
     languages = ["fr", "en", "en-au", "de", "it", "es", "ru"]
+    
+    # Sitemap tracking
+    sitemap_urls = []
     
     # Language code mapping for Amenitiz URLs
     amenitiz_lang_map = {
@@ -316,6 +331,48 @@ def compile_site():
                 "active_lang_en_au": "active" if lang == "en-au" else ""
             }
             
+            # Generate Hreflang Tags
+            hreflang_tags = ""
+            for l in languages:
+                hreflang_tags += f'<link rel="alternate" hreflang="{l}" href="https://www.fianceedupirate.com/{l}/{page_path}">\n    '
+            hreflang_tags += f'<link rel="alternate" hreflang="x-default" href="https://www.fianceedupirate.com/fr/{page_path}">'
+            
+            # Generate JSON-LD
+            json_ld = f"""<script type="application/ld+json">
+            {{
+              "@context": "https://schema.org",
+              "@type": "Hotel",
+              "name": "La Fiancée du Pirate",
+              "description": "{meta_desc}",
+              "url": "https://www.fianceedupirate.com/{lang}/{page_path}",
+              "telephone": "+33493766740",
+              "email": "info@fianceedupirate.com",
+              "address": {{
+                "@type": "PostalAddress",
+                "streetAddress": "8 Boulevard de La Corne d'Or, Moyenne Corniche",
+                "addressLocality": "Villefranche-sur-Mer",
+                "postalCode": "06230",
+                "addressCountry": "FR"
+              }},
+              "image": "https://www.fianceedupirate.com/assets/images/accueil/hotel_view.webp",
+              "starRating": {{
+                "@type": "Rating",
+                "ratingValue": "4"
+              }},
+              "sameAs": [
+                "https://www.facebook.com/hotellafianceedupirate/",
+                "https://www.instagram.com/la_fiancee_du_pirate/",
+                "https://www.tripadvisor.fr/Hotel_Review-g187246-d675618-Reviews-Hotel_La_Fiancee_du_Pirate-Villefranche_sur_Mer_French_Riviera_Cote_d_Azur_Provence_Alp.html",
+                "https://www.booking.com/hotel/fr/la-fiancee-du-pirate.fr.html",
+                "https://www.agoda.com/fr-fr/hotel-la-fiancee-du-pirate/hotel/villefranche-sur-mer-fr.html",
+                "https://www.expedia.fr/Nice-Hotel-Hotel-La-Fiancee-Du-Pirate.h17251932.Description-Hotel"
+              ]
+            }}
+            </script>"""
+            
+            context["hreflang_tags"] = hreflang_tags
+            context["json_ld"] = json_ld
+            
             # Combine language translation dictionary
             full_vars = {**lang_data, **context}
             
@@ -357,8 +414,12 @@ def compile_site():
                 os.makedirs(page_dir, exist_ok=True)
                 dest_file_path = os.path.join(page_dir, "index.html")
                 
+                
             with open(dest_file_path, 'w', encoding='utf-8') as f:
                 f.write(final_html)
+                
+            # Add to sitemap
+            sitemap_urls.append(f"https://www.fianceedupirate.com/{lang}/{page_path}")
                 
     # 5. Create root redirection index.html
     root_index_content = """<!DOCTYPE html>
@@ -399,6 +460,20 @@ def compile_site():
 """
     with open(os.path.join(dist_dir, "index.html"), 'w', encoding='utf-8') as f:
         f.write(root_index_content)
+        
+    # 6. Generate Sitemap XML
+    sitemap_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for url in sitemap_urls:
+        sitemap_content += f'  <url>\n    <loc>{url}</loc>\n  </url>\n'
+    sitemap_content += '</urlset>'
+    
+    with open(os.path.join(dist_dir, "sitemap.xml"), 'w', encoding='utf-8') as f:
+        f.write(sitemap_content)
+        
+    # 7. Generate robots.txt
+    robots_content = "User-agent: *\nAllow: /\n\nSitemap: https://www.fianceedupirate.com/sitemap.xml\n"
+    with open(os.path.join(dist_dir, "robots.txt"), 'w', encoding='utf-8') as f:
+        f.write(robots_content)
         
     print("Compilation completed successfully!")
 
