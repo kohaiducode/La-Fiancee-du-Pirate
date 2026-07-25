@@ -526,6 +526,11 @@ def compile_site():
     with open(os.path.join(dist_dir, "robots.txt"), 'w', encoding='utf-8') as f:
         f.write(robots_content)
         
+    # 8. Generate Google Site Verification
+    google_verification = "google-site-verification: google73772bf637863755.html"
+    with open(os.path.join(dist_dir, "google73772bf637863755.html"), 'w', encoding='utf-8') as f:
+        f.write(google_verification)
+        
     print("Compilation completed successfully!")
 
 if __name__ == "__main__":
