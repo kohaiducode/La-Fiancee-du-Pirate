@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fianceedupirate.com/sitemap.xml
+Sitemap: https://kohaiducode.github.io/La-Fiancee-du-Pirate/sitemap.xml

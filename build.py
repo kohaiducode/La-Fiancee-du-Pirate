@@ -372,8 +372,11 @@ def compile_site():
             # Generate Hreflang Tags
             hreflang_tags = ""
             for l in languages:
-                hreflang_tags += f'<link rel="alternate" hreflang="{l}" href="https://www.fianceedupirate.com/{l}/{page_path}">\n    '
-            hreflang_tags += f'<link rel="alternate" hreflang="x-default" href="https://www.fianceedupirate.com/fr/{page_path}">'
+                hreflang_tags += f'<link rel="alternate" hreflang="{l}" href="https://kohaiducode.github.io/La-Fiancee-du-Pirate/{l}/{page_path}">\n    '
+            hreflang_tags += f'<link rel="alternate" hreflang="x-default" href="https://kohaiducode.github.io/La-Fiancee-du-Pirate/fr/{page_path}">\n    '
+            
+            # Canonical Tag
+            canonical_tag = f'<link rel="canonical" href="https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}">'
             
             # Generate JSON-LD
             hotel_data = lang_data.get("json_ld", {})
@@ -395,7 +398,7 @@ def compile_site():
               "@type": "Hotel",
               "name": "{hotel_name}",
               "description": "{meta_desc}",
-              "url": "https://www.fianceedupirate.com/{lang}/{page_path}",
+              "url": "https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}",
               "telephone": "{hotel_phone}",
               "email": "{hotel_email}",
               "address": {{
@@ -415,6 +418,7 @@ def compile_site():
             
             
             context["hreflang_tags"] = hreflang_tags
+            context["canonical_tag"] = canonical_tag
             context["json_ld_script"] = json_ld_script
             context["current_year"] = str(datetime.now().year)
             
@@ -466,7 +470,7 @@ def compile_site():
                 f.write(final_html)
                 
             # Add to sitemap
-            sitemap_urls.append(f"https://www.fianceedupirate.com/{lang}/{page_path}")
+            sitemap_urls.append(f"https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}")
                 
     # 5. Create root redirection index.html
     root_index_content = """<!DOCTYPE html>
@@ -518,7 +522,7 @@ def compile_site():
         f.write(sitemap_content)
         
     # 7. Generate robots.txt
-    robots_content = "User-agent: *\nAllow: /\n\nSitemap: https://www.fianceedupirate.com/sitemap.xml\n"
+    robots_content = "User-agent: *\nAllow: /\n\nSitemap: https://kohaiducode.github.io/La-Fiancee-du-Pirate/sitemap.xml\n"
     with open(os.path.join(dist_dir, "robots.txt"), 'w', encoding='utf-8') as f:
         f.write(robots_content)
         
