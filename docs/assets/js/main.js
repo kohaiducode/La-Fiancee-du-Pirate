@@ -271,11 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Booking Bar Date Initialization & Form Handling
     // ==========================================================================
-    const bookingForm = document.getElementById('bookingForm');
-    const barCheckIn = document.getElementById('barCheckIn');
-    const barCheckOut = document.getElementById('barCheckOut');
+    const bookingForms = document.querySelectorAll('.header-booking-form, #bookingForm');
     
-    if (bookingForm && barCheckIn && barCheckOut) {
+    if (bookingForms.length > 0) {
         const today = new Date();
         const tomorrow = new Date(today);
         tomorrow.setDate(tomorrow.getDate() + 1);
@@ -293,38 +291,48 @@ document.addEventListener('DOMContentLoaded', () => {
             return `${yyyy}-${mm}-${dd}`;
         };
         
-        // Set values and min limits
-        barCheckIn.min = formatDate(today);
-        barCheckIn.value = formatDate(tomorrow);
-        barCheckOut.min = formatDate(tomorrow);
-        barCheckOut.value = formatDate(dayAfterTomorrow);
-        
-        // Dynamic dates check out update
-        barCheckIn.addEventListener('change', () => {
-            const selectedIn = new Date(barCheckIn.value);
-            const nextMinOut = new Date(selectedIn);
-            nextMinOut.setDate(nextMinOut.getDate() + 1);
+        bookingForms.forEach(form => {
+            const checkInInput = form.querySelector('[name="check_in"], [name="start_date"]');
+            const checkOutInput = form.querySelector('[name="check_out"], [name="end_date"]');
+            const adultsInput = form.querySelector('[name="adults"]');
+            const childrenInput = form.querySelector('[name="children"]');
             
-            barCheckOut.min = formatDate(nextMinOut);
-            
-            // Auto advance checkout if needed
-            const currentOut = new Date(barCheckOut.value);
-            if (currentOut <= selectedIn) {
-                barCheckOut.value = formatDate(nextMinOut);
+            if (checkInInput && checkOutInput) {
+                // Set values and min limits
+                checkInInput.min = formatDate(today);
+                checkInInput.value = formatDate(tomorrow);
+                checkOutInput.min = formatDate(tomorrow);
+                checkOutInput.value = formatDate(dayAfterTomorrow);
+                
+                // Dynamic dates check out update
+                checkInInput.addEventListener('change', () => {
+                    const selectedIn = new Date(checkInInput.value);
+                    const nextMinOut = new Date(selectedIn);
+                    nextMinOut.setDate(nextMinOut.getDate() + 1);
+                    
+                    checkOutInput.min = formatDate(nextMinOut);
+                    
+                    // Auto advance checkout if needed
+                    const currentOut = new Date(checkOutInput.value);
+                    if (currentOut <= selectedIn) {
+                        checkOutInput.value = formatDate(nextMinOut);
+                    }
+                });
             }
-        });
-        
-        // Form submit integration: Intercept and build final URL with query params
-        bookingForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const actionUrl = bookingForm.getAttribute('action');
-            const inVal = barCheckIn.value;
-            const outVal = barCheckOut.value;
-            const adultsVal = document.getElementById('barGuests').value;
             
-            // Build dynamic url: .../booking/room?start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&adults=X&children=0#RoomSelection-BE
-            const finalUrl = `${actionUrl}?start_date=${inVal}&end_date=${outVal}&adults=${adultsVal}&children=0#RoomSelection-BE`;
-            window.open(finalUrl, '_blank', 'noopener');
+            // Form submit integration: Intercept and build final URL with query params
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const actionUrl = form.getAttribute('action');
+                const inVal = checkInInput ? checkInInput.value : '';
+                const outVal = checkOutInput ? checkOutInput.value : '';
+                const adultsVal = adultsInput ? adultsInput.value : '2';
+                const childrenVal = childrenInput ? childrenInput.value : '0';
+                
+                // Build dynamic url
+                const finalUrl = `${actionUrl}?start_date=${inVal}&end_date=${outVal}&adults=${adultsVal}&children=${childrenVal}#RoomSelection-BE`;
+                window.open(finalUrl, '_blank', 'noopener');
+            });
         });
     }
 

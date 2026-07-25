@@ -101,9 +101,45 @@
             </ul>
             <!-- Mobile Only Actions (Book & Lang) -->
             <div class="mobile-only-actions">
-                <a href="https://la-fiancee-du-pirate.amenitiz.io/de/booking/room" target="_blank" rel="noopener" class="btn btn-secondary btn-book-mobile">
-                    Buchen
-                </a>
+                <div class="header-booking-wrapper-mobile" style="position: relative; width: 100%;">
+                    <button class="btn btn-secondary btn-book-mobile" id="mobileBookingToggle" onclick="toggleHeaderBooking('mobileHeaderBookingPopup')" style="width: 100%;">
+                        Buchen
+                    </button>
+                    <!-- Mobile Popup -->
+                    <div id="mobileHeaderBookingPopup" style="display: none; position: absolute; top: 120%; left: 0; right: 0; background: var(--color-primary); padding: 15px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 1000; border: 1px solid rgba(255,255,255,0.1); flex-direction: column; gap: 10px;">
+                        <form class="header-booking-form" action="https://la-fiancee-du-pirate.amenitiz.io/de/booking/room" method="GET" target="_blank" rel="noopener" style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="display: flex; flex-direction: column; gap: 5px;">
+                                <label for="mHeadCheckIn" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-regular fa-calendar-days"></i> Anreise</label>
+                                <input type="date" id="mHeadCheckIn" name="start_date" required style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 5px;">
+                                <label for="mHeadCheckOut" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-regular fa-calendar-days"></i> Abreise</label>
+                                <input type="date" id="mHeadCheckOut" name="end_date" required style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+                                    <label for="mHeadGuests" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-solid fa-user"></i> Erwachsene</label>
+                                    <select id="mHeadGuests" name="adults" style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                                        <option value="1" style="background: var(--color-primary);">1</option>
+                                        <option value="2" selected style="background: var(--color-primary);">2</option>
+                                        <option value="3" style="background: var(--color-primary);">3</option>
+                                        <option value="4" style="background: var(--color-primary);">4</option>
+                                    </select>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+                                    <label for="mHeadChildren" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-solid fa-child"></i> Kinder</label>
+                                    <select id="mHeadChildren" name="children" style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                                        <option value="0" selected style="background: var(--color-primary);">0</option>
+                                        <option value="1" style="background: var(--color-primary);">1</option>
+                                        <option value="2" style="background: var(--color-primary);">2</option>
+                                        <option value="3" style="background: var(--color-primary);">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px; padding: 10px;">Verfügbarkeit prüfen</button>
+                        </form>
+                    </div>
+                </div>
                 
                 <div class="lang-selector">
                     <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtnMobile">
@@ -158,9 +194,45 @@
             </div>
 
             <!-- Header Booking CTA -->
-            <a href="https://la-fiancee-du-pirate.amenitiz.io/de/booking/room" target="_blank" rel="noopener" class="btn btn-secondary btn-book-header">
-                Buchen
-            </a>
+            <div class="header-booking-wrapper" style="position: relative;">
+                <button class="btn btn-secondary btn-book-header" id="headerBookingToggle" onclick="toggleHeaderBooking('desktopHeaderBookingPopup')">
+                    Buchen
+                </button>
+                <!-- Desktop Popup -->
+                <div id="desktopHeaderBookingPopup" style="display: none; position: absolute; top: 120%; right: 0; background: var(--color-primary); padding: 20px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 300px; z-index: 1000; border: 1px solid rgba(255,255,255,0.1); flex-direction: column; gap: 10px;">
+                    <form class="header-booking-form" action="https://la-fiancee-du-pirate.amenitiz.io/de/booking/room" method="GET" target="_blank" rel="noopener" style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="dHeadCheckIn" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-regular fa-calendar-days"></i> Anreise</label>
+                            <input type="date" id="dHeadCheckIn" name="start_date" required style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="dHeadCheckOut" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-regular fa-calendar-days"></i> Abreise</label>
+                            <input type="date" id="dHeadCheckOut" name="end_date" required style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+                                <label for="dHeadGuests" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-solid fa-user"></i> Erwachsene</label>
+                                <select id="dHeadGuests" name="adults" style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                                    <option value="1" style="background: var(--color-primary);">1</option>
+                                    <option value="2" selected style="background: var(--color-primary);">2</option>
+                                    <option value="3" style="background: var(--color-primary);">3</option>
+                                    <option value="4" style="background: var(--color-primary);">4</option>
+                                </select>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+                                <label for="dHeadChildren" style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-secondary);"><i class="fa-solid fa-child"></i> Kinder</label>
+                                <select id="dHeadChildren" name="children" style="padding: 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: white;">
+                                    <option value="0" selected style="background: var(--color-primary);">0</option>
+                                    <option value="1" style="background: var(--color-primary);">1</option>
+                                    <option value="2" style="background: var(--color-primary);">2</option>
+                                    <option value="3" style="background: var(--color-primary);">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px; padding: 10px;">Verfügbarkeit prüfen</button>
+                    </form>
+                </div>
+            </div>
             
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
@@ -171,6 +243,37 @@
         </div>
     </div>
 </header>
+
+<style>
+    /* Masquer l'ancienne barre de réservation pour ce test */
+    .booking-bar-wrapper { display: none !important; }
+</style>
+
+<script>
+function toggleHeaderBooking(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup.style.display === 'none' || popup.style.display === '') {
+        popup.style.display = 'flex';
+    } else {
+        popup.style.display = 'none';
+    }
+}
+
+// Close popup when clicking outside
+document.addEventListener('click', function(event) {
+    const desktopPopup = document.getElementById('desktopHeaderBookingPopup');
+    const mobilePopup = document.getElementById('mobileHeaderBookingPopup');
+    const desktopBtn = document.getElementById('headerBookingToggle');
+    const mobileBtn = document.getElementById('mobileBookingToggle');
+    
+    if (desktopPopup && desktopBtn && !desktopPopup.contains(event.target) && !desktopBtn.contains(event.target)) {
+        desktopPopup.style.display = 'none';
+    }
+    if (mobilePopup && mobileBtn && !mobilePopup.contains(event.target) && !mobileBtn.contains(event.target)) {
+        mobilePopup.style.display = 'none';
+    }
+});
+</script>
 
     
     <!-- Main Content Page Body -->
@@ -304,7 +407,7 @@
             
             <!-- Guests -->
             <div class="booking-field">
-                <label for="barGuests"><i class="fa-solid fa-users"></i> Gäste</label>
+                <label for="barGuests"><i class="fa-solid fa-users"></i> Erwachsene</label>
                 <select id="barGuests" name="adults">
                     <option value="1">1</option>
                     <option value="2" selected>2</option>

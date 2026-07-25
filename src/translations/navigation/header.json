@@ -9,7 +9,8 @@
       "gallery": "Galerie"
     },
     "booking_bar": {
-      "guests": "Voyageurs",
+      "guests": "Adultes",
+      "children": "Enfants",
       "search": "Réserver",
       "check_in": "Arrivée",
       "check_out": "Départ"
@@ -25,7 +26,8 @@
       "gallery": "Gallery"
     },
     "booking_bar": {
-      "guests": "Guests",
+      "guests": "Adults",
+      "children": "Children",
       "search": "Check Availability",
       "check_in": "Arrival",
       "check_out": "Departure"
@@ -41,7 +43,8 @@
       "gallery": "Gallery"
     },
     "booking_bar": {
-      "guests": "Guests",
+      "guests": "Adults",
+      "children": "Children",
       "search": "Check Availability",
       "check_in": "Arrival",
       "check_out": "Departure"
@@ -57,7 +60,8 @@
       "gallery": "Galerie"
     },
     "booking_bar": {
-      "guests": "Gäste",
+      "guests": "Erwachsene",
+      "children": "Kinder",
       "search": "Verfügbarkeit prüfen",
       "check_in": "Anreise",
       "check_out": "Abreise"
@@ -73,7 +77,8 @@
       "gallery": "Galleria"
     },
     "booking_bar": {
-      "guests": "Ospiti",
+      "guests": "Adulti",
+      "children": "Bambini",
       "search": "Verifica disponibilità",
       "check_in": "Arrivo",
       "check_out": "Partenza"
@@ -89,7 +94,8 @@
       "gallery": "Galería"
     },
     "booking_bar": {
-      "guests": "Huéspedes",
+      "guests": "Adultos",
+      "children": "Niños",
       "search": "Comprobar disponibilidad",
       "check_in": "Llegada",
       "check_out": "Salida"
@@ -105,7 +111,8 @@
       "gallery": "Галерея"
     },
     "booking_bar": {
-      "guests": "Гости",
+      "guests": "Взрослые",
+      "children": "Дети",
       "search": "Проверить наличие",
       "check_in": "Заезд",
       "check_out": "Выезд"
