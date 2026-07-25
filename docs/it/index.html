@@ -203,13 +203,15 @@
                 <!-- Desktop Popup -->
                 <div id="desktopHeaderBookingPopup" class="header-booking-popup-container">
                     <form class="header-booking-form" action="https://la-fiancee-du-pirate.amenitiz.io/it/booking/room" method="GET" target="_blank" rel="noopener">
-                        <div class="header-booking-field">
-                            <label for="dHeadCheckIn"><i class="fa-regular fa-calendar-days"></i> Arrivo</label>
-                            <input type="date" id="dHeadCheckIn" name="start_date" required>
-                        </div>
-                        <div class="header-booking-field">
-                            <label for="dHeadCheckOut"><i class="fa-regular fa-calendar-days"></i> Partenza</label>
-                            <input type="date" id="dHeadCheckOut" name="end_date" required>
+                        <div class="desktop-dates-row">
+                            <div class="header-booking-field">
+                                <label for="dHeadCheckIn"><i class="fa-regular fa-calendar-days"></i> Arrivo</label>
+                                <input type="date" id="dHeadCheckIn" name="start_date" required>
+                            </div>
+                            <div class="header-booking-field">
+                                <label for="dHeadCheckOut"><i class="fa-regular fa-calendar-days"></i> Partenza</label>
+                                <input type="date" id="dHeadCheckOut" name="end_date" required>
+                            </div>
                         </div>
                         <div class="header-booking-row">
                             <div class="header-booking-field">
@@ -323,6 +325,26 @@
         width: 100%;
         margin-top: 5px;
         padding: 10px;
+    }
+
+    .desktop-dates-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Small devices */
+    @media (max-width: 991px) {
+        #desktopHeaderBookingPopup {
+            position: fixed;
+            top: 70px; /* Below the header */
+            right: 15px;
+            left: 15px;
+            width: auto;
+        }
+        .desktop-dates-row {
+            flex-direction: row;
+        }
     }
 
     /* Extra small devices (iPhone SE size) */
