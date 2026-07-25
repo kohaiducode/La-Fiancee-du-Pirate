@@ -417,6 +417,16 @@ def compile_site():
             </script>"""
             
             
+            # Truncate meta_desc for Open Graph (max ~125 chars)
+            og_desc = meta_desc
+            if len(og_desc) > 125:
+                last_space = og_desc.rfind(' ', 0, 122)
+                if last_space > -1:
+                    og_desc = og_desc[:last_space] + "..."
+                else:
+                    og_desc = og_desc[:122] + "..."
+                    
+            context["og_desc"] = og_desc
             context["hreflang_tags"] = hreflang_tags
             context["canonical_tag"] = canonical_tag
             context["json_ld_script"] = json_ld_script
