@@ -410,13 +410,21 @@ def compile_site():
               "aggregateRating": {{
                 "@type": "AggregateRating",
                 "ratingValue": "{round(avg_rating, 1)}",
-                "reviewCount": "{len(reviews_items)}"
+                "reviewCount": "{len(reviews_items)}",
+                "itemReviewed": {{
+                  "@type": "Hotel",
+                  "name": "{hotel_name}"
+                }}
               }}"""
                 
                 schema_reviews = []
                 for rev in reviews_items:
                     schema_reviews.append({
                         "@type": "Review",
+                        "itemReviewed": {
+                            "@type": "Hotel",
+                            "name": hotel_name
+                        },
                         "author": {"@type": "Person", "name": rev.get("author")},
                         "reviewRating": {"@type": "Rating", "ratingValue": str(rev.get("rating", 5))},
                         "name": rev.get("title"),
