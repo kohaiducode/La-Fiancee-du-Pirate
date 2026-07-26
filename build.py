@@ -432,6 +432,21 @@ def compile_site():
                     })
                 reviews_json = f",\n              \"review\": {json.dumps(schema_reviews, ensure_ascii=False)}"
             
+            # Generate JSON-LD extra properties
+            schema_images = []
+            hero_images_data = lang_data.get("hero", {}).get("images", [])
+            if not hero_images_data:
+                hero_images_data = [{"image": "/Photos/hotel_view.webp"}]
+            for item in hero_images_data:
+                img_path = get_optimized_image_path(item.get("image", ""))
+                schema_images.append(f"https://kohaiducode.github.io/La-Fiancee-du-Pirate/{img_path.lstrip('/')}")
+                
+            amenities_list = [
+                "Wifi Gratuit", "Plateau de courtoisie", "Sèche-cheveux", "Produits d'accueil", 
+                "Peignoirs", "Petit-déjeuner Buffet", "Jardin & Salons", "Piscine & Jacuzzi"
+            ]
+            schema_amenities = [{"@type": "LocationFeatureSpecification", "name": am, "value": True} for am in amenities_list]
+
             json_ld_script = f"""<script type="application/ld+json">
             {{
               "@context": "https://schema.org",
@@ -441,6 +456,7 @@ def compile_site():
               "url": "https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}",
               "telephone": "{hotel_phone}",
               "email": "{hotel_email}",
+              "image": {json.dumps(schema_images)},
               "address": {{
                 "@type": "PostalAddress",
                 "streetAddress": "{hotel_street}",
@@ -448,6 +464,12 @@ def compile_site():
                 "postalCode": "{hotel_zip}",
                 "addressCountry": "{hotel_country}"
               }},
+              "geo": {{
+                "@type": "GeoCoordinates",
+                "latitude": "43.706814",
+                "longitude": "7.3021958"
+              }},
+              "amenityFeature": {json.dumps(schema_amenities, ensure_ascii=False)},
               "starRating": {{
                 "@type": "Rating",
                 "ratingValue": "{hotel_stars}"
