@@ -442,8 +442,10 @@ def compile_site():
                 schema_images.append(f"https://kohaiducode.github.io/La-Fiancee-du-Pirate/{img_path.lstrip('/')}")
                 
             amenities_list = [
-                "Wifi Gratuit", "Plateau de courtoisie", "Sèche-cheveux", "Produits d'accueil", 
-                "Peignoirs", "Petit-déjeuner Buffet", "Jardin & Salons", "Piscine & Jacuzzi"
+                "Wi-Fi Gratuit", "Parking Gratuit", "Climatisation", "Piscine Extérieure",
+                "Jacuzzi", "Petit-déjeuner Buffet", "Restaurant", "Plateau de courtoisie",
+                "Sèche-cheveux", "Produits d'accueil", "Peignoirs", "Jardin & Salons",
+                "Bagagerie", "Service de réveil", "Ménage quotidien", "Salle de bain privée"
             ]
             schema_amenities = [{"@type": "LocationFeatureSpecification", "name": am, "value": True} for am in amenities_list]
 
@@ -457,6 +459,9 @@ def compile_site():
               "telephone": "{hotel_phone}",
               "email": "{hotel_email}",
               "image": {json.dumps(schema_images)},
+              "checkinTime": "15:00",
+              "checkoutTime": "11:00",
+              "petsAllowed": true,
               "address": {{
                 "@type": "PostalAddress",
                 "streetAddress": "{hotel_street}",
