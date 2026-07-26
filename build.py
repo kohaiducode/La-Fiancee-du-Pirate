@@ -118,10 +118,6 @@ def compile_site():
     footer_tpl = ""
     with open(os.path.join(templates_dir, "footer.html"), 'r', encoding='utf-8') as f:
         footer_tpl = f.read()
-        
-    booking_tpl = ""
-    with open(os.path.join(templates_dir, "booking-bar.html"), 'r', encoding='utf-8') as f:
-        booking_tpl = f.read()
 
     # Get all pages
     pages = [f for f in os.listdir(pages_dir) if f.endswith('.html')]
@@ -160,10 +156,13 @@ def compile_site():
         seo_data = {"seo": {}}
         global_path = os.path.join(translations_dir, "seo", "global.json")
         json_ld = {}
+        favicon = "/Photos/Logo/Logo bleu fond blanc - favicon.png"
         if os.path.exists(global_path):
             global_data = load_json(global_path)
             json_ld = global_data.get(lang, {}).get("json_ld", {})
+            favicon = global_data.get(lang, {}).get("favicon", favicon)
         lang_data["json_ld"] = json_ld
+        lang_data["favicon"] = favicon
         lang_data["base_url"] = BASE_URL
         
         for name in ["accueil", "chambres", "services", "galerie", "contact"]:
@@ -338,8 +337,17 @@ def compile_site():
                 
             # Render layout parts with page details
             is_index = (page_name_no_ext == "index")
-            path_prefix = "../" if is_index else "../../"
-            page_path = "" if is_index else f"{page_name_no_ext}/"
+            is_404 = (page_name_no_ext == "404")
+            
+            if is_index:
+                path_prefix = "../"
+                page_path = ""
+            elif is_404:
+                path_prefix = "/La-Fiancee-du-Pirate/"
+                page_path = "404.html"
+            else:
+                path_prefix = "../../"
+                page_path = f"{page_name_no_ext}/"
             
             context = {
                 "lang": lang,
@@ -392,6 +400,30 @@ def compile_site():
             same_as_list = hotel_data.get("sameAs", [])
             same_as_urls = [s.get("url") for s in same_as_list if isinstance(s, dict) and "url" in s]
             
+            # Aggregate Rating and Reviews from TripAdvisor
+            aggregate_rating_json = ""
+            reviews_json = ""
+            reviews_items = lang_data.get("reviews", {}).get("items", [])
+            if len(reviews_items) > 0:
+                avg_rating = sum(r.get("rating", 5) for r in reviews_items) / len(reviews_items)
+                aggregate_rating_json = f""",
+              "aggregateRating": {{
+                "@type": "AggregateRating",
+                "ratingValue": "{round(avg_rating, 1)}",
+                "reviewCount": "{len(reviews_items)}"
+              }}"""
+                
+                schema_reviews = []
+                for rev in reviews_items:
+                    schema_reviews.append({
+                        "@type": "Review",
+                        "author": {"@type": "Person", "name": rev.get("author")},
+                        "reviewRating": {"@type": "Rating", "ratingValue": str(rev.get("rating", 5))},
+                        "name": rev.get("title"),
+                        "reviewBody": rev.get("text")
+                    })
+                reviews_json = f",\n              \"review\": {json.dumps(schema_reviews, ensure_ascii=False)}"
+            
             json_ld_script = f"""<script type="application/ld+json">
             {{
               "@context": "https://schema.org",
@@ -412,19 +444,15 @@ def compile_site():
                 "@type": "Rating",
                 "ratingValue": "{hotel_stars}"
               }},
-              "sameAs": {json.dumps(same_as_urls)}
+              "sameAs": {json.dumps(same_as_urls)}{aggregate_rating_json}{reviews_json}
             }}
             </script>"""
             
             
-            # Truncate meta_desc for Open Graph (max ~125 chars)
-            og_desc = meta_desc
-            if len(og_desc) > 125:
-                last_space = og_desc.rfind(' ', 0, 122)
-                if last_space > -1:
-                    og_desc = og_desc[:last_space] + "..."
-                else:
-                    og_desc = og_desc[:122] + "..."
+            # Get dedicated Open Graph description or fallback to meta_desc without arbitrary truncation
+            og_desc = lang_data.get("seo", {}).get("og_desc", "")
+            if not og_desc:
+                og_desc = meta_desc
                     
             context["og_desc"] = og_desc
             context["hreflang_tags"] = hreflang_tags
@@ -432,13 +460,16 @@ def compile_site():
             context["json_ld_script"] = json_ld_script
             context["current_year"] = str(datetime.now().year)
             
+            # Clean Myblackcab phone number for tel: link
+            raw_phone = lang_data.get("accueil", {}).get("myblackcab_phone", "")
+            context["myblackcab_phone_clean"] = raw_phone.replace(" ", "").replace("(", "").replace(")", "")
+            
             # Combine language translation dictionary
             full_vars = {**lang_data, **context}
             
             # Render template parts
             rendered_head = render_template(head_tpl, full_vars)
             rendered_header = render_template(header_tpl, full_vars)
-            rendered_booking = render_template(booking_tpl, full_vars)
             rendered_footer = render_template(footer_tpl, full_vars)
             
             # Load page specific content body
@@ -461,7 +492,6 @@ def compile_site():
             final_html = final_html.replace("{{head}}", rendered_head)
             final_html = final_html.replace("{{header}}", rendered_header)
             final_html = final_html.replace("{{content}}", rendered_page_content)
-            final_html = final_html.replace("{{booking_bar}}", rendered_booking)
             final_html = final_html.replace("{{footer}}", rendered_footer)
             
             # Final variable clean up
@@ -470,6 +500,11 @@ def compile_site():
             # Save compiled file
             if is_index:
                 dest_file_path = os.path.join(lang_dist_dir, "index.html")
+            elif is_404:
+                dest_file_path = os.path.join(lang_dist_dir, "404.html")
+                if lang == "fr":
+                    with open(os.path.join(dist_dir, "404.html"), 'w', encoding='utf-8') as f:
+                        f.write(final_html)
             else:
                 page_dir = os.path.join(lang_dist_dir, page_name_no_ext)
                 os.makedirs(page_dir, exist_ok=True)
@@ -479,8 +514,9 @@ def compile_site():
             with open(dest_file_path, 'w', encoding='utf-8') as f:
                 f.write(final_html)
                 
-            # Add to sitemap
-            sitemap_urls.append(f"https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}")
+            # Add to sitemap (exclude 404)
+            if not is_404:
+                sitemap_urls.append(f"https://kohaiducode.github.io/La-Fiancee-du-Pirate/{lang}/{page_path}")
                 
     # 5. Create root redirection index.html
     root_index_content = """<!DOCTYPE html>

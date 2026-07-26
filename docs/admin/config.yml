@@ -41,6 +41,7 @@ collections:
             fields:
               - { label: "Titre Google - Accueil", name: home_title, widget: string, i18n: true }
               - { label: "Description Google - Accueil", name: home_desc, widget: text, i18n: true }
+              - { label: "Description Open Graph (Courte)", name: og_desc, widget: text, i18n: true, required: false }
 
       - name: global
         label: "Configuration Globale (JSON-LD)"
@@ -49,7 +50,7 @@ collections:
         format: json
         extension: json
         fields:
-
+          - { label: "Favicon du site", name: favicon, widget: image, required: false }
           - name: json_ld
             label: "Données Structurées (Hotel)"
             widget: object
@@ -85,6 +86,7 @@ collections:
             fields:
               - { label: "Titre Google - Chambres", name: rooms_title, widget: string, i18n: true }
               - { label: "Description Google - Chambres", name: rooms_desc, widget: text, i18n: true }
+              - { label: "Description Open Graph (Courte)", name: og_desc, widget: text, i18n: true, required: false }
 
       - name: services
         label: "Services"
@@ -101,6 +103,7 @@ collections:
             fields:
               - { label: "Titre Google - Services", name: services_title, widget: string, i18n: true }
               - { label: "Description Google - Services", name: services_desc, widget: text, i18n: true }
+              - { label: "Description Open Graph (Courte)", name: og_desc, widget: text, i18n: true, required: false }
 
       - name: galerie
         label: "Galerie"
@@ -117,6 +120,7 @@ collections:
             fields:
               - { label: "Titre Google - Galerie", name: gallery_title, widget: string, i18n: true }
               - { label: "Description Google - Galerie", name: gallery_desc, widget: text, i18n: true }
+              - { label: "Description Open Graph (Courte)", name: og_desc, widget: text, i18n: true, required: false }
 
       - name: contact
         label: "Contact"
@@ -133,6 +137,7 @@ collections:
             fields:
               - { label: "Titre Google - Contact", name: contact_title, widget: string, i18n: true }
               - { label: "Description Google - Contact", name: contact_desc, widget: text, i18n: true }
+              - { label: "Description Open Graph (Courte)", name: og_desc, widget: text, i18n: true, required: false }
 
   - name: navigation
     label: "2. En-tête & Pied de page"

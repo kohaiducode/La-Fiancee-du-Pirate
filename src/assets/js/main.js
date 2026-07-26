@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Booking Bar Date Initialization & Form Handling
     // ==========================================================================
-    const bookingForms = document.querySelectorAll('.header-booking-form, #bookingForm');
+    const bookingForms = document.querySelectorAll('.header-booking-form');
     
     if (bookingForms.length > 0) {
         const today = new Date();

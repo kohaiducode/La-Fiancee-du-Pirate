@@ -1,5 +1,6 @@
 {
   "fr": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -20,6 +21,7 @@
     }
   },
   "en": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -40,6 +42,7 @@
     }
   },
   "en-au": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -60,6 +63,7 @@
     }
   },
   "de": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -80,6 +84,7 @@
     }
   },
   "it": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -100,6 +105,7 @@
     }
   },
   "es": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
@@ -120,6 +126,7 @@
     }
   },
   "ru": {
+    "favicon": "/Photos/Logo/Logo bleu fond blanc - favicon.png",
     "json_ld": {
       "name": "La Fiancée du Pirate",
       "telephone": "+33493766740",
